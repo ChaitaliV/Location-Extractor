@@ -10,11 +10,6 @@ Original file is located at
 from google.colab import drive
 drive.mount('/content/drive')
 
-!pip install openai
-!pip install pytorch-pretrained-bert pytorch-nlp
-!pip install -q transformers
-!pip install Keras-Preprocessing
-
 import torch
 import torch.nn as nn
 import numpy as np
