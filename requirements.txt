@@ -1,0 +1,7 @@
+flask-ngrok==0.0.25
+pyngrok==5.1.0
+pytorch-pretrained-bert==0.6.2
+pytorch-nlp==0.5.0
+transformers==4.28.1
+keras-preprocessing==1.1.2
+
