@@ -21,10 +21,13 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, TensorDataset
 from transformers import AdamW, get_linear_schedule_with_warmup
 from tqdm import tqdm, trange
+import requests
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
 model = torch.load(r'/content/drive/MyDrive/BERT_text.pt')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+base_url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json"
+api_key = "AIzaSyCU7kaDfhZIM4bbJVujlGlhdXphUPke1yY"
 MAX_LEN = 512
 
 class LocationExtractor:
@@ -91,9 +94,53 @@ class LocationExtractor:
         lst = text.split(".")
         for sent in lst:
             names.append(self.extract_location(sent))
-        return list(filter(None, names))
+        data = list(filter(None, names))
+        l = []
+        for place_list in data:
+            for i in place_list:
+                l.append(i + ', ' + self.city)
+        return l
 
-sentence = "I went to Paris and visited the Eiffel Tower."
-location_extractor = LocationExtractor(sentence)
-location_extractor.extract_location(sentence)
+class PlaceFinder:
+    def __init__(self, data):
+        self.base_url = base_url
+        self.api_key = api_key
+        self.data = data
+        
+    def fetch_place_details(self, place):
+        # Set up the parameters for the API request
+        params = {
+            'key': self.api_key,
+            'input': place,
+            'inputtype': 'textquery',
+            'fields': 'name,formatted_address,rating,opening_hours,geometry'
+        }
+        
+        # Send the API request
+        response = requests.get(self.base_url, params=params).json()
+
+        # Check if the response contains any results
+        if response['status'] == 'ZERO_RESULTS':
+            print('No results found.')
+        else:
+            # Get the details of the first result (assuming it is the correct restaurant)
+            try: 
+                result = response['candidates'][0]
+            except:
+                result = response
+                
+        details = {}
+        details['Name'] = result['name']
+        details['Address'] = result['formatted_address']
+        details['Rating'] = result.get('rating', 'N/A')
+        details['Opening Hours'] = result.get('opening_hours', 'N/A')
+        details['Location'] = result['geometry']['location']
+        
+        return details
+    
+    def get_places_data(self):
+        data = []
+        for ele in self.data:
+            data.append(self.fetch_place_details(ele))
+        return data
 
