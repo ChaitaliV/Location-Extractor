@@ -34,11 +34,12 @@ engine = "text-davinci-002"
 MAX_LEN = 512
 
 class LocationExtractor:
-    def __init__(self, sent):
+    def __init__(self, sent, city):
         self.device = device
         self.tokenizer = tokenizer
         self.model = model
         self.model.to(self.device)
+        self.city = city
         self.sent = sent
         self.categories = ['Restaurant', 'Cafe', 'House', 'Barbecue', 'Bar', 'Pub', 'Palace', 'Kitchen', 'Club', 'Bakery', 'Shop', 'Room', 'Shack', 'Garden', 'Factory', 'Queen']
 
