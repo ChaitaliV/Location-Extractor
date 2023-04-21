@@ -13,6 +13,8 @@ drive.mount('/content/drive')
 import torch
 import torch.nn as nn
 import numpy as np
+import os
+import openai
 import re
 from transformers import BertTokenizer, BertForTokenClassification
 from keras_preprocessing.sequence import pad_sequences
@@ -28,6 +30,7 @@ model = torch.load(r'/content/drive/MyDrive/BERT_text.pt')
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 base_url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json"
 api_key = "AIzaSyCU7kaDfhZIM4bbJVujlGlhdXphUPke1yY"
+engine = "text-davinci-002"
 MAX_LEN = 512
 
 class LocationExtractor:
