@@ -147,3 +147,68 @@ class PlaceFinder:
             data.append(self.fetch_place_details(ele))
         return data
 
+
+    
+    
+class PlaceDescriptionGenerator:
+    def __init__(self, openai_key):
+        self.openai_key = openai_key
+        self.engine = engine
+        openai.api_key = openai_key
+        
+        
+    def generate_description_and_tags(self, place_name):
+        # Set the prompt for the API
+        prompt = f"Generate a 300 character description and 3 relevant tags for {place_name}. I will give you one example, if the restaurant name is 'The Chocolate Room', the response should be of the format 'Description: The Chocolate Room, Mohali is a cozy little cafe that serves up some of the best chocolate desserts in town. With a menu that features both classic and innovative chocolate dishes, there's something for everyone at The Chocolate Room.Tags: Chocolate, Desserts, Cafe' only"
+        
+        # Generate a response to the prompt
+        response = openai.Completion.create(
+            engine=self.engine,
+            prompt=prompt,
+            max_tokens=200,
+            n=1,
+            stop=None,
+            temperature=0.5,
+        )
+
+        # Extract the generated text from the response
+        message = response.choices[0].text.strip()
+
+        description = re.findall(r'Description:(.+?)Tags:', message, flags=re.DOTALL)[0].strip()
+        tags = re.findall(r'Tags:(.+)', message)[0].split(',')
+
+        return description, tags
+
+    def list_tag_data(self,data):
+      all_data = []
+      for place in data:
+        info = {}
+        info['Description'], info['Tags'] = self.generate_description_and_tags(place)
+        all_data.append(info)
+      return all_data
+
+    def generate_description(self,place_name):
+        # Set the prompt for the API
+        prompt = f"Generate a 100 character description for {place_name}. I will give you one example, if the restaurant name is 'The Chocolate Room', the response should be of the format 'The Chocolate Room, Mohali is a cozy little cafe that serves up some of the best chocolate desserts in town. With a menu that features both classic and innovative chocolate dishes, there's something for everyone at The Chocolate Room."
+        
+        # Generate a response to the prompt
+        response = openai.Completion.create(
+            engine=self.engine,
+            prompt=prompt,
+            max_tokens=200,
+            n=1,
+            stop=None,
+            temperature=0.5,
+        )
+
+        # Extract the generated text from the response
+        message = response.choices[0].text.strip()
+        return message.replace('\n','')
+
+    def list_description(self,data):
+      all_description = []
+      for place in data:
+        info = {}
+        info['Description'] = self.generate_description(place)
+        all_description.append(info)
+      return all_description
