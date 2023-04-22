@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Mapbox Demo</title>
-    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no">
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.js"></script>
-    <link href="https://api.mapbox.com/mapbox-gl-js/v2.4.1/mapbox-gl.css" rel="stylesheet">
+    <meta charset="utf-8" />
+    <title>Mapbox Example</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
         #map {
-            height: 100vh;
-            width: 100%;
             position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
         }
     </style>
 </head>
 <body>
-<div id="map"></div>
-<script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiYWF5dXNoZG9zaGkiLCJhIjoiY2xnZzdrYmRzMDhzbTNkcG5zOGszMjRzMyJ9.1Ljn54UqJ-EYlQBh1HWU8g';
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [73.7561532, 15.5557889],
-        zoom: 10
-    });
+    <div id='map'></div>
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYWF5dXNoZG9zaGkiLCJhIjoiY2xnZzdrYmRzMDhzbTNkcG5zOGszMjRzMyJ9.1Ljn54UqJ-EYlQBh1HWU8g';
 
-    var places = {{ places|safe }};
+        var places = {{ places.to_json(orient='records')|safe }};
+        
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [places[0].Longitude, places[0].Latitude],
+            zoom: 10
+        });
 
-    places.forEach(function (place) {
-        var el = document.createElement('div');
-        el.className = 'marker';
+        var markers = createMarkers(places);
 
-        new mapboxgl.Marker(el)
-            .setLngLat([place['longitude'], place['latitude']])
-            .setPopup(new mapboxgl.Popup({offset: 25})
-                .setHTML('<h3>' + place['name'] + '</h3><p>' + place['description'] + '</p><p>' + place['tags'] + '</p>'))
-            .addTo(map);
-    });
-</script>
+        function createMarkers(places) {
+            var markers = places.map(function(place) {
+                var popupContent = "<h3>" + place.Name + "</h3>"
+                    + "<p>Description: " + place.Description + "</p>"
+                    + "<p>Tags: " + place.Tags + "</p>"
+                    + "<p>Rating: " + place.Rating + "</p>"
+                    + "<p>Address: " + place.Address + "</p>"
+                    + "<p>Opening Hours: " + place["Opening Hours"] + "</p>";
+                return new mapboxgl.Marker({
+                    color: "#FF5733"
+                }).setLngLat([place.Longitude, place.Latitude])
+                    .setPopup(new mapboxgl.Popup().setHTML(popupContent))
+                    .addTo(map);
+            });
+            return markers;
+        }
+    </script>
 </body>
 </html>
