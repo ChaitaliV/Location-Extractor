@@ -113,6 +113,7 @@ class PlaceFinder:
         self.data = data
         
     def fetch_place_details(self, place):
+        global result 
         # Set up the parameters for the API request
         params = {
             'key': self.api_key,
@@ -127,6 +128,7 @@ class PlaceFinder:
         # Check if the response contains any results
         if response['status'] == 'ZERO_RESULTS':
             print('No results found.')
+            result = None
         else:
             # Get the details of the first result (assuming it is the correct restaurant)
             try: 
@@ -135,13 +137,17 @@ class PlaceFinder:
                 result = response
                 
         details = {}
-        details['Name'] = result['name']
-        details['Address'] = result['formatted_address']
-        details['Rating'] = result.get('rating', 'N/A')
-        details['Opening Hours'] = result.get('opening_hours', 'N/A')
-        details['Location'] = result['geometry']['location']
+        try:
+          details['Name'] = result['name']
+          details['Address'] = result['formatted_address']
+          details['Rating'] = result.get('rating', 'N/A')
+          details['Opening Hours'] = result.get('opening_hours', 'N/A')
+          details['Location'] = result['geometry']['location']
+        except:
+          pass
         
         return details
+        
     
     def get_places_data(self):
         data = []
