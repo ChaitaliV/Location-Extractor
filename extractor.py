@@ -94,6 +94,7 @@ class LocationExtractor:
         return list(filter(None, final_lst))
 
     def multiline_data(self, text):
+        text = text.replace('\n','.')
         names = []
         lst = text.split(".")
         for sent in lst:
