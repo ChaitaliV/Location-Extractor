@@ -41,7 +41,7 @@ class LocationExtractor:
         self.model.to(self.device)
         self.city = city
         self.sent = sent
-        self.categories = ['Restaurant', 'Cafe', 'House', 'Barbecue', 'Bar', 'Pub', 'Palace', 'Kitchen', 'Club', 'Bakery', 'Shop', 'Room', 'Shack', 'Garden', 'Factory', 'Queen', 'Street', 'Mall', 'Park', 'Palace', 'Temple', 'Masjid', 'Dargah', 'Avenue', 'Gallery', 'Museum', 'Garden', 'Hotel', 'Lake', 'Fort', 'Beach', 'Mandir']
+        self.categories = ['Restaurant', 'Cafe', 'House', 'Barbecue', 'Bar', 'Pub', 'Palace', 'Kitchen', 'Club', 'Bakery', 'Shop', 'Room', 'Shack', 'Garden', 'Factory', 'Queen', 'Street', 'Mall', 'Park', 'Palace', 'Temple', 'Masjid', 'Dargah', 'Avenue', 'Gallery', 'Museum', 'Garden', 'Hotel', 'Lake', 'Fort', 'Beach', 'Mandir', 'Hill', 'Bhavan']
 
     def clean_string(self, lst, sent):
         l = []
