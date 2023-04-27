@@ -10,169 +10,47 @@
         body {
             margin: 0;
             padding: 0;
-            display: flex;
         }
-
         #map {
-            position: relative;
-            width: 100%;
-            flex: 1;
-        }
-
-        #sidebar {
-            position: fixed;
+            position: absolute;
             top: 0;
-            right: 0;
             bottom: 0;
-            width: 300px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            overflow: scroll;
-            padding: 20px;
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0s, opacity 0.5s ease-out;
-        }
-
-        #sidebar.active {
-            visibility: visible;
-            opacity: 1;
-            transition: visibility 0s, opacity 0.5s ease-in;
-        }
-
-        #sidebar h3 {
-            font-weight: bold;
-            margin-top: 0;
-        }
-
-        #sidebar p {
-            margin-top: 5px;
-            margin-bottom: 5px;
-        }
-
-        #sidebar button {
-            margin-top: 10px;
-            margin-right: 10px;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-        }
-
-        #sidebar .map-button {
-            background-color: #3498db;
-        }
-
-        #sidebar .call-button {
-            background-color: #2ecc71;
-        }
-
-        #sidebar .close-button {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            padding: 10px;
-            border-radius: 50%;
-            border: none;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            background-color: red;
-        }
-
-        #back-button {
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            padding: 10px;
-            border-radius: 50%;
-            border: none;
-            color: white;
-            font-weight: bold;
-            cursor: pointer;
-            background-color: gray;
-            visibility: hidden;
-        }
-
-        #back-button.active {
-            visibility: visible;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <div id='map'></div>
-    <div id="sidebar">
-        <h3></h3>
-        <p id="tags"></p>
-        <button class="map-button">Map</button>
-        <button class="call-button">Call</button>
-        <p id="description"></p>
-        <p id="rating"></p>
-        <p id="address"></p>
-        <p id="opening-hours"></p>
-        <button class="close-button">Close</button>
-    </div>
-    <button id="back-button">&#8592; Back</button>
     <script>
-        mapboxgl.accessToken = 'pk.eyJ1IjoiYWF5dXNoZG9zaGkiLCJhIjoiY2xnZzdrYmRzMDhzbTNkcG5zOGszMjRzMyJ9.1Ljn54UqJ-EYlQBh1HWU8g';
-        var places = {{ places_json|safe }};
-    
-    var map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
-        center: [places[0].Longitude, places[0].Latitude],
-        zoom: 10
-    });
+        mapboxgl.accessToken = 'YOUR_MAPBOX_API_KEY';
 
-    var markers = createMarkers(places);
-
-    function createMarkers(places) {
-        var markers = places.map(function(place) {
-            var popupContent = "<h3>" + place.Name + "</h3>"
-                + "<p>Description: " + place.Description + "</p>"
-                + "<p>Tags: " + place.Tags + "</p>"
-                + "<p>Rating: " + place.Rating + "</p>"
-                + "<p>Address: " + place.Address + "</p>"
-                + "<p>Opening Hours: " + place["Opening Hours"] + "</p>";
-            return new mapboxgl.Marker({
-                color: "#FF5733"
-            }).setLngLat([place.Longitude, place.Latitude])
-                .setPopup(new mapboxgl.Popup().setHTML(popupContent))
-                .addTo(map)
-                .getElement()
-                .addEventListener('click', function() {
-                    var sidebar = document.getElementById('sidebar');
-                    var backButton = document.getElementById('back-button');
-                    var closeButton = document.querySelector('.close-button');
-                    var mapButton = document.querySelector('.map-button');
-                    var callButton = document.querySelector('.call-button');
-
-                    sidebar.classList.add('active');
-                    mapButton.onclick = function() {
-                        window.open('https://www.mapbox.com/', '_blank');
-                    }
-                    callButton.onclick = function() {
-                        window.open('tel:' + place.Phone);
-                    }
-                    backButton.onclick = function() {
-                        sidebar.classList.remove('active');
-                    }
-                    closeButton.onclick = function() {
-                        sidebar.classList.remove('active');
-                    }
-
-                    document.querySelector('#sidebar h3').innerHTML = place.Name;
-                    document.querySelector('#sidebar #tags').innerHTML = place.Tags;
-                    document.querySelector('#sidebar #description').innerHTML = place.Description;
-                    document.querySelector('#sidebar #rating').innerHTML = 'Rating: ' + place.Rating;
-                    document.querySelector('#sidebar #address').innerHTML = 'Address: ' + place.Address;
-                    document.querySelector('#sidebar #opening-hours').innerHTML = 'Opening Hours: ' + place["Opening Hours"];
-                });
+        var places = {{ places.to_json(orient='records')|safe }};
+        
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [places[0].Longitude, places[0].Latitude],
+            zoom: 10
         });
-        return markers;
-    }
-</script>
-    </body>
+
+        var markers = createMarkers(places);
+
+        function createMarkers(places) {
+            var markers = places.map(function(place) {
+                var popupContent = "<h3>" + place.Name + "</h3>"
+                    + "<p>Description: " + place.Description + "</p>"
+                    + "<p>Tags: " + place.Tags + "</p>"
+                    + "<p>Rating: " + place.Rating + "</p>"
+                    + "<p>Address: " + place.Address + "</p>"
+                    + "<p>Opening Hours: " + place["Opening Hours"] + "</p>";
+                return new mapboxgl.Marker({
+                    color: "#FF5733"
+                }).setLngLat([place.Longitude, place.Latitude])
+                    .setPopup(new mapboxgl.Popup().setHTML(popupContent))
+                    .addTo(map);
+            });
+            return markers;
+        }
+    </script>
+</body>
 </html>
