@@ -22,9 +22,9 @@
 <body>
     <div id='map'></div>
     <script>
-        mapboxgl.accessToken = 'YOUR_MAPBOX_API_KEY';
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYWF5dXNoZG9zaGkiLCJhIjoiY2xnZzdrYmRzMDhzbTNkcG5zOGszMjRzMyJ9.1Ljn54UqJ-EYlQBh1HWU8g';
 
-        var places = {{ places.to_json(orient='records')|safe }};
+        var places = {{ places_json|safe }};
         
         var map = new mapboxgl.Map({
             container: 'map',
