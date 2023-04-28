@@ -153,11 +153,21 @@
 
                     sidebar.classList.add('active');
                     mapButton.onclick = function() {
-                        window.open('https://www.mapbox.com/', '_blank');
-                    }
-                    callButton.onclick = function() {
-                        window.open('tel:' + place.Phone);
-                    }
+    var url = 'https://www.google.com/maps/search/?api=1&query=' + place.Latitude + ',' + place.Longitude;
+    window.open(url, '_blank');
+}
+                    if (place.Phone) {
+    callButton.style.display = "block";
+    callButton.onclick = function() {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            window.location.href = "tel:" + place.Phone;
+        } else {
+            window.open("tel:" + place.Phone);
+        }
+    }
+} else {
+    callButton.style.display = "none";
+}
                     backButton.onclick = function() {
                         sidebar.classList.remove('active');
                     }
