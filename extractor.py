@@ -193,9 +193,8 @@ class PlaceDescriptionGenerator:
       # Split the message into the description and tags
       place_tokens = place_name.split(',')
       for token in place_tokens:
-          message = message.replace(token, '')
-          message = message.replace(token, '')
-      return message
+          message1 = message.replace(token, '')
+      return message1, message
     
     def get_tags(self,description):
       prompt = """
