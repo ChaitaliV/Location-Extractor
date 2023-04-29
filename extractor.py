@@ -111,53 +111,59 @@ class PlaceFinder:
         self.base_url = base_url
         self.api_key = api_key
         self.data = data
-        
-    def fetch_place_details(self, place):
-        global result 
-        # Set up the parameters for the API request
-        params = {
-            'key': self.api_key,
-            'input': place,
-            'inputtype': 'textquery',
-            'fields': 'name,formatted_address,rating,opening_hours,geometry'
-        }
-        
-        # Send the API request
-        response = requests.get(self.base_url, params=params).json()
 
-        # Check if the response contains any results
-        if response['status'] == 'ZERO_RESULTS':
-            print('No results found.')
-            result = None
-        else:
-            # Get the details of the first result (assuming it is the correct restaurant)
-            try: 
-                result = response['candidates'][0]
-            except:
-                result = response
-                
-        details = {}
-        try:
-          details['Name'] = result['name']
-          details['Address'] = result['formatted_address']
+    def fetch_place_details(self,place_name):
+      # Set up the parameters for the API request
+      global result
+      params = {
+          'key': self.api_key,
+          'input': place_name,
+          'inputtype': 'textquery',
+          'fields': 'place_id,name,formatted_address,rating,opening_hours,geometry,photos'
+      }
+
+      # Send the API request
+      response = requests.get(self.base_url, params=params).json()
+
+      # Check if the response contains any results
+      if response['status'] == 'ZERO_RESULTS':
+          result = ''
+      else:
+          result = response['candidates'][0]
+          # Get the place ID of the first result (assuming it is the correct restaurant)
+          place_id = response['candidates'][0]['place_id']
+
+          # Make a request to the Places Details API to fetch the phone number
+          details_url = f'https://maps.googleapis.com/maps/api/place/details/json?place_id={place_id}&fields=international_phone_number&key={api_key}'
+          details_response = requests.get(details_url).json()
+
+          # Extract the relevant details from the API response
+          details = {}
+          details['Name']= result['name']
+          details['Address']= result['formatted_address']
           details['Rating'] = result.get('rating', 'N/A')
-          details['Opening Hours'] = result.get('opening_hours', 'N/A')
-          details['Location'] = result['geometry']['location']
-        except:
-          pass
-        
-        return details
-        
+          details['Opening Hours'] =  result.get('opening_hours', 'N/A')
+          details['Location']= result['geometry']['location']
+
+          details['Phone'] = details_response['result'].get('international_phone_number', 'N/A')
+          photo_reference = response['candidates'][0].get('photos', None)
+          if photo_reference:
+              photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference={photo_reference[0]['photo_reference']}&key={api_key}"
+              details['Photo'] = photo_url
+          else:
+              details['Photo'] = 'N/A'
+
+          return details
+
     
     def get_places_data(self):
         data = []
         for ele in self.data:
             data.append(self.fetch_place_details(ele))
         return data
-
-
     
     
+   
 class PlaceDescriptionGenerator:
     def __init__(self, openai_key):
         self.openai_key = openai_key
@@ -165,58 +171,66 @@ class PlaceDescriptionGenerator:
         openai.api_key = openai_key
         
         
-    def generate_description_and_tags(self, place_name):
-        # Set the prompt for the API
-        prompt = f"Generate a 300 character description and 3 relevant tags for {place_name}. I will give you one example, if the restaurant name is 'The Chocolate Room', the response should be of the format 'Description: The Chocolate Room, Mohali is a cozy little cafe that serves up some of the best chocolate desserts in town. With a menu that features both classic and innovative chocolate dishes, there's something for everyone at The Chocolate Room.Tags: Chocolate, Desserts, Cafe' only"
-        
-        # Generate a response to the prompt
-        response = openai.Completion.create(
-            engine=self.engine,
-            prompt=prompt,
-            max_tokens=200,
-            n=1,
-            stop=None,
-            temperature=0.5,
-        )
+    def get_description(self,place_name):
+      # Set the prompt for the API
+      prompt = """Get a 200 characters, accurate description about the \n\nRestaurant: """ + place_name+ """ from the internet,
+      you can use google description about the place or some other website to get description about this place. Description 
+      should include place type, Ambience, what it provides, speciality, etc. Please generate accurate description.
+      """
+      # Generate a response to the prompt
+      response = openai.Completion.create(
+          engine=self.engine,
+          prompt=prompt,
+          max_tokens=1024,
+          n=1,
+          stop=None,
+          temperature=0.7,
+      )
 
-        # Extract the generated text from the response
-        message = response.choices[0].text.strip()
+      # Extract the generated text from the response
+      message = response.choices[0].text.strip()
+      
+      # Split the message into the description and tags
+      place_tokens = place_name.split(',')
+      for token in place_tokens:
+          message = message.replace(token, '')
+          message = message.replace(token, '')
+      return message
+    
+    def get_tags(self,description):
+      prompt = """
+      Generate only three tags,each tag should not be more than 2 words long, from the """+description+""", Note that out of three tags, one tag should be about place
+      type, for example is it cafe, restaurant, shopping place, spa, etc. second tag should be cuisine or another category 
+      that describes the place, for example if it is Italian cafe, tag should be Italian, If it is museaum, the tag 
+      should be art & History, etc. third tag should be something creative about the place, For example, if it is a roof-top 
+      cafe third tag can be rooftop, If it is a shopping street famous for night-life, third tag should be night-life.
+      if it is site-seeing, third tag can be tourist attraction, etc. Note that each tag SHOULD NOT be more than 2
+      words long."""
+      # Generate a response to the prompt
+      response = openai.Completion.create(
+          engine=engine,
+          prompt=prompt,
+          max_tokens=32,
+          n=1,
+          stop=None,
+          temperature=0.7,
+      )
 
-        description = re.findall(r'Description:(.+?)Tags:', message, flags=re.DOTALL)[0].strip()
-        tags = re.findall(r'Tags:(.+)', message)[0].split(',')
-
-        return description, tags
-
+      # Extract the generated text from the response
+      message = response.choices[0].text.strip()
+      words_to_remove = ['Tag','Tags','input','tags','tag','Input','var','Place','place','type','Type','CODE','enter','YOUR  HERE','Output','here','list of','three','append']
+      message = message.replace('\n',',')
+      clean_text = re.sub("[^A-Za-z,']+", ' ', message)
+      for word in words_to_remove:
+          clean_text = clean_text.replace(word,'')
+      return clean_text
+      
     def list_tag_data(self,data):
       all_data = []
       for place in data:
         info = {}
-        info['Description'], info['Tags'] = self.generate_description_and_tags(place)
+        des = self.get_description(place)
+        info['Tags'] = self.get_tags(des)
+        info['Description'] = des
         all_data.append(info)
       return all_data
-
-    def generate_description(self,place_name):
-        # Set the prompt for the API
-        prompt = f"Generate a 100 character description for {place_name}. I will give you one example, if the restaurant name is 'The Chocolate Room', the response should be of the format 'The Chocolate Room, Mohali is a cozy little cafe that serves up some of the best chocolate desserts in town. With a menu that features both classic and innovative chocolate dishes, there's something for everyone at The Chocolate Room."
-        
-        # Generate a response to the prompt
-        response = openai.Completion.create(
-            engine=self.engine,
-            prompt=prompt,
-            max_tokens=200,
-            n=1,
-            stop=None,
-            temperature=0.5,
-        )
-
-        # Extract the generated text from the response
-        message = response.choices[0].text.strip()
-        return message.replace('\n','')
-
-    def list_description(self,data):
-      all_description = []
-      for place in data:
-        info = {}
-        info['Description'] = self.generate_description(place)
-        all_description.append(info)
-      return all_description
