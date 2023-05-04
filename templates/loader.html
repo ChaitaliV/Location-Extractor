@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Page Loader Example</title>
+    <style>
+      /* Center the loader in the middle of the page */
+      .loader {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      
+      /* Define the animation for the loader */
+      .loader:before,
+      .loader:after {
+        content: "";
+        display: block;
+        border-radius: 50%;
+        width: 0;
+        height: 0;
+        position: absolute;
+        border: 4px solid #ccc;
+        opacity: 0.8;
+        animation: loader 1.5s infinite;
+      }
+      
+      /* Define the keyframes for the loader animation */
+      @keyframes loader {
+        0% {
+          width: 0;
+          height: 0;
+          opacity: 0.8;
+        }
+        100% {
+          width: 50px;
+          height: 50px;
+          opacity: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- The loader element -->
+    <div class="loader"></div>
+    
+    <!-- Your page content here -->
+    <h1>Welcome to my website</h1>
+    <p>This is an example of a page loader using CSS animation.</p>
+  </body>
+</html>
