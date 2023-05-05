@@ -146,12 +146,12 @@ class PlaceFinder:
           details['Location']= result['geometry']['location']
 
           details['Phone'] = details_response['result'].get('international_phone_number', 'N/A')
-          photo_reference = response['candidates'][0].get('photos', None)
-          if photo_reference:
-              photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference={photo_reference[0]['photo_reference']}&key={api_key}"
-              details['Photo'] = photo_url
-          else:
-              details['Photo'] = 'N/A'
+          photos = []
+          photo_references = result.get('photos', [])
+          for photo_reference in photo_references:
+              photo_url = f"https://maps.googleapis.com/maps/api/place/photo?maxwidth=400&photoreference={photo_reference['photo_reference']}&key={api_key}"
+              photos.append(photo_url)
+          details['Photos'] = photos
 
           return details
 
