@@ -235,7 +235,7 @@
 
                 var el = document.createElement('div');
         el.className = 'marker';
-        el.style.backgroundImage = 'url(' + place.Photo + ')';
+        el.style.backgroundImage = 'url(' + place.Photos[0] + ')';
         
         return new mapboxgl.Marker({
             element: el
