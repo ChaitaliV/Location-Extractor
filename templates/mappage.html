@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mapbox Example</title>
+    <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+          
+        }
+
+       #loader {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: #fff;
+}
+
+#loader:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 60px;
+  height: 60px;
+  margin: -30px 0 0 -30px;
+  border-radius: 50%;
+  border: 6px solid #ccc;
+  border-top-color: #000;
+  animation: loader 1.5s infinite linear;
+}
+
+@keyframes loader {
+  to { transform: rotate(360deg); }
+}
+
+         #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+       #map .marker {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  border: 2px solid white;
+}
+    
+        #sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 300px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            overflow: scroll;
+            padding: 20px;
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0s, opacity 0.5s ease-out;
+        }
+
+        #sidebar.active {
+            visibility: visible;
+            opacity: 1;
+            transition: visibility 0s, opacity 0.5s ease-in;
+        }
+
+        #sidebar h3 {
+            font-weight: bold;
+            margin-top: 35px;
+            font-size: 23px;
+        }
+
+        #sidebar p {
+            margin-top: 5px;
+            
+        }
+
+    .sidebar-images {
+      overflow-x: scroll;
+      white-space: nowrap;
+      margin-top: 10px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .sidebar-images img {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      margin-right: 10px;
+    
+      object-fit: cover;
+    
+    }
+
+        #sidebar .tags {
+           
+            margin-top: 35px;
+              font-size: 18px;
+              color: black;
+        }
+
+        #sidebar .text {
+           
+            
+              font-size: 16px;
+              font-weight: normal;
+              color: black;
+        }
+        
+        
+        #sidebar .title {
+            font-weight: bold;
+            color: #00008B;
+            margin-top: 10px;
+              font-size: 18px;
+        }
+
+         #sidebar .description {
+            height: 100px; /* set a fixed height for the element */
+            overflow-y: scroll; /* enable vertical scrolling */
+            position:relative;
+            width:300px;
+          }
+
+        #sidebar button {
+            margin-top: 10px;
+            margin-right: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #sidebar .map-button {
+            background-color: #3498db;
+            padding: 10px;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        #sidebar .call-button {
+            background-color: #2ecc71;
+            padding: 10px;
+            width: 100px;
+            margin-bottom: 10px;
+        }
+
+        #sidebar .close-button {
+               position: absolute;
+          right: 10px;
+  top: 10px;
+          border-radius: 0px;
+          background-color: white;
+          color:black;
+             border: solid black;
+             margin-top:20px;
+             margin-left:20px;
+          width: 15px;
+          height: 15px;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+        }
+
+        #back-button {
+         
+           background-color: transparent;
+             border: solid black;
+             margin-top:20px;
+             margin-left:20px;
+          width: 15px;
+          height: 15px;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+        }
+        }
+
+        #back-button.active {
+            visibility: visible;
+        }
+    </style>
+</head>
+<body>
+     
+     
+      <div id="loader"></div>
+    <div id='map'></div>
+   
+    <div id="sidebar">
+        <h3></h3>
+        <p class="title">Tags: <span class="tags" id="tag"></span></p>
+       
+        <button class="map-button">Map</button>
+        <button class="call-button">Call</button>
+        <p class="title">Description: <span class="text" id="description"></span></p>
+        <p class="title">Rating: <span class="text" id="rating"></span></p>
+        <p class="title">Address: <span class="text" id="address"></span></p>
+        <p class="title">Opening Hours: <span class="text" id="opening-hours"></span></p>
+        <div class="sidebar-images"></div>
+        <button class="close-button"></button>
+    </div>
+    <form method="POST" action="/">
+    <button id="back-button"></button>
+       
+    <script>
+      
+        mapboxgl.accessToken = 'pk.eyJ1IjoiYWF5dXNoZG9zaGkiLCJhIjoiY2xnZzdrYmRzMDhzbTNkcG5zOGszMjRzMyJ9.1Ljn54UqJ-EYlQBh1HWU8g';
+
+        var places = {{ places_json|safe }};
+        
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [places[0].Longitude, places[0].Latitude],
+            zoom: 12
+        });
+
+        var markers = createMarkers(places);
+
+        function createMarkers(places) {
+            var markers = places.map(function(place) {
+                var popupContent = "<h3>" + place.Name + "</h3>"
+                    + "<p>Description: " + place.Description + "</p>"
+                    + "<p>Tags: " + place.Tags + "</p>"
+                    + "<p>Rating: " + place.Rating + "</p>"
+                    + "<p>Address: " + place.Address + "</p>"
+                    + "<p>Opening Hours: " + place["Opening Hours"] + "</p>";
+
+                var el = document.createElement('div');
+        el.className = 'marker';
+        el.style.backgroundImage = 'url(' + place.Photos[0] + ')';
+        
+        return new mapboxgl.Marker({
+            element: el
+        }).setLngLat([place.Longitude, place.Latitude])
+               
+                    
+                    .addTo(map)
+                    .getElement()
+                .addEventListener('click', function() {
+                    var sidebar = document.getElementById('sidebar');
+                    var backButton = document.getElementById('back-button');
+                    var closeButton = document.querySelector('.close-button');
+                    var mapButton = document.querySelector('.map-button');
+                    var callButton = document.querySelector('.call-button');
+
+                    sidebar.classList.add('active');
+                    mapButton.onclick = function() {
+    var googleMapsUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(place.Name + ' ' + place.Address);
+    window.open(googleMapsUrl, '_blank');
+}
+                    if (place.Phone) {
+    callButton.style.display = "block";
+    callButton.onclick = function() {
+        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+            window.location.href = "tel:" + place.Phone;
+        } else {
+            window.open("tel:" + place.Phone);
+        }
+    }
+} else {
+    callButton.style.display = "none";
+}
+                    backButton.onclick = function() {
+                        sidebar.classList.remove('active');
+                    }
+                    closeButton.onclick = function() {
+                        sidebar.classList.remove('active');
+                    }
+
+                    document.querySelector('#sidebar h3').innerHTML = place.Name;
+                    document.querySelector('#sidebar #tag').innerHTML = place.Tags;
+                    document.querySelector('#sidebar #description').innerHTML = place.Description;
+                    document.querySelector('#sidebar #rating').innerHTML =  place.Rating;
+                    document.querySelector('#sidebar #address').innerHTML = place.Address;
+                    document.querySelector('#sidebar #opening-hours').innerHTML = place["Opening Hours"];
+                    // Select the sidebar-images container
+const sidebarImagesContainer = document.querySelector('#sidebar .sidebar-images');
+
+// Create a new list to hold the image elements
+const imageList = document.createElement('ul');
+imageList.classList.add('sidebar-image-list');
+
+// Loop through each photo url and create a new image element for it
+for (var j = 0; j < place.Photos.length; j++) {
+  // Create a new image element
+  const img = document.createElement('img');
+  img.src = place.Photos[j];
+  img.alt = place.Name;
+  img.width = 100;
+  img.height = 100;
+  img.classList.add('sidebar-image');
+
+  // Add the image element to the list
+  const imageListItem = document.createElement('li');
+  imageListItem.appendChild(img);
+  imageList.appendChild(imageListItem);
+}
+
+// Replace the previous images in the sidebar-images container with the new ones
+if (sidebarImagesContainer.firstChild) {
+  sidebarImagesContainer.replaceChild(imageList, sidebarImagesContainer.firstChild);
+} else {
+  sidebarImagesContainer.appendChild(imageList);
+}
+
+
+                });
+            
+            });
+            return markers;
+        }
+
+        document.onreadystatechange = function() {
+        if (document.readyState !== "complete") {
+            document.querySelector(
+            "body").style.visibility = "hidden";
+            document.querySelector(
+            "#loader").style.visibility = "visible";
+            setTimeout(function() {
+        document.querySelector(
+            "#loader").style.visibility = "visible";
+        }, 2000);
+        } else {
+            document.querySelector(
+            "#loader").style.display = "none";
+            document.querySelector(
+            "body").style.visibility = "visible";
+        }
+    };
+    </script>
+     
+</body>
+</html>
