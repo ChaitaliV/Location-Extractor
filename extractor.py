@@ -190,10 +190,8 @@ class PlaceDescriptionGenerator:
         
     def get_description(self,place_name):
       # Set the prompt for the API
-      prompt = """Get a 200 characters, accurate description about the """ + place_name+ """ from the internet,
-      you can use google description about the place or some other website to get description about this place. Description 
-      should include place type, Ambience, what it provides, speciality, etc. Please generate accurate description.
-      """
+      prompt = """Get a 150 characters description about the place """ + place_name
+     
       # Generate a response to the prompt
       response = openai.Completion.create(
           engine=self.engine,
