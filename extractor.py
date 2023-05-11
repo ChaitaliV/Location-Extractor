@@ -119,7 +119,7 @@ class PlaceFinder:
           'key': self.api_key,
           'input': place_name,
           'inputtype': 'textquery',
-          'fields': 'place_id,name,formatted_address,rating,opening_hours,geometry,photos'
+          'fields': 'place_id,name,formatted_address,rating,opening_hours,geometry,photos,types'
       }
 
       # Send the API request
@@ -144,6 +144,7 @@ class PlaceFinder:
           details['Rating'] = result.get('rating', 'N/A')
           details['Opening Hours'] =  result.get('opening_hours', 'N/A')
           details['Location']= result['geometry']['location']
+          details['Types'] = result.get('types', 'N/A')[0]
 
           details['Phone'] = details_response['result'].get('international_phone_number', 'N/A')
           photos = []
