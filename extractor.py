@@ -63,6 +63,19 @@ class LocationExtractor:
             return match.group()
         else:
             return p
+        
+    def add_next_word(self, p, sent):
+        match = re.search(p, sent)
+        if match:
+            s = sent[match.end():]
+            try: 
+              if (s[0] == '' or ' '):
+                p = p + ' ' + s[1]
+              else:
+                p = p+' '+s[0]
+            except:
+              pass
+        return p
 
     def extract_location(self, sent):
         true_label = []
@@ -91,7 +104,10 @@ class LocationExtractor:
         final_lst = []
         for ele in p:
             final_lst.append(self.add_suffix(ele, sent))
-        return list(filter(None, final_lst))
+        list_2 = []
+        for ele in final_lst:
+            list_2.append(self.add_next_word(ele,sent))
+        return list(filter(None, list_2))
 
     def multiline_data(self, text):
         text = text.replace('\n','.')
