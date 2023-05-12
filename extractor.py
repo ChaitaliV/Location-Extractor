@@ -67,9 +67,11 @@ class LocationExtractor:
     def add_next_word(self, p, sent):
         match = re.search(p, sent)
         if match:
-            s = sent[match.end():]
+            s = sent[match.end():].split(' ')
             try: 
-              if (s[0] == '' or ' '):
+              if (s[0] == ''):
+                p = p + ' ' + s[1]
+              elseif (s[0] == ' '):
                 p = p + ' ' + s[1]
               else:
                 p = p+' '+s[0]
