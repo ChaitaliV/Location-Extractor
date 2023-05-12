@@ -215,13 +215,7 @@ class PlaceDescriptionGenerator:
     
     def get_tags(self,description):
       prompt = """
-      Generate only three tags,each tag should not be more than 2 words long, from the """+description+""", Note that out of three tags, one tag should be about place
-      type, for example is it cafe, restaurant, shopping place, spa, etc. second tag should be cuisine or another category 
-      that describes the place, for example if it is Italian cafe, tag should be Italian, If it is museaum, the tag 
-      should be art & History, etc. third tag should be something creative about the place, For example, if it is a roof-top 
-      cafe third tag can be rooftop, If it is a shopping street famous for night-life, third tag should be night-life.
-      if it is site-seeing, third tag can be tourist attraction, etc. Note that each tag SHOULD NOT be more than 2
-      words long."""
+      Generate only three short tags about the place from the """+description
       # Generate a response to the prompt
       response = openai.Completion.create(
           engine=engine,
