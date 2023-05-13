@@ -2,12 +2,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link href="https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap" rel="stylesheet">
-	<title>Enter Paragraph</title>
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+	<title>Lookout</title>
 	<style>
 		body {
 			background-color: #f2f2f2;
-			font-family: 'Poppins', sans-serif;
+			font-family: 'Poppins';
 			font-size: 16px;
 			font-weight: 400;
 		}
@@ -17,20 +17,19 @@
       width: 100%;
 			background-color: white;
 			display: flex;
-			align-items: center;
 			padding-left: 20px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-		}
-
-		h1 {
-			color: #e63946;
-			margin: 0;
-			text-align: center;
-			font-family: 'Poppins', sans-serif;
+      
+      padding-top:15px;
+      vertical-align:middle;
+      color: #e63946;
+			font-family: 'Poppins';
   font-weight: 700;
   font-size: 40px;
-  
+      
+		}
+
+    .logo {
+			margin-right: 10px; 
 		}
 
 		.container {
@@ -39,7 +38,7 @@
 			padding: 20px;
 			background-color: white;
 			border-radius: 0px;
-			box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+			font-family: 'Poppins';
 		}
 
 		form {
@@ -47,6 +46,7 @@
 			flex-direction: column;
 			align-items: center;
 			margin-top: 20px;
+      font-family: 'Poppins';
 		}
 
 		label {
@@ -62,6 +62,7 @@
 			padding: 10px;
 			font-size: 16px;
 			border-radius: 5px;
+      font-family: 'Poppins';
 			border: 1px solid #cccccc;
 		}
 
@@ -72,6 +73,7 @@
 			border-radius: 5px;
 			border: 1px solid #cccccc;
 			margin-top: 10px;
+      font-family: 'Poppins';
 		}
 
 		input[type="submit"] {
@@ -80,6 +82,7 @@
 			border: none;
 			padding: 10px 20px;
 			font-size: 16px;
+      font-family: 'Poppins';
 			border-radius: 5px;
 			cursor: pointer;
 			margin-top: 10px;
@@ -94,11 +97,12 @@
 </head>
 <body>
 	<div class="title-bar">
-		<h1><img src="{{ url_for('static', filename='lookout_logo.png') }}" height="70">  Lookout</h1>
+		<img class="logo" src="{{ url_for('static', filename='lookout_logo.png') }}" height="70">
+    <span>Lookout</span>
 	</div>
 	<div class="container">
 		<h2>Extract Locations from Text</h2>
-		<form method="POST" action="/process">
+		<form method="POST" action="/process" onsubmit="changeButtonText()">
 			<label for="paragraph">Enter a paragraph:</label>
                       
 			<textarea id="paragraph" name="paragraph"></textarea>
@@ -107,8 +111,14 @@
                       
 			<input type="text" id="city" name="city">
 
-			<input type="submit" value="Submit">
+			<input type="submit" value="Submit" id="submitBtn"">
 		</form>
 	</div>
 </body>
+<script>
+		function changeButtonText() {
+			var submitButton = document.getElementById("submitBtn");
+			submitButton.value = "Processing...";
+		}
+	</script>
 </html>
