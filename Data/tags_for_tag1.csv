@@ -1,0 +1,664 @@
+,Tags
+0,Monestry
+1,Cruise
+2,"Museum, Palace"
+3,Craft Market
+4,Mall
+5,Saree
+6,Lounge
+7,Bhojpuri
+8,Sauna
+9,Grocery Store
+10,Sushi Restaurant
+11,African
+12,Snowboarding
+13,"Bar, Bakery"
+14,Indian
+15,Island
+16,French. Bistro
+17,Resort
+18,Peak
+19,Thrift Store
+20,Electronics Store
+21,Sailing
+22,Airport
+23,Bhaji Pav
+24,Tanning Salon
+25,Tea Shop
+26,Dam
+27,Street Food Market
+28,Landmark
+29,Auto Parts Store
+30,Shopping Street
+31,Appliance Store
+32,Convenience Store
+33,Cocktail Bar
+34,Lassi
+35,Acupuncture Clinic
+36,Specialty Food Store
+37,Paratha
+38,Sanctuary
+39,Spa
+40,North Indian
+41,Garden Center
+42,Pedestrian Street
+43,Kebab House
+44,Kathiyawadi
+45,Taco Stand
+46,Oyster Bar
+47,Distillery
+48,"Cafe,Restaurant"
+49,"Ethiopian, Cafe"
+50,Indonesian
+51,Peruvian
+52,"Temple, Hill"
+53,Archery Range
+54,Gourmet Food Shop
+55,Masala Dosa
+56,Deli
+57,Outlet Store
+58,Zoo
+59,Computer Store
+60,Egyptian
+61,Idli House
+62,Cake Shop
+63,Stargazing Spot
+64,Salt Cave
+65,Mindfulness Studio
+66,Masjid
+67,English Pub
+68,Statue
+69,Mangalorean
+70,Kadai Paneer
+71,Locho
+72,Dessert Shop
+73,Lassi Shop
+74,Greek Restaurant
+75,"Pho Noodle, Vietnamese"
+76,"South Indian, Restaurant"
+77,Ayurvedic Center
+78,"Museum,Library"
+79,Restaurant
+80,University
+81,Flea Market
+82,"Turkish, Kebab"
+83,Chole Bhature Stall
+84,Garden
+85,Infrared Sauna
+86,Buddihist
+87,Boutique
+88,Manipuri
+89,Rasmalai
+90,Amusement Park
+91,"Swedish, Meatball, Bistro"
+92,Ski Resort
+93,Kerala
+94,Home Decor Store
+95,Jalebi
+96,Pesarattu
+97,Roti
+98,Department Store
+99,Wine Tasting Room
+100,Restro
+101,Retreat Center
+102,Greek
+103,Thali Restaurant
+104,Fashion Boutique
+105,Vegan Restaurant
+106,Cakery
+107,"cruises, River"
+108,Chocolatier
+109,Shopping Center
+110,Bakery
+111,Dutch
+112,Paneer Tikka Corner
+113,"Veg, Restaurant"
+114,Juice Bar
+115,Bengali
+116,Vav
+117,Historical Site
+118,River
+119,Naan
+120,Tandoori
+121,Gurudwara
+122,Resort Spa
+123,Pani Puri Stall
+124,Paragliding
+125,Valley
+126,German
+127,Ice Cream
+128,Ice Cream Parlor
+129,Pilates Studio
+130,Donuts
+131,Mount
+132,Hair Salon
+133,Vineyard
+134,Fashion
+135,Goan
+136,Biryani
+137,Beaches
+138,Kachori Corner
+139,City Tour
+140,Garhwali
+141,Jodhpuri
+142,Cheese Market
+143,Archaeological Park
+144,Day Spa
+145,Jewelry Store
+146,Drive-In
+147,Helicopter Tour
+148,Surfing
+149,Gallery
+150,Market
+151,Italian
+152,Baker
+153,Beach Shack
+154,Maharashtrian
+155,Lighthouse
+156,Wildlife Tour
+157,Spanish
+158,Dhaba
+159,Vietnamese Restaurant
+160,Anglo-Indian
+161,"Cave, Buddisht"
+162,Mizo
+163,French
+164,Physical Therapy Center
+165,Pub
+166,Super Market
+167,Sandwich Shop
+168,Vietnamese
+169,Steam Room
+170,Taproom
+171,Pastry Shop
+172,Playground
+173,Video Game Store
+174,Fort
+175,Toy Store
+176,Fine Dining Restaurant
+177,Couture
+178,Malai Kofta Corner
+179,Opera House
+180,Food Court
+181,"Hot Springs, Temple"
+182,Shopping Mall
+183,Food Market
+184,Conference Center
+185,Noodle House
+186,Photography Spot
+187,Sports Stadium
+188,Holistic Center
+189,Family Restaurant
+190,Safari
+191,Historical Tour
+192,Rasgulla Stall
+193,Clinic
+194,Heritage Walk
+195,Organic Restaurant
+196,Brewery
+197,Live Music Venue
+198,Hill
+199,Naan Shop
+200,Steakhouse
+201,Russian
+202,Mosque
+203,Falls
+204,Football Field
+205,Silk Emporium
+206,Cafe
+207,Sweets Shop
+208,Coastal
+209,Korma
+210,Equestrian Center
+211,Collage
+212,Thai
+213,Butcher Shop
+214,Rajasthani
+215,"Argentinian, Steakhouse"
+216,Coffee Shop
+217,Golf Course
+218,Upma
+219,Moroccan
+220,Irish
+221,Chinese
+222,Awadhi
+223,Stationery Store
+224,Karaoke Bar
+225,Fried Chicken Joint
+226,Italian Restaurant
+227,Khichdi
+228,Art Gallery
+229,Afghan
+230,Cold Drinks
+231,Rock Climbing Gym
+232,Supplement Store
+233,Waffle
+234,Pharmacy
+235,Hot Air Balloon
+236,Mexican
+237,Pakora Stall
+238,Bhelpuri
+239,Paratha Shop
+240,Idli
+241,Bridge
+242,Mutton Biryani
+243,Cave
+244,Uttar Pradesh
+245,Poha
+246,Seafood Restaurant
+247,Archaeological Site
+248,Waterfalls
+249,Halotherapy Center
+250,Roti Wala
+251,"Sweets, Restaurant"
+252,Sports Bar
+253,"Korean, BBQ, Grill"
+254,Art Supply Store
+255,Thai Restaurant
+256,Bar
+257,Club
+258,Reflexology Center
+259,Gourmet Food Store
+260,Hills
+261,Continental
+262,Souvenir Shop
+263,Cocktails
+264,Palace
+265,Rasgulla
+266,Piano Bar
+267,Chaat
+268,Mughlai
+269,Heritage Site
+270,Barbershop
+271,Fish Market
+272,Cycling
+273,Memorial
+274,Tibetan
+275,Palak Paneer
+276,Wellness Center
+277,Court
+278,Badminton Court
+279,Gymnasium
+280,Street Food Stall
+281,Spice Shop
+282,Gelateria
+283,Bird Watching
+284,Maldivian
+285,Cryotherapy Center
+286,Plantations
+287,Reserve
+288,Beach
+289,"Irish, Pub, Eatery"
+290,"Park, Buddha"
+291,Music
+292,Theater
+293,Diving
+294,Dosa
+295,Bicycle Path
+296,Sikkim
+297,Wine Shop
+298,Australian
+299,Beauty Salon
+300,Andaman and Nicobar
+301,Lucknowi
+302,Scandinavian
+303,Farmers' Market
+304,Sunset Point
+305,Bowling Alley
+306,None
+307,Coffee Roastery
+308,Mandir
+309,Stepwell
+310,Guesthouse
+311,Herb Shop
+312,Lebanese
+313,Race Track
+314,Sushi Bar
+315,Brazilian
+316,Nature Park
+317,Brewpub
+318,Cheese Shop
+319,"Spa, Thai"
+320,Bhel Puri Stall
+321,Kulfi
+322,Trade Fair
+323,Chiropractic Clinic
+324,Liquor Store
+325,Meditation Center
+326,Pulao
+327,Hypermarket
+328,Middle Eastern
+329,"Australian, Grill"
+330,Gift Shop
+331,Wellness Cafe
+332,Malaysian
+333,Maqbara
+334,Mexican Restaurant
+335,British
+336,Pav Bhaji Stall
+337,Gardens
+338,"Bar, Cocktail"
+339,Bagel
+340,memorials
+341,Theme Park
+342,Convention Center
+343,Bazzar
+344,"Irani, Cafe"
+345,Pav Bhaji
+346,Gujarati
+347,Kebab
+348,Paintball Arena
+349,Bookstore
+350,Camping
+351,Donut Shop
+352,Sikkimese
+353,Nail Salon
+354,Hyderabadi
+355,Bistro
+356,Bhaji
+357,Memorial Hall
+358,Floatation Center
+359,Himachali
+360,Caves
+361,Parsi
+362,Rajma
+363,Botanical Garden
+364,Planetarium
+365,South Indian
+366,Salad Bar
+367,Vada
+368,Paneer
+369,Club House
+370,Vegetarian Restaurant
+371,Tavern
+372,College
+373,Fitness Center
+374,Rice Terrace
+375,Rafting
+376,Relaxation Center
+377,Beer Store
+378,Spanish Restaurant
+379,Meghalayan
+380,Ethnic
+381,Foot Spa
+382,Waterfall
+383,Biryani House
+384,Health Food Store
+385,Adventure Tour
+386,Specialty Store
+387,Swiss
+388,Science Centre
+389,Observatory
+390,Popcorn Shop
+391,Smoothie Bar
+392,Vintage Shop
+393,Ashram
+394,Go-Kart Track
+395,Jain
+396,Curry House
+397,Dahi Vada
+398,Detox Center
+399,Cosmetics Store
+400,Beer Garden
+401,Nature Trail
+402,Barbecue Restaurant
+403,Hot Springs
+404,Cricket Ground
+405,Scenic Viewpoint
+406,Water Park
+407,Gulab Jamun House
+408,Diner
+409,Hostel
+410,Park
+411,Cheesecake
+412,Health Club
+413,Bhindi Masala
+414,Brazillian
+415,Gajar Halwa
+416,Chaat Stall
+417,Kachori
+418,Tearoom
+419,Ethiopian
+420,Basilica
+421,Pet Store
+422,"Temple, Lake"
+423,Church
+424,Accessory Store
+425,Masala Dosa House
+426,Cheesemonger
+427,"Marine Park, Safari"
+428,"Bakery, Bistro"
+429,Cidery
+430,"Temple, Cave"
+431,"Egyptian, Falafel"
+432,Fishing
+433,Lodge
+434,Chinese Medicine Clinic
+435,Konkani
+436,Sake Shop
+437,Wellness Resort
+438,Thali
+439,Chettinad
+440,Tandoori Corner
+441,"Pub,Bistro"
+442,Massage Studio
+443,Hot Dog Stand
+444,Adventure Park
+445,Mediterranean
+446,Tea House
+447,Craft Store
+448,Outdoor Arena
+449,Sunrise Point
+450,Winery
+451,American
+452,Snacks
+453,Vegetable Market
+454,Beauty Spa
+455,Northeastern
+456,Barbecue
+457,Gota
+458,Saffron Fields
+459,Causeway
+460,Reef
+461,Barbeque
+462,Butter Chicken
+463,Malvani
+464,Sports Goods Store
+465,Misal
+466,Coconut Chutney
+467,Sindhi
+468,Israeli
+469,Mountain Range
+470,Picnic Spot
+471,Exhibition
+472,Odisha
+473,Vada Pav Stall
+474,Ruins
+475,Fish and Chips Shop
+476,Karnataka
+477,Mysore Masala Dosa
+478,Iranian
+479,Street Food
+480,Market Stall
+481,Shrine
+482,Candy Store
+483,Indian Restaurant
+484,Korean
+485,Jacuzzi
+486,Kande Pohe
+487,Cinema
+488,Hiking
+489,Burger Joint
+490,Chinese Restaurant
+491,Rehabilitation Center
+492,"Pub, Bistro"
+493,Beauty Supply Store
+494,Tamil
+495,Locally Sourced Restaurant
+496,Drinks
+497,Curry
+498,Kulfi Corner
+499,Clothing Store
+500,Canteen
+501,"Cafe, Coffee"
+502,Fruit Stand
+503,Sweet Shop
+504,Malai Kofta
+505,"Swiss, Fondue"
+506,Aloo Tikki
+507,Yoga
+508,Rice Terraces
+509,Japanese
+510,Street
+511,Cultural Tour
+512,Bathhouse
+513,Gym
+514,Ski Center
+515,Tennis Court
+516,Assamese
+517,"Bakery, Restaurant"
+518,Volleyball Court
+519,Turkish
+520,Café
+521,Bicycle Shop
+522,Mess
+523,Punjabi
+524,Rainforest
+525,Adventure Sports Center
+526,Snorkeling
+527,Farm
+528,Raita
+529,Shooting Range
+530,Swimming Pool
+531,Chocolate
+532,Food Truck
+533,Ice Skating Rink
+534,Tripuri
+535,Farmers Market
+536,"Bakery, Bar, Kitchen"
+537,"Vegetarian, Restaurant"
+538,Khasi
+539,Olive Oil Shop
+540,Dhokla House
+541,Night Market
+542,Music Store
+543,Sporthall
+544,Boat Tour
+545,"Museum,Art Gallery"
+546,Museum
+547,Massage Center
+548,Middle Eastern Restaurant
+549,Andhra
+550,Forest
+551,Misal Pav
+552,Gastropub
+553,"Restaurant, Bar"
+554,Biriyani
+555,Harbor
+556,Coffee
+557,Rajput
+558,Gourmet Market
+559,Antique Store
+560,Hyderabadi Biryani House
+561,Sweets 
+562,Ramen Shop
+563,Skiing
+564,Thermal Spa
+565,Gulab Jamun
+566,Sweet
+567,Rogan Josh
+568,Rajma Chawal Stall
+569,Irish Pub
+570,Film Festival
+571,Salon
+572,"Indonesian, Restaurant"
+573,Pizzeria
+574,Riverwalk
+575,Kolkata
+576,Delicatessen
+577,Family Entertainment Center
+578,Farm-to-Table Restaurant
+579,Bhel
+580,Health Spa
+581,"Spanish, Bar"
+582,Kashmiri
+583,Samosa Corner
+584,Naga
+585,Brasserie
+586,Confectionery
+587,Buffet Restaurant
+588,Monument
+589,Furniture Store
+590,Frozen Yogurt Shop
+591,Nature Tour
+592,Food Hall
+593,Chole Bhature
+594,Herbal Spa
+595,Wildlife Sanctuary
+596,Supermarket
+597,Cultural Center
+598,"Spa,Salon"
+599,Hill Station
+600,Wellness Spa
+601,Fish Curry
+602,Aromatherapy Studio
+603,Temple
+604,Castle
+605,Lake
+606,Picnic Garden
+607,Bay
+608,Fitness Trail
+609,Ladakhi
+610,Bazaar
+611,Ghat
+612,Bihari
+613,National Park
+614,Kheer
+615,Music Festival
+616,Wine Bar
+617,Vada Pav
+618,Promenade
+619,Jalebi House
+620,Plaza
+621,Drive-Thru
+622,Meat Shop
+623,Chocolate Shop
+624,Samosa
+625,Mahal
+626,Kitchen
+627,Jamaican
+628,Cupcake Shop
+629,Skating Rink
+630,Pani Puri
+631,Pyramids
+632,"Cafe, Beer"
+633,Fast Food Joint
+634,"Mexican, Grill"
+635,Japanese Restaurant
+636,Yoga Studio
+637,Spice Farm
+638,Pakora
+639,Chapati
+640,Railway Station
+641,Library
+642,Fast Food
+643,"Danish, Deli"
+644,French Restaurant
+645,Kayaking
+646,Basketball Court
+647,Campground
+648,Gelato
+649,Indoor Arena
+650,"Salon,Spa"
+651,Mountain
+652,"Finnish, Cafe, Sauna"
+653,Shoe Store
+654,Papad
+655,Hardware Store
+656,Korean Restaurant
+657,Uttarakhand
+658,Bagh
+659,Ice Cream Shop
+660,Hotel
+661,Wellbeing Retreat
+662,Nightclub
