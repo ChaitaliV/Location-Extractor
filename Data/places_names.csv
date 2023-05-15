@@ -1,0 +1,1241 @@
+,Place Name,Tag from name,Google places Type
+0,"VR Surat, Surat",None,shopping_mall
+1,"Iscon Mall, Surat",Mall,point_of_interest
+2,"Central Mall, Surat",Mall,shopping_mall
+3,"RahulRaj Mall, Surat",Mall,shopping_mall
+4,"Big Bazaar, Surat",None,furniture_store
+5,"Dumas Road Shopping Street, Surat",Shopping Street,shopping_mall
+6,"Rander Road Shopping Street, Surat",Shopping Street,point_of_interest
+7,"Ghod Dod Road Shopping Street, Surat",Shopping Street,shopping_mall
+8,"Sahara Darwaja Market, Surat",Market,neighborhood
+9,"Lal Gate Market, Surat",Market,neighborhood
+10,"Textile Market, Surat",Market,neighborhood
+11,"Millennium Market, Surat",Market,neighborhood
+12,"Pal Shopping Center, Surat",Shopping Center,premise
+13,"Jolly Plaza, Surat",Plaza,premise
+14,"Piplod Shopping Center, Surat",Shopping Center,shopping_mall
+15,"Prime Shoppers, Surat",None,shopping_mall
+16,"Crossway Mall, Surat",Mall,premise
+17,"Imperial Square Mall, Surat",Mall,shopping_mall
+18,"Dumas Shopping Center, Surat",Shopping Center,shopping_mall
+19,"Bhatar Road Shopping Street, Surat",Shopping Street,shopping_mall
+20,"Vesu Shopping Street, Surat",Shopping Street,shopping_mall
+21,"Magob Shopping Center, Surat",Shopping Center,shopping_mall
+22,"Raghuvir Celeum, Surat",None,point_of_interest
+23,"SNS Platina, Surat",None,parking
+24,"Pooja Abhishek, Surat",None,shopping_mall
+25,"Inorbit Mall, Surat",Mall,shopping_mall
+26,"Anupam Super Market, Surat",Super Market,point_of_interest
+27,"Gaurav Path Shopping Center, Surat",Shopping Center,shopping_mall
+28,"Varachha Road Shopping Street, Surat",Shopping Street,shopping_mall
+29,"Udhna Main Road Shopping Street, Surat",Shopping Street,shopping_mall
+30,"Label Mantra, Surat",None,point_of_interest
+31,"Kalki Fashion, Surat",Fashion,point_of_interest
+32,"Jade by Monica and Karishma, Surat",None,clothing_store
+33,"Roopkala, Surat",None,clothing_store
+34,"Kimaya, Surat",None,clothing_store
+35,"Sabyasachi Surat, Surat",None,clothing_store
+36,"Anaya, Surat",None,clothing_store
+37,"G3+ Fashion, Surat",Fashion,clothing_store
+38,"Seasons, Surat",None,clothing_store
+39,"Kala Niketan, Surat",None,clothing_store
+40,"Mansi Collections, Surat",None,clothing_store
+41,"Vama Couture, Surat",Couture,clothing_store
+42,"Asopalav, Surat",None,point_of_interest
+43,"Khushi Galleria, Surat",None,clothing_store
+44,"Satrangi, Surat",None,clothing_store
+45,"Kanchee Silk Emporium, Surat",Silk Emporium,point_of_interest
+46,"Aura Studio, Surat",None,point_of_interest
+47,"Sagar Couture, Surat",Couture,clothing_store
+48,"Gaurang, Surat",None,physiotherapist
+49,"Zoya Boutique, Surat",Boutique,clothing_store
+50,"Kakadiya Group, Surat",None,jewelry_store
+51,"Kavita Fashion, Surat",Fashion,store
+52,"Pranjal's Boutique, Surat",Boutique,point_of_interest
+53,"Alankrita Boutique, Surat",Boutique,
+54,"Nallu Collection, Surat",None,clothing_store
+55,"Vedanshi Boutique, Surat",Boutique,shopping_mall
+56,"Trupsel, Surat",None,
+57,"Charmi Creations, Surat",None,point_of_interest
+58,"Mansi Saree Palace, Surat",Saree,clothing_store
+59,"Vrisa Couture, Surat",Couture,clothing_store
+60,"Alpha One Mall, Ahemdabad",Mall,premise
+61,"Ahmedabad One Mall, Ahemdabad",Mall,shopping_mall
+62,"Himalaya Mall, Ahemdabad",Mall,shopping_mall
+63,"Iscon Mega Mall, Ahemdabad",Mall,shopping_mall
+64,"CG Square Mall, Ahemdabad",Mall,shopping_mall
+65,"Gulmohar Park Mall, Ahemdabad",Mall,shopping_mall
+66,"R3 Mall, Ahemdabad",Mall,shopping_mall
+67,"The Acropolis Mall, Ahemdabad",Mall,shopping_mall
+68,"Law Garden Market, Ahemdabad",Market,jewelry_store
+69,"Lal Darwaja Market, Ahemdabad",Market,supermarket
+70,"Manek Chowk Market, Ahemdabad",Market,restaurant
+71,"Ferns N Petals Plaza, Ahemdabad",Plaza,florist
+72,"Sindhu Bhavan Road Shopping Street, Ahemdabad",Shopping Street,shopping_mall
+73,"CG Road Shopping Street, Ahemdabad",Shopping Street,shopping_mall
+74,"Thaltej Road Shopping Street, Ahemdabad",Shopping Street,shopping_mall
+75,"SG Highway Shopping Street, Ahemdabad",Shopping Street,shopping_mall
+76,"Ashram Road Shopping Street, Ahemdabad",Shopping Street,shopping_mall
+77,"Ahmedabad Textile Market, Ahemdabad",Market,point_of_interest
+78,"Dhalgarwad Market, Ahemdabad",Market,point_of_interest
+79,"Raipur Gate Market, Ahemdabad",Market,clothing_store
+80,"Sardar Patel Stadium Market, Ahemdabad",Market,stadium
+81,"Vastrapur Lake Front Market, Ahemdabad",Market,supermarket
+82,"Ratan Pole Market, Ahemdabad",Market,clothing_store
+83,"Gurukul Road Shopping Center, Ahemdabad",Shopping Center,shopping_mall
+84,"Chandkheda Market, Ahemdabad",Market,point_of_interest
+85,"New C.G. Road Shopping Center, Ahemdabad",Shopping Center,shopping_mall
+86,"Maninagar Market, Ahemdabad",Market,supermarket
+87,"Paldi Market, Ahemdabad",Market,grocery_or_supermarket
+88,"Nehru Bridge Market, Ahemdabad",Market,point_of_interest
+89,"Jhulta Minara Market, Ahemdabad",Market,tourist_attraction
+90,"Elan Couture, Ahemdabad",Couture,clothing_store
+91,"Vraj:bhoomi, Ahemdabad",None,clothing_store
+92,"Collage, Ahemdabad",Collage,university
+93,"Kala Kriti, Ahemdabad",None,clothing_store
+94,"The Wardrobe Theorem, Ahemdabad",None,clothing_store
+95,"Aura Studio, Ahemdabad",None,point_of_interest
+96,"Vaya Couture, Ahemdabad",Couture,clothing_store
+97,"Mansi Collections, Ahemdabad",None,clothing_store
+98,"Ombre Lane, Ahemdabad",None,bakery
+99,"Itrana, Ahemdabad",None,point_of_interest
+100,"Devangi's, Ahemdabad",None,store
+101,"Vrutti, Ahemdabad",None,shopping_mall
+102,"The Ethnic Story, Ahemdabad",None,clothing_store
+103,"Saahil Exclusive, Ahemdabad",None,clothing_store
+104,"Poonam's Boutique, Ahemdabad",Boutique,clothing_store
+105,"Shibori Fashion, Ahemdabad",Fashion,clothing_store
+106,"Studio AV, Ahemdabad",None,point_of_interest
+107,"Roop Sangam, Ahemdabad",None,clothing_store
+108,"Saree.com, Ahemdabad",Saree,clothing_store
+109,"Shyamal & Bhumika, Ahemdabad",None,clothing_store
+110,"Chamee & Palak, Ahemdabad",None,
+111,"Radhika's, Ahemdabad",None,restaurant
+112,"Kimaya, Ahemdabad",None,restaurant
+113,"Studio 149, Ahemdabad",None,point_of_interest
+114,"Purva Couture, Ahemdabad",Couture,clothing_store
+115,"Bhumika Creations, Ahemdabad",None,point_of_interest
+116,"The Kaftan Company, Ahemdabad",None,point_of_interest
+117,"House of Ombre, Ahemdabad",None,point_of_interest
+118,"Aeshaane, Ahemdabad",None,point_of_interest
+119,"The Dressing Room , Ahemdabad",None,clothing_store
+120,"Mall de Goa, Goa",Mall,shopping_mall
+121,"Caculo Mall, Goa",Mall,shopping_mall
+122,"DLF Promenade, Goa",None,general_contractor
+123,"Margao Municipal Market, Goa",Market,clothing_store
+124,"Mapusa Friday Market, Goa",Market,point_of_interest
+125,"Calangute Market Square, Goa",Market,neighborhood
+126,"Panjim Market, Goa",Market,neighborhood
+127,"Anjuna Flea Market, Goa",Market,point_of_interest
+128,"Arpora Saturday Night Market, Goa",Market,point_of_interest
+129,"Tibetan Market, Baga, Goa",Market,point_of_interest
+130,"Calangute Bazaar, Goa",Bazzar,shopping_mall
+131,"Tito's Lane, Baga, Goa",None,route
+132,"Mackie's Night Bazaar, Goa",Bazaar,point_of_interest
+133,"Vasco Municipal Market, Goa",Market,point_of_interest
+134,"Candolim Market, Goa",Market,neighborhood
+135,"Panjim Market Square, Goa",Market,point_of_interest
+136,"Mapusa Market Square, Goa",Market,shopping_mall
+137,"Palolem Market, Goa",Market,point_of_interest
+138,"Ingo's Saturday Night Market, Arpora, Goa",Market,point_of_interest
+139,"Margao Market Square, Goa",Market,point_of_interest
+140,"Porvorim Mall, Goa",Mall,shopping_mall
+141,"Newton's Supermarket, Candolim, Goa",Supermarket,supermarket
+142,"Dona Paula Market, Goa",Market,point_of_interest
+143,"Ponda Market, Goa",Market,point_of_interest
+144,"Baina Market, Vasco da Gama, Goa",Market,point_of_interest
+145,"Patto Center, Panjim, Goa",None,sublocality_level_1
+146,"Colva Market Square, Goa",Market,tourist_attraction
+147,"Quepem Municipal Market, Goa",Market,point_of_interest
+148,"Vasco Fish Market, Goa",Market,food
+149,"Siolim Market Square , Goa",Market,point_of_interest
+150,"Anjuna Flea Market, Goa",Market,point_of_interest
+151,"Arpora Saturday Night Market, Goa",Market,point_of_interest
+152,"Colaba Causeway, Mumbai, Maharashtra",Causeway,route
+153,"Janpath Market, New Delhi",Market,tourist_attraction
+154,"Sarojini Nagar Market, New Delhi",Market,sublocality_level_2
+155,"Khan Market, New Delhi",Market,tourist_attraction
+156,"Dilli Haat, New Delhi",None,point_of_interest
+157,"Tibetan Market, Manali, Himachal Pradesh",Market,route
+158,"Baga Night Market, Goa",Market,point_of_interest
+159,"Crawford Market, Mumbai, Maharashtra",Market,premise
+160,"Chor Bazaar, Mumbai, Maharashtra",Bazzar,sublocality_level_2
+161,"Jaisalmer Desert Market, Jaisalmer, Rajasthan",Market,shopping_mall
+162,"Meena Bazaar, Old Delhi, New Delhi",Bazaar,route
+163,"Brigade Road, Bangalore, Karnataka",None,route
+164,"Commercial Street, Bangalore, Karnataka",Street,route
+165,"Pondy Bazaar, Chennai, Tamil Nadu",Bazzar,sublocality_level_3
+166,"Lamington Road, Mumbai, Maharashtra",None,route
+167,"Leopold Market, Shimla, Himachal Pradesh",Market,point_of_interest
+168,"Charminar Bazaar, Hyderabad, Telangana",Bazaar,point_of_interest
+169,"Chandni Chowk, Kolkata, West Bengal",None,sublocality_level_2
+170,"Jodhpur Market, Jodhpur, Rajasthan",Market,point_of_interest
+171,"Jaipur Street Market, Jaipur, Rajasthan",Market,point_of_interest
+172,"Mysore Market, Mysore, Karnataka",Market,point_of_interest
+173,"Sardar Market, Jodhpur, Rajasthan",Market,point_of_interest
+174,"Nampally Market, Hyderabad, Telangana",Market,neighborhood
+175,"Palika Bazaar, New Delhi",Bazaar,sublocality_level_2
+176,"Laad Bazaar, Hyderabad, Telangana",Bazaar,sublocality_level_3
+177,"Meherchand Market, New Delhi",Market,sublocality_level_2
+178,"Tibetan Market, McLeod Ganj, Himachal Pradesh",Market,point_of_interest
+179,"Fashion Street, Pune, Maharashtra",Street,route
+180,"Indian Museum, Kolkata, West Bengal",Museum,museum
+181,"National Museum, New Delhi",Museum,museum
+182,"Victoria Memorial Hall, Kolkata, West Bengal",Memorial Hall,museum
+183,"Salar Jung Museum, Hyderabad, Telangana",Museum,museum
+184,"Chhatrapati Shivaji Maharaj Vastu Sangrahalaya (formerly Prince of Wales Museum), Mumbai, Maharashtra",Museum,tourist_attraction
+185,"Dr. Bhau Daji Lad Museum, Mumbai, Maharashtra",Museum,museum
+186,"National Gallery of Modern Art, New Delhi",Gallery,art_gallery
+187,"National Handicrafts and Handlooms Museum (Crafts Museum), New Delhi",Museum,tourist_attraction
+188,"Government Museum and Art Gallery, Chandigarh","Museum,Art Gallery",tourist_attraction
+189,"Gandhi Smriti and Darshan Samiti, New Delhi",None,museum
+190,"Shankar's International Dolls Museum, New Delhi",Museum,museum
+191,"Indian War Memorial Museum, New Delhi",Museum,museum
+192,"Chitrakala Parishath, Bangalore, Karnataka",None,art_gallery
+193,"Jaipur Wax Museum, Jaipur, Rajasthan",Museum,museum
+194,"Napier Museum, Thiruvananthapuram, Kerala",Museum,tourist_attraction
+195,"City Palace Museum, Udaipur, Rajasthan","Museum, Palace",museum
+196,"Allahabad Museum, Allahabad, Uttar Pradesh",Museum,tourist_attraction
+197,"Indian Music Experience, Bangalore, Karnataka",Music,premise
+198,"National Rail Museum, New Delhi",Museum,tourist_attraction
+199,"National Science Centre, Delhi",Science Centre,tourist_attraction
+200,"Calico Museum of Textiles, Ahmedabad, Gujarat",Museum,tourist_attraction
+201,"Sanskriti Museums, New Delhi",Museum,museum
+202,"Rashtrapati Bhavan Museum, New Delhi",Museum,tourist_attraction
+203,"National Philatelic Museum, New Delhi",Museum,museum
+204,"National Science Centre, Kolkata, West Bengal",Science Centre,university
+205,"Albert Hall Museum, Jaipur, Rajasthan",Museum,museum
+206,"Nehru Memorial Museum and Library, New Delhi","Museum,Library",museum
+207,"Goa State Museum, Panaji, Goa",Museum,museum
+208,"Napier Museum and Art Gallery, Chennai, Tamil Nadu","Museum,Art Gallery",museum
+209,"Government Museum, Chennai, Tamil Nadu",Museum,museum
+210,"Calangute Beach, Goa",Beach,natural_feature
+211,"Baga Beach, Goa",Beach,natural_feature
+212,"Anjuna Beach, Goa",Beach,natural_feature
+213,"Vagator Beach, Goa",Beach,locality
+214,"Fort Aguada, Goa",Fort,tourist_attraction
+215,"Dudhsagar Falls, Goa",Falls,tourist_attraction
+216,"Old Goa (Velha Goa), Goa",None,point_of_interest
+217,"Basilica of Bom Jesus, Goa",Basilica,tourist_attraction
+218,"Chapora Fort, Goa",Fort,point_of_interest
+219,"Palolem Beach, Goa",Beach,natural_feature
+220,"Miramar Beach, Goa",Beach,sublocality_level_1
+221,"Dona Paula, Goa",None,natural_feature
+222,"Candolim Beach, Goa",Beach,natural_feature
+223,"Arambol Beach, Goa",Beach,natural_feature
+224,"Butterfly Beach, Goa",Beach,natural_feature
+225,"Divar Island, Goa",Island,natural_feature
+226,"Tito's Lane, Baga, Goa",None,route
+227,"Spice Plantations, Goa",Plantations,point_of_interest
+228,"Bondla Wildlife Sanctuary, Goa",Wildlife Sanctuary,zoo
+229,"Naval Aviation Museum, Goa",Museum,museum
+230,"Museum of Christian Art, Goa",Museum,museum
+231,"Sahakari Spice Farm, Goa",Spice Farm,point_of_interest
+232,"Shri Mangueshi Temple, Goa",Temple,hindu_temple
+233,"Shri Mahalasa Temple, Mardol, Goa",Temple,hindu_temple
+234,"Tambdi Surla Temple, Goa",Temple,hindu_temple
+235,"Mollem National Park, Goa",National Park,locality
+236,"Shri Mangeshi Temple, Goa",Temple,hindu_temple
+237,"Casino cruises on Mandovi River, Goa","cruises, River",casino
+238,"Reis Magos Fort, Goa",Fort,point_of_interest
+239,"Shri Shantadurga Temple, Goa",Temple,hindu_temple
+240,"Amber Fort, Jaipur",Fort,tourist_attraction
+241,"Mehrangarh Fort, Jodhpur",Fort,tourist_attraction
+242,"Hawa Mahal, Jaipur",Mahal,tourist_attraction
+243,"City Palace, Udaipur",Palace,museum
+244,"Junagarh Fort, Bikaner",Fort,tourist_attraction
+245,"Jaisalmer Fort, Jaisalmer",Fort,tourist_attraction
+246,"Chittorgarh Fort, Chittorgarh",Fort,tourist_attraction
+247,"Umaid Bhawan Palace, Jodhpur",Palace,lodging
+248,"Ranthambore Fort, Sawai Madhopur",Fort,point_of_interest
+249,"Kumbhalgarh Fort, Rajsamand",Fort,tourist_attraction
+250,"Jaigarh Fort, Jaipur",Fort,tourist_attraction
+251,"Nahargarh Fort, Jaipur",Fort,point_of_interest
+252,"Taragarh Fort, Ajmer",Fort,tourist_attraction
+253,"Mandawa Fort, Mandawa",Fort,lodging
+254,"Patwon Ki Haveli, Jaisalmer",None,tourist_attraction
+255,"Jaswant Thada, Jodhpur",None,tourist_attraction
+256,"Kirti Stambh (Tower of Fame), Chittorgarh",None,tourist_attraction
+257,"Bada Bagh, Jaisalmer",Bagh,tourist_attraction
+258,"Rani Padmini's Palace, Chittorgarh",Palace,tourist_attraction
+259,"Alwar Fort, Alwar",Fort,tourist_attraction
+260,"Bundi Palace, Bundi",Palace,tourist_attraction
+261,"Fateh Prakash Palace, Chittorgarh",Palace,tourist_attraction
+262,"Lalgarh Palace, Bikaner",Palace,premise
+263,"Jag Mandir, Udaipur",Mandir,tourist_attraction
+264,"Sariska Palace, Alwar",Palace,route
+265,"Jantar Mantar, Jaipur",None,tourist_attraction
+266,"Anasagar Lake, Ajmer",Lake,natural_feature
+267,"Chittorgarh Palace, Chittorgarh",Palace,tourist_attraction
+268,"Kishangarh Fort, Kishangarh",Fort,tourist_attraction
+269,"Abhaneri Stepwell, Dausa",Stepwell,tourist_attraction
+270,"Dal Lake, Srinagar",Lake,natural_feature
+271,"Mughal Gardens (Shalimar Bagh, Nishat Bagh, Chashme Shahi), Srinagar",Gardens,tourist_attraction
+272,Gulmarg,None,locality
+273,Pahalgam,None,locality
+274,Sonamarg,None,locality
+275,"Shankaracharya Hill, Srinagar",Hill,natural_feature
+276,"Hazratbal Shrine, Srinagar",Shrine,mosque
+277,"Wular Lake, Bandipora",Lake,natural_feature
+278,"Betab Valley, Pahalgam",None,park
+279,"Aru Valley, Pahalgam",None,locality
+280,"Nigeen Lake, Srinagar",Lake,natural_feature
+281,"Pari Mahal, Srinagar",Mahal,tourist_attraction
+282,"Awantipora Ruins, Pulwama",Ruins,hindu_temple
+283,Yusmarg,None,tourist_attraction
+284,"Dachigam National Park, Srinagar",National Park,tourist_attraction
+285,"Khir Bhawani Temple, Ganderbal",Temple,hindu_temple
+286,"Martand Sun Temple, Anantnag",Temple,hindu_temple
+287,"Manasbal Lake, Ganderbal",Lake,natural_feature
+288,"Pampore Saffron Fields, Pampore",Saffron Fields,park
+289,"Kheer Bhawani Temple, Srinagar",Temple,hindu_temple
+290,"Tarsar Lake, Pulwama",Lake,natural_feature
+291,"Kokernag Gardens, Anantnag",Gardens,park
+292,"Jama Masjid, Srinagar",Masjid,mosque
+293,"Hari Parbat Fort, Srinagar",Fort,tourist_attraction
+294,"Nishat Bagh, Srinagar",Bagh,shopping_mall
+295,"Sinthan Top, Kishtwar",None,tourist_attraction
+296,"Aharbal Waterfall, Kulgam",Waterfall,tourist_attraction
+297,"Achabal Gardens, Anantnag",Gardens,park
+298,"Lolab Valley, Kupwara",None,taxi_stand
+299,"Harwan Gardens, Srinagar ",Gardens,route
+300," Sabarmati Ashram, Ahmedabad",Ashram,tourist_attraction
+301,"Rani ki Vav, Patan",Vav,point_of_interest
+302,"Champaner-Pavagadh Archaeological Park, Champaner",Archaeological Park,tourist_attraction
+303,"Modhera Sun Temple, Modhera",Temple,hindu_temple
+304,"Dwarkadhish Temple, Dwarka",Temple,hindu_temple
+305,"Somnath Temple, Veraval",Temple,hindu_temple
+306,"Sarkhej Roza, Ahmedabad",None,mosque
+307,"Adalaj Stepwell, Gandhinagar",Stepwell,tourist_attraction
+308,"Kirti Mandir (Mahatma Gandhi's Birthplace), Porbandar",Mandir,parking
+309,"Laxmi Vilas Palace, Vadodara",Palace,tourist_attraction
+310,"Sidi Saiyyed Mosque, Ahmedabad",Mosque,mosque
+311,"Lothal Archaeological Site, Lothal",Archaeological Site,tourist_attraction
+312,"Patan Patola Heritage Museum, Patan",Museum,tourist_attraction
+313,"Junagadh Buddhist Cave Groups, Junagadh","Cave, Buddisht",museum
+314,"Shree Swaminarayan Mandir, Bhuj",Mandir,hindu_temple
+315,"Dholavira Archaeological Site, Kutch",Archaeological Site,tourist_attraction
+316,"Pavagadh Hill and Kalika Mata Temple, Champaner","Temple, Hill",hindu_temple
+317,"Uparkot Fort, Junagadh",Fort,point_of_interest
+318,"Dandi Salt March Memorial, Navsari",Memorial,park
+319,"Surat Castle, Surat",Castle,tourist_attraction
+320,"Shree Swaminarayan Mandir, Ahmedabad",Mandir,hindu_temple
+321,"Sun Temple, Modhera",Temple,hindu_temple
+322,"Vadnagar Archaeological Site, Vadnagar",Archaeological Site,tourist_attraction
+323,"Vijay Vilas Palace, Mandvi",Palace,tourist_attraction
+324,"Nalsarovar Bird Sanctuary, Ahmedabad",Sanctuary,park
+325,"Rajkumar College, Rajkot",College,school
+326,"Watson Museum, Rajkot",Museum,museum
+327,"Maharaja Fateh Singh Museum, Vadodara",Museum,museum
+328,"European tombs and memorials, Diu",memorials,
+329,"Sayaji Garden, Vadodara",Garden,zoo
+330,"Jim Corbett National Park, Uttarakhand",National Park,tourist_attraction
+331,"Ranthambore National Park, Rajasthan",National Park,tourist_attraction
+332,"Kaziranga National Park, Assam",National Park,tourist_attraction
+333,"Kanha National Park, Madhya Pradesh",National Park,tourist_attraction
+334,"Bandhavgarh National Park, Madhya Pradesh",National Park,park
+335,"Pench National Park, Madhya Pradesh",National Park,premise
+336,"Sariska Tiger Reserve, Rajasthan",Reserve,tourist_attraction
+337,"Dudhwa National Park, Uttar Pradesh",National Park,tourist_attraction
+338,"Great Himalayan National Park, Himachal Pradesh",National Park,tourist_attraction
+339,"Binsar Wildlife Sanctuary, Uttarakhand",Sanctuary,park
+340,"Dachigam National Park, Jammu and Kashmir",National Park,tourist_attraction
+341,"Hemis National Park, Ladakh",National Park,park
+342,"Rajaji National Park, Uttarakhand",National Park,park
+343,"Nanda Devi National Park, Uttarakhand",National Park,natural_feature
+344,"Chitwan National Park, Nepal (near North India border)",National Park,tourist_attraction
+345,"Kalesar National Park, Haryana",National Park,locality
+346,"Shivalik Elephant Reserve, Punjab",Reserve,park
+347,"Pilibhit Tiger Reserve, Uttar Pradesh",Reserve,tourist_attraction
+348,"Jaldapara National Park, West Bengal",National Park,park
+349,"Keoladeo National Park, Rajasthan",National Park,tourist_attraction
+350,"Dibru-Saikhowa National Park, Assam",National Park,tourist_attraction
+351,"Orang National Park, Assam",National Park,tourist_attraction
+352,"Manas National Park, Assam",National Park,tourist_attraction
+353,"Nameri National Park, Assam",National Park,tourist_attraction
+354,"Sunderbans National Park, West Bengal",National Park,park
+355,"Valmiki National Park, Bihar",National Park,park
+356,"Simlipal National Park, Odisha (near North India border)",National Park,tourist_attraction
+357,"Betla National Park, Jharkhand (near North India border)",National Park,tourist_attraction
+358,"Buxa Tiger Reserve, West Bengal",Reserve,tourist_attraction
+359,"Neora Valley National Park, West Bengal ",National Park,tourist_attraction
+360,"Gir National Park and Wildlife Sanctuary, Gujarat",Sanctuary,tourist_attraction
+361,"Bandipur National Park and Tiger Reserve, Karnataka",Reserve,park
+362,"Periyar Wildlife Sanctuary, Kerala",Sanctuary,tourist_attraction
+363,"Kaziranga National Park, Assam",National Park,tourist_attraction
+364,"Sundarbans National Park, West Bengal",National Park,park
+365,"Sariska Tiger Reserve, Rajasthan",Reserve,tourist_attraction
+366,"Tadoba Andhari Tiger Reserve, Maharashtra",Reserve,tourist_attraction
+367,"Pench National Park, Madhya Pradesh",National Park,premise
+368,"Nagarhole National Park, Karnataka",National Park,tourist_attraction
+369,"Kanha National Park, Madhya Pradesh",National Park,tourist_attraction
+370,"Ranthambore National Park, Rajasthan",National Park,tourist_attraction
+371,"Jim Corbett National Park, Uttarakhand",National Park,tourist_attraction
+372,"Keoladeo National Park, Rajasthan",National Park,tourist_attraction
+373,"Hemis National Park, Ladakh",National Park,park
+374,"Mudumalai National Park, Tamil Nadu",National Park,locality
+375,"Silent Valley National Park, Kerala",National Park,tourist_attraction
+376,"Rajaji National Park, Uttarakhand",National Park,park
+377,"Dandeli Wildlife Sanctuary, Karnataka",Sanctuary,tourist_attraction
+378,"Bhadra Wildlife Sanctuary, Karnataka",Sanctuary,zoo
+379,"Bhitarkanika Wildlife Sanctuary, Odisha",Sanctuary,tourist_attraction
+380,"Chinnar Wildlife Sanctuary, Kerala",Sanctuary,tourist_attraction
+381,"Great Himalayan National Park, Himachal Pradesh",National Park,tourist_attraction
+382,"Simlipal National Park, Odisha",National Park,tourist_attraction
+383,"Kalakkad Mundanthurai Tiger Reserve, Tamil Nadu",Reserve,tourist_attraction
+384,"Indravati National Park, Chhattisgarh",National Park,tourist_attraction
+385,"Melghat Tiger Reserve, Maharashtra",Reserve,tourist_attraction
+386,"Dibru-Saikhowa National Park, Assam",National Park,tourist_attraction
+387,"Eravikulam National Park, Kerala",National Park,tourist_attraction
+388,"Manas National Park, Assam",National Park,tourist_attraction
+389,"Nanda Devi National Park, Uttarakhand ",National Park,natural_feature
+390,"Tattva Spa, Surat",Spa,spa
+391,"O2 Spa, Surat",Spa,spa
+392,"Four Fountains De-Stress Spa, Surat",Spa,spa
+393,"VLCC Wellness Center, Surat",Wellness Center,spa
+394,"Jawed Habib Hair & Beauty Salon, Surat",Salon,hair_care
+395,"Lakmé Salon, Surat",Salon,beauty_salon
+396,"Kaya Skin Clinic, Surat",Clinic,beauty_salon
+397,"Enrich Salon, Surat",Salon,beauty_salon
+398,"Jean Claude Biguine Salon & Spa, Surat","Salon,Spa",beauty_salon
+399,"Jiva Spa, Surat",Spa,beauty_salon
+400,"Naturals Salon & Spa, Surat","Salon,Spa",beauty_salon
+401,"Aura Thai Spa, Surat",Spa,spa
+402,"Limelite Salon & Spa, Surat","Salon,Spa",hair_care
+403,"Tony & Guy Salon, Surat",Salon,hair_care
+404,"Strands Salon & Spa, Surat","Salon,Spa",beauty_salon
+405,"Kaya Kalp Spa, Surat",Spa,spa
+406,"Warren Tricomi Salon, Surat",Salon,
+407,"La Belle Salon & Spa, Surat","Salon,Spa",beauty_salon
+408,"B:Blunt Salon, Surat",Salon,beauty_salon
+409,"Tangles Salon & Spa, Surat","Salon,Spa",hair_care
+410,"Urban Nirvana Spa, Surat",Spa,
+411,"Aroma Thai Spa, Surat","Spa, Thai",spa
+412,"Juice Salon & Spa, Surat","Salon,Spa",spa
+413,"A'Kreations Salon, Surat",Salon,beauty_salon
+414,"Club Nailz Spa & Salon, Surat","Spa,Salon",beauty_salon
+415,"The SPAce, Surat",None,point_of_interest
+416,"The Beauty Lounge, Surat",None,beauty_salon
+417,"Envee Salon & Spa, Surat","Salon,Spa",beauty_salon
+418,"The Salon & Spa at Radisson Blu, Surat","Salon,Spa",beauty_salon
+419,"Style Lounge Salon & Spa, Surat","Salon,Spa",beauty_salon
+420,", Surat",None,locality
+421,", Surat",None,locality
+422,", Surat",None,locality
+423,", Surat",None,locality
+424,"O2 Spa, Ahemdabad",Spa,spa
+425,"Sohum Spa, Ahemdabad",Spa,spa
+426,"Ishana Spa, Ahemdabad",Spa,spa
+427,"Aum Spa, Ahemdabad",Spa,spa
+428,"The Ummed Spa, Ahemdabad",Spa,lodging
+429,"Zivaya Spa, Ahemdabad",Spa,beauty_salon
+430,"Aarogyam Spa, Ahemdabad",Spa,spa
+431,"Zion Spa, Ahemdabad",Spa,beauty_salon
+432,"Indulgence Spa, Ahemdabad",Spa,
+433,"Serenity Spa, Ahemdabad",Spa,spa
+434,"Jiva Spa at Taj Gateway, Ahemdabad",Spa,spa
+435,"Aura Thai Spa, Ahemdabad",Spa,spa
+436,"Seven Seas Spa, Ahemdabad",Spa,spa
+437,"Aaina Beauty & Spa, Ahemdabad",Spa,hair_care
+438,"Four Fountains De-Stress Spa, Ahemdabad",Spa,
+439,"Rebirth Spa, Ahemdabad",Spa,spa
+440,"The Balinese Spa, Ahemdabad",Spa,spa
+441,"The Thai Spa, Ahemdabad","Spa, Thai",spa
+442,"Ayush Spa, Ahemdabad",Spa,spa
+443,"The Serene Spa, Ahemdabad",Spa,spa
+444,"The Fern Spa, Ahemdabad",Spa,spa
+445,"The Essence Spa, Ahemdabad",Spa,spa
+446,"The Soul Spa, Ahemdabad",Spa,spa
+447,"Blue Sea Thai Spa, Ahemdabad","Spa, Thai",spa
+448,"Lotus Spa, Ahemdabad",Spa,spa
+449,"Mint Thai Spa, Ahemdabad","Spa, Thai",spa
+450,"Calm Spa, Ahemdabad",Spa,spa
+451,"Soothing Spa, Ahemdabad",Spa,spa
+452,"The Healing Touch Spa, Ahemdabad",Spa,spa
+453,"The Tranquil Spa, Ahemdabad",Spa,beauty_salon
+454,"Peddlers - The Beer Café, Chandigarh","Cafe, Beer",bar
+455,"Ministry of Bar Exchange, Chandigarh",Bar,bar
+456,"FLYP at MTV, Chandigarh",None,bar
+457,"Hops n Grains Microbrewery, Chandigarh",Brewery,restaurant
+458,"The Great Bear, Chandigarh",None,bar
+459,"The Brew Estate, Chandigarh",None,cafe
+460,"Paara Night Club, Chandigarh",Club,night_club
+461,"S-Café & Bar, Chandigarh",Bar,night_club
+462,"F Bar & Lounge, Chandigarh",Bar,bar
+463,"Socialite, Chandigarh",None,point_of_interest
+464,"Score Nightclub, Chandigarh",Nightclub,night_club
+465,"Lava Bar, Chandigarh",Bar,restaurant
+466,"The Back Room, Chandigarh",None,bar
+467,"Whisky 111, Chandigarh",None,restaurant
+468,"F-Bar Chandigarh, Chandigarh",Bar,night_club
+469,"F Lounge, Chandigarh",None,bar
+470,"Velvet Clarks Exotica Lounge & Bar, Chandigarh",Bar,lodging
+471,"Topaz Lounge & Bar, Chandigarh",Bar,cafe
+472,"S Lounge Bar, Chandigarh",Bar,bar
+473,"Bluzz Trinjan, Chandigarh",None,
+474,"Playaaz Lounge Bar, Chandigarh",Bar,night_club
+475,"The Bar Cat, Chandigarh",Bar,courthouse
+476,"Aqua Lounge & Bar, Chandigarh",Bar,night_club
+477,"F2O Restro Bar, Chandigarh",Bar,restaurant
+478,"H2O Lounge, Chandigarh",None,cafe
+479,"Underdoggs Sports Bar & Grill, Chandigarh",Bar,bar
+480,"Nik Baker's - Lounge & Bar, Chandigarh",Bar,bakery
+481,"Antidote Bar & Lounge, Chandigarh",Bar,bar
+482,"The Cube Lounge, Chandigarh",None,restaurant
+483,"Le Lounge, Chandigarh",None,bar
+484,", Chandigarh",None,locality
+485,", Chandigarh",None,locality
+486,", Chandigarh",None,locality
+487,", Chandigarh",None,locality
+488,", Chandigarh",None,locality
+489,", Chandigarh",None,locality
+490,"Kitty Su, Delhi",None,night_club
+491,"Playboy Club, Delhi",Club,night_club
+492,"Privee, Delhi",None,night_club
+493,"The Electric Room, Delhi",None,night_club
+494,"House A, Delhi",None,night_club
+495,"Farzi Café, Delhi",Cafe,restaurant
+496,"Tamasha, Delhi",None,restaurant
+497,"Summer House Café, Delhi",Cafe,cafe
+498,"PCO - Prohibition Cocktail Bar, Delhi","Bar, Cocktail",night_club
+499,"The Junkyard Café, Delhi",Cafe,bar
+500,"Lord of the Drinks, Delhi",Drinks,cafe
+501,"Imperfecto, Delhi",None,bar
+502,"Social, Delhi",None,restaurant
+503,"The Hong Kong Club, Delhi",Club,bar
+504,"LIT Ultrabar, Delhi",None,point_of_interest
+505,"Playground, Delhi",Playground,point_of_interest
+506,"RSVP, Delhi",None,night_club
+507,"The Piano Man Jazz Club, Delhi",Club,night_club
+508,"Bandstand, Delhi",None,bar
+509,"The Blue Bar, Delhi",Bar,bar
+510,"Gastronomica Kitchen & Bar, Delhi",Bar,restaurant
+511,"Club BW, Delhi",Club,night_club
+512,"Public Affair, Delhi",None,bar
+513,"Molecule Air Bar, Delhi",Bar,restaurant
+514,"The Flying Saucer Café, Delhi",Cafe,cafe
+515,"Levels HKV, Delhi",None,bar
+516,"Toy Room, Delhi",None,night_club
+517,"The Irish House, Delhi",Irish,bar
+518,"Cocktails & Dreams, Speakeasy, Delhi",Cocktails,restaurant
+519,"Raasta Delhi, Delhi",None,night_club
+520,"Tito's Club, Goa",Club,night_club
+521,"Club Cubana, Goa",Club,night_club
+522,"LPK Waterfront, Goa",None,night_club
+523,"SinQ Nightclub, Goa",Nightclub,night_club
+524,"Café Mambo, Goa",Cafe,night_club
+525,"Club LPK - Love Passion Karma, Goa",Club,night_club
+526,"Cape Town Café, Goa",Cafe,night_club
+527,"Club M, Goa",Club,night_club
+528,"Kamaki, Goa",None,night_club
+529,"UV Bar, Goa",Bar,night_club
+530,"Soro - The Village Pub, Goa",Pub,bar
+531,"Chronicle, Goa",None,point_of_interest
+532,"Curlies Beach Shack, Goa",Beach Shack,night_club
+533,"Hilltop Goa, Goa",None,point_of_interest
+534,"Cafe Mojo Pub & Bistro, Goa","Pub, Bistro",bar
+535,"Waters Lounge & Club, Goa",Club,night_club
+536,"Café Lilliput, Goa",Cafe,cafe
+537,"The Fisherman's Wharf Pub, Goa",Pub,bar
+538,"Café del Mar, Goa",Cafe,bar
+539,"Butter Nightclub, Goa",Nightclub,restaurant
+540,"Silent Noise Club, Goa",Club,night_club
+541,"Bollywood Discotheque, Goa",None,night_club
+542,"Leopold Lounge & Bar, Goa",Bar,night_club
+543,"Red Square Lounge, Goa",None,night_club
+544,"Cohiba, Goa",None,bar
+545,"Down The Road, Goa",None,restaurant
+546,"Shiva Valley, Goa",None,restaurant
+547,"Nyex Beach Club, Goa",Club,night_club
+548,"Cantare, Goa",None,restaurant
+549,"Blue Waves Beach Shack, Goa",Beach Shack,restaurant
+550,"Kuremal Mohan Lal Kulfi Wale, Delhi",Kulfi,store
+551,"Naturals Ice Cream, Delhi",Ice Cream,store
+552,"Big Chill Cakery, Delhi",Cakery,bakery
+553,"Elma's Bakery, Bar, and Kitchen, Delhi","Bar, Bakery",bakery
+554,"Wengers, Delhi",None,bakery
+555,"Theobroma, Delhi",None,bakery
+556,"Movenpick Ice Cream, Delhi",Ice Cream,store
+557,"Whipped, Delhi",None,bakery
+558,"Giani's Di Hatti, Delhi",None,restaurant
+559,"Creambell, Delhi",None,food
+560,"Kuremal Mohan Lal Kulfi Wale, Delhi",Kulfi,store
+561,"Karim's, Delhi",None,restaurant
+562,"Kuremal Mohan Lal Kulfi Wale, Delhi",Kulfi,store
+563,"Karim's, Delhi",None,restaurant
+564,"Evergreen Sweet House, Delhi",Sweet,store
+565,"Theos, Delhi",None,bakery
+566,"Keventers, Delhi",None,cafe
+567,"Dolce Gelato, Delhi",Gelato,point_of_interest
+568,"Kuremal Mohan Lal Kulfi Wale, Delhi",Kulfi,store
+569,"Mithas Sweets & Restaurant, Delhi","Sweets, Restaurant",store
+570,"Eggjactly, Delhi",None,point_of_interest
+571,"Nirula's, Delhi",None,bakery
+572,"L'Opera, Delhi",None,bakery
+573,"Kuremal Mohan Lal Kulfi Wale, Delhi",Kulfi,store
+574,"Movenpick Ice Cream, Delhi",Ice Cream,store
+575,"Gelato Italiano, Delhi",Gelato,food
+576,"Whipped, Delhi",None,bakery
+577,"Theobroma, Delhi",None,bakery
+578,"Karim's, Delhi",None,restaurant
+579,"Giani's Di Hatti, Delhi",None,restaurant
+580,"Havmor Ice Cream, Surat",Ice Cream,store
+581,"Gelato World, Surat",Gelato,store
+582,"Iceberg Ice Creams, Surat",Ice Cream,point_of_interest
+583,"Creamistry, Surat",None,store
+584,"The Belgian Waffle Co., Surat",Waffle,store
+585,"Amul Ice Cream, Surat",Ice Cream,point_of_interest
+586,"Apsara Ice Cream, Surat",Ice Cream,store
+587,"Temptations Ice Cream, Surat",Ice Cream,night_club
+588,"SMC Ice Cream, Surat",Ice Cream,store
+589,"Surti Delite Ice Cream, Surat",Ice Cream,store
+590,"ScoopZone Ice Cream, Surat",Ice Cream,store
+591,"Mangukiya Ice Cream, Surat",Ice Cream,store
+592,"Rajhans Dairy & Ice Cream, Surat",Ice Cream,food
+593,"Mohan Ice Cream, Surat",Ice Cream,store
+594,"Vipul Ice Cream, Surat",Ice Cream,food
+595,"R.K. Ice Cream, Surat",Ice Cream,store
+596,"Sartaj Ice Cream, Surat",Ice Cream,store
+597,"Royal Delite Ice Cream, Surat",Ice Cream,store
+598,"Ice n Spice, Surat",None,restaurant
+599,"Kova Ice Cream, Surat",Ice Cream,store
+600,"Frutti Fresh Ice Cream, Surat",Ice Cream,store
+601,"Kwality Ice Cream, Surat",Ice Cream,food
+602,"Cream & Munch, Surat",None,restaurant
+603,"Taste Freeze Ice Cream, Surat",Ice Cream,restaurant
+604,"Sun Moon Ice Cream, Surat",Ice Cream,food
+605,"Ice Cream Works, Surat",Ice Cream,store
+606,"Cream Factory, Surat",None,point_of_interest
+607,"Scoops Ice Cream, Surat",Ice Cream,food
+608,"Panchavati Gaurav Ice Cream, Surat",Ice Cream,meal_takeaway
+609,"Chandu Ice Cream, Surat",Ice Cream,store
+610,"Havmor Ice Cream, Ahemdabad",Ice Cream,store
+611,"Gelato World, Ahemdabad",Gelato,food
+612,"Natural's Ice Cream, Ahemdabad",Ice Cream,store
+613,"Amul Ice Cream, Ahemdabad",Ice Cream,store
+614,"Vadilal Ice Cream, Ahemdabad",Ice Cream,store
+615,"Gwalia Sweets, Ahemdabad",Sweets ,point_of_interest
+616,"Creamistry, Ahemdabad",None,store
+617,"Keventers, Ahemdabad",None,cafe
+618,"Scoop Street, Ahemdabad",None,cafe
+619,"The Belgian Waffle Co., Ahemdabad",Waffle,bakery
+620,"Nini's Kitchen, Ahemdabad",Kitchen,restaurant
+621,"Amdavad Ni Gufa Ice Cream, Ahemdabad",Ice Cream,art_gallery
+622,"Kabhi B Bakery, Ahemdabad",Bakery,bakery
+623,"Mirch Masala Ice Cream, Ahemdabad",Ice Cream,restaurant
+624,"ScoopClub Ice Cream, Ahemdabad",Ice Cream,store
+625,"The Scoop, Ahemdabad",None,food
+626,"Haji Ice Cream, Ahemdabad",Ice Cream,store
+627,"Iceberg Ice Creams, Ahemdabad",Ice Cream,store
+628,"Cream & Fudge Factory, Ahemdabad",None,point_of_interest
+629,"Havmor Drive-In, Ahemdabad",Drive-In,point_of_interest
+630,"Little Hut Ice Cream, Ahemdabad",Ice Cream,cafe
+631,"Ice n Spice, Ahemdabad",None,restaurant
+632,"Ambika Ice Cream Parlour, Ahemdabad",Ice Cream,store
+633,"Chandravilas Ice Cream, Ahemdabad",Ice Cream,restaurant
+634,"Honest Ice Cream, Ahemdabad",Ice Cream,point_of_interest
+635,"Sukhadia's Gota, Ahemdabad",Gota,food
+636,"Mad Over Donuts, Ahemdabad",Donuts,cafe
+637,"Kulfi House, Ahemdabad",Kulfi,store
+638,"Creams & Dreams, Ahemdabad",None,food
+639,"Cafe Baraco, Ahemdabad",Cafe,cafe
+640,"Café Mojo, Goa",Cafe,bar
+641,"Baba Au Rhum, Goa",None,bar
+642,"Café Alchemia, Goa",Cafe,cafe
+643,"Suzie's, Goa",None,restaurant
+644,"Black Sheep Bistro, Goa",Bistro,restaurant
+645,"Gunpowder, Goa",None,bar
+646,"Café Real, Goa",Cafe,cafe
+647,"The Caravan Serai, Goa",None,lodging
+648,"Artjuna Garden Café, Goa",Cafe,cafe
+649,"Café Chocolatti, Goa",Cafe,cafe
+650,"Bean Me Up, Goa",None,bar
+651,"Blue Planet Café, Goa",Cafe,cafe
+652,"German Bakery Goa, Goa",Bakery,bakery
+653,"Villa Blanche Bistro, Goa",Bistro,cafe
+654,"Café Bodega, Goa",Cafe,cafe
+655,"The Project Café, Goa",Cafe,point_of_interest
+656,"Café Cotinga, Goa",Cafe,cafe
+657,"Noronha's Corner, Goa",None,restaurant
+658,"Casa Playa Beach Café, Goa",Cafe,night_club
+659,"Jila Café, Goa",Cafe,bakery
+660,"The Banyan Tree Café, Goa",Cafe,restaurant
+661,"German Bakery & Bistro, Goa","Bakery, Bistro",cafe
+662,"Café Inn, Anjuna, Goa",Cafe,cafe
+663,"Café de Goa, Goa",Cafe,cafe
+664,"Lazy Dog, Goa",None,restaurant
+665,"Suzie's, Goa",None,restaurant
+666,"Chocolatti Patisserie, Goa",None,cafe
+667,"Café Mambo, Goa",Cafe,night_club
+668,"Café Mambos Tito's, Goa",Cafe,night_club
+669,"Café Mojo Pub & Bistro, Goa","Pub,Bistro",bar
+670,"Café Coffee Day, Delhi","Cafe, Coffee",cafe
+671,"Starbucks, Delhi",None,cafe
+672,"Costa Coffee, Delhi",Coffee,cafe
+673,"The Coffee Bean & Tea Leaf, Delhi",Coffee,cafe
+674,"Blue Tokai Coffee Roasters, Delhi",Coffee,cafe
+675,"Rose Café, Delhi",Cafe,cafe
+676,"The Brew Room, Delhi",None,cafe
+677,"Café Lota, Delhi",Cafe,restaurant
+678,"Big Chill Café, Delhi",Cafe,cafe
+679,"Social, Delhi",None,restaurant
+680,"Ivy & Bean, Delhi",None,cafe
+681,"Perch Wine & Coffee Bar, Delhi",Bar,cafe
+682,"Elma's Bakery, Bar, and Kitchen, Delhi","Bakery, Bar, Kitchen",bakery
+683,"Kunzum Travel Café, Delhi",Cafe,book_store
+684,"The Grammar Room, Delhi",None,cafe
+685,"Diggin, Delhi",None,cafe
+686,"Amici Café, Delhi",Cafe,cafe
+687,"Cha Bar, Delhi",Bar,cafe
+688,"Di Ghent Café, Delhi",Cafe,cafe
+689,"United Coffee House, Delhi",Coffee,restaurant
+690,"Ivy & Bean, Delhi",None,cafe
+691,"The Coffee Shop, IHC, Delhi",Coffee,cafe
+692,"Café Turtle, Delhi",Cafe,cafe
+693,"The Artful Baker, Delhi",Baker,bakery
+694,"Blue Door Café, Delhi",Cafe,restaurant
+695,"Depot 29, Delhi",None,bar
+696,"Art House Café, Delhi",Cafe,restaurant
+697,"Jugmug Thela, Delhi",None,cafe
+698,"Espresso Café, Delhi",Cafe,cafe
+699,"Café Tesu, Delhi",Cafe,restaurant
+700,"Café Zoe, Mumbai",Cafe,cafe
+701,"Kala Ghoda Café, Mumbai",Cafe,cafe
+702,"The Pantry, Mumbai",None,cafe
+703,"Leopold Café, Mumbai",Cafe,cafe
+704,"Prithvi Café, Mumbai",Cafe,cafe
+705,"The Bagel Shop, Mumbai",Bagel,cafe
+706,"Café Mondegar, Mumbai",Cafe,bar
+707,"Le 15 Patisserie, Mumbai",None,bakery
+708,"Kala Ghoda Arts Café, Mumbai",Cafe,cafe
+709,"Salt Water Café, Mumbai",Cafe,cafe
+710,"Birdsong Organic Café, Mumbai",Cafe,cafe
+711,"The Nutcracker, Mumbai",None,cafe
+712,"Theobroma, Mumbai",None,bakery
+713,"Indigo Deli, Mumbai",Deli,restaurant
+714,"Yoga House, Mumbai",Yoga,gym
+715,"Bombay to Barcelona Library Café, Mumbai",Cafe,cafe
+716,"The Bombay Canteen, Mumbai",Canteen,meal_delivery
+717,"Grandmama's Café, Mumbai",Cafe,cafe
+718,"Pali Village Café, Mumbai",Cafe,restaurant
+719,"Candies, Mumbai",None,cafe
+720,"Social, Mumbai",None,restaurant
+721,"Aromas Café, Mumbai",Cafe,cafe
+722,"Mockingbird Café, Mumbai",Cafe,bar
+723,"Tea Villa Café, Mumbai",Cafe,cafe
+724,"Suzette Creperie & Café, Mumbai",Cafe,cafe
+725,"Trattoria Café, Mumbai",Cafe,restaurant
+726,"Jamjar Diner, Mumbai",Diner,meal_takeaway
+727,"Piccoli Tortini, Mumbai",None,bakery
+728,"Chaayos, Mumbai",None,cafe
+729,"Poetry by Love & Cheesecake, Mumbai",Cheesecake,cafe
+730,"Amethyst Café, Chennai",Cafe,cafe
+731,"Café Coffee Day, Chennai",Coffee,cafe
+732,"Starbucks, Chennai",None,cafe
+733,"The Brew Room, Chennai",None,cafe
+734,"Sandy's Chocolate Laboratory, Chennai",Chocolate,cafe
+735,"The English Tearoom, Chennai",Tearoom,cafe
+736,"Writer's Café, Chennai",Cafe,cafe
+737,"Wild Garden Café, Chennai",Cafe,cafe
+738,"Chamiers Café, Chennai",Cafe,cafe
+739,"The Flying Elephant, Chennai",None,bar
+740,"Ciclo Café, Chennai",Cafe,restaurant
+741,"MASH Resto Café, Chennai",Cafe,cafe
+742,"The Whistle Café, Chennai",Cafe,bar
+743,"Jonah's Bistro, Chennai",Bistro,restaurant
+744,"Ashvita Bistro, Chennai",Bistro,cafe
+745,"The Brew Room, Chennai",None,cafe
+746,"Café de Paris, Chennai",Cafe,cafe
+747,"Blend - The High Energy Bar, Chennai",Bar,bar
+748,"Craveyard Café, Chennai",Cafe,cafe
+749,"Café Mercara Express, Chennai",Cafe,restaurant
+750,"Café Xtasi, Chennai",Cafe,restaurant
+751,"Café Arabica, Chennai",Cafe,cafe
+752,"Cafe Espresso, Chennai",Cafe,cafe
+753,"Filter Coffee Shop, Chennai",Coffee,cafe
+754,"Autumn Leaf Café, Chennai",Cafe,restaurant
+755,"The Little Café, Chennai",Cafe,restaurant
+756,"Tuscana Pizzeria, Chennai",Pizzeria,meal_takeaway
+757,"The Brew Story, Chennai",None,cafe
+758,"Ashvita Nirvana, Chennai",None,cafe
+759,"Basil With A Twist, Chennai",None,meal_takeaway
+760,"Sasumaa Gujarati Thali, Surat",Gujarati,restaurant
+761,"Barbeque Nation, Surat",Barbeque,restaurant
+762,"The Grand Bhagwati, Surat",None,lodging
+763,"Tex Mex Mexican Grill, Surat",Mexican,restaurant
+764,"Black Pepper Restaurant, Surat",Restaurant,general_contractor
+765,"Level 5 - Terrace Restro, Surat",Restro,restaurant
+766,"Barbecue Delights, Surat",Barbeque,restaurant
+767,"Dakshinayan, Surat",None,
+768,"Kansar Gujarati Thali, Surat",Gujarati,restaurant
+769,"Bhai Bhai Bhaji Pav, Surat",Bhaji Pav,restaurant
+770,"Tomato's, Surat",None,point_of_interest
+771,"Gusto Cafe & Restaurant, Surat","Cafe,Restaurant",cafe
+772,"Jai Jalaram Khichdi, Surat",Khichdi,restaurant
+773,"Fresh Roast, Surat",None,cafe
+774,"Masaala Fusion Kitchen, Surat",Kitchen,restaurant
+775,"Waterfront Restaurant, Surat",Restaurant,bar
+776,"Sankalp Restaurant, Surat",Restaurant,lodging
+777,"Barbecue Nation, Surat",Barbeque,restaurant
+778,"Dine 11, Surat",None,
+779,"Gopal Locho Khaman House, Surat",Locho,restaurant
+780,"Tomato's, Surat",None,point_of_interest
+781,"Mirch Masala, Surat",None,point_of_interest
+782,"Govardhan Thal, Surat",None,restaurant
+783,"Kabir Restaurant, Surat",Restaurant,restaurant
+784,"The Gateway Hotel, Surat",Hotel,route
+785,"Kansar Kathiyawadi Thali, Surat",Kathiyawadi,restaurant
+786,"Ice N Spice, Surat",None,restaurant
+787,"TGB - The Grand Bhagwati, Surat",None,lodging
+788,"Simran Restaurant, Surat",Restaurant,food
+789,"Atithi Gruh Utsav, Surat",None,lodging
+790," Agashiye, Ahemdabad",None,meal_takeaway
+791,"Vishalla, Ahemdabad",None,restaurant
+792,"The House of MG, Ahemdabad",None,lodging
+793,"Rajwadu, Ahemdabad",None,restaurant
+794,"Gordhan Thal, Ahemdabad",None,restaurant
+795,"Patang Revolving Restaurant, Ahemdabad",Restaurant,restaurant
+796,"Nini's Kitchen, Ahemdabad",Kitchen,restaurant
+797,"Tomato's, Ahemdabad",None,restaurant
+798,"Swati Snacks, Ahemdabad",Snacks,restaurant
+799,"Mirch Masala, Ahemdabad",None,restaurant
+800,"Manek Chowk, Ahemdabad",None,route
+801,"Honest Restaurant, Ahemdabad",Restaurant,restaurant
+802,"Gordhan Thal, Ahemdabad",None,restaurant
+803,"Havmor Restaurant, Ahemdabad",Restaurant,restaurant
+804,"Tinello, Ahemdabad",None,restaurant
+805,"Toran Dining Hall, Ahemdabad",None,restaurant
+806,"The Green House, Ahemdabad",None,restaurant
+807,"The Cafe Baraco, Ahemdabad",Cafe,cafe
+808,"Kansar Gujarati Thali, Ahemdabad",Gujarati,restaurant
+809,"Shree Kutchi Dabeli & Street Food, Ahemdabad",Street Food,restaurant
+810,"Little Italy, Ahemdabad",None,restaurant
+811,"Darya Restaurant, Ahemdabad",Restaurant,restaurant
+812,"Agora The Food Club, Ahemdabad",None,bakery
+813,"Karpagam South Indian Restaurant, Ahemdabad","South Indian, Restaurant",restaurant
+814,"Lemon Tree Premier, The Atrium, Ahemdabad",None,lodging
+815,"The President - A Boutique Hotel, Ahemdabad",Hotel,lodging
+816,"Shree Maruti Dabeli & Fast Food, Ahemdabad",Fast Food,restaurant
+817,"La Vista - Renaissance Ahmedabad Hotel, Ahemdabad",Hotel,lodging
+818,"Swagat The Welcome, Ahemdabad",None,restaurant
+819,"Gulmohar Restaurant, Ahemdabad",Restaurant,restaurant
+820,AlphaOne Mall Food Court - Ahmedabad,Food Court,point_of_interest
+821,Iscon Mega Mall Food Court - Rajkot,Food Court,shopping_mall
+822,Himalaya Mall Food Court - Ahmedabad,Food Court,meal_takeaway
+823,VR Surat Food Box - Surat,None,restaurant
+824,AlphaOne Mall Food Court - Vadodara,Food Court,food
+825,Crystal Mall Food Court - Rajkot,Food Court,shopping_mall
+826,Gulmohar Park Mall Food Court - Ahmedabad,Food Court,shopping_mall
+827,R3 Mall Food Court - Surat,Food Court,point_of_interest
+828,Seven Seas Mall Food Court - Vadodara,Food Court,restaurant
+829,VR Mall Food Box - Ahmedabad,None,supermarket
+830,PVR Acropolis Food Court - Ahmedabad,Food Court,movie_theater
+831,CG Square Mall Food Court - Ahmedabad,Food Court,shopping_mall
+832,Decathlon Mall Food Court - Ahmedabad,Food Court,bicycle_store
+833,Rajhans Cinemas Food Court - Surat,Food Court,movie_theater
+834,The Metropole Food Court - Ahmedabad,Food Court,restaurant
+835,Raj Arcade Food Court - Vadodara,Food Court,point_of_interest
+836,Iscon Mall Food Court - Ahmedabad,Food Court,shopping_mall
+837,Decathlon Food Court - Surat,Food Court,shoe_store
+838,Vero Moda Mall Food Court - Ahmedabad,Food Court,clothing_store
+839,Sargam Shopping Mall Food Court - Surat,Food Court,food
+840,Centre Square Mall Food Court - Vadodara,Food Court,shopping_mall
+841,Himalaya Mall Food Court - Bhavnagar,Food Court,shopping_mall
+842,Central Mall Food Court - Surat,Food Court,point_of_interest
+843,Iscon Mega Mall Food Court - Ahmedabad,Food Court,shopping_mall
+844,Shyamal Cross Road Food Court - Ahmedabad,Food Court,food
+845,Sardar Patel Mall Food Court - Ahmedabad,Food Court,restaurant
+846,Decathlon Food Court - Vadodara,Food Court,bicycle_store
+847,Pal Heights Mall Food Court - Surat,Food Court,shopping_mall
+848,PVR Acropolis Mall Food Court - Vadodara,Food Court,point_of_interest
+849,R Mall Food Court - Surat,Food Court,food
+850,"Murugan Idli Shop, Chennai",Idli,restaurant
+851,"Saravana Bhavan, Chennai",None,restaurant
+852,"Anjappar Chettinad Restaurant, Chennai",Restaurant,restaurant
+853,"Dindigul Thalappakatti Biriyani, Chennai",Biriyani,restaurant
+854,"Buhari Hotel, Chennai",Hotel,restaurant
+855,"A2B - Adyar Ananda Bhavan, Chennai",None,restaurant
+856,"Ratna Cafe, Chennai",Cafe,cafe
+857,"Namma Veedu Vasantha Bhavan, Chennai",None,restaurant
+858,"Amethyst Café, Chennai",Cafe,cafe
+859,"Annalakshmi Restaurant, Chennai",Restaurant,restaurant
+860,"Cream Centre, Chennai",None,restaurant
+861,"Hotel Junior Kuppanna, Chennai",Hotel,restaurant
+862,"Ponnusamy Hotel, Chennai",Hotel,restaurant
+863,"Ashvita Bistro, Chennai",Bistro,cafe
+864,"Wangs Kitchen, Chennai",Kitchen,restaurant
+865,"Jonah's Bistro, Chennai",Bistro,restaurant
+866,"Absolute Barbecue, Chennai",Barbecue,restaurant
+867,"Ciclo Café, Chennai",Cafe,restaurant
+868,"Kaidi Kitchen, Chennai",Kitchen,restaurant
+869,"Nair Mess, Chennai",Mess,restaurant
+870,"The Flying Elephant, Chennai",None,bar
+871,"Sandy's Chocolate Laboratory, Chennai",Chocolate,cafe
+872,"Murugan Idli Kadai, Chennai",Idli,restaurant
+873,"Sangeetha Veg Restaurant, Chennai","Veg, Restaurant",restaurant
+874,"Kebab Factory, Chennai",Kebab,restaurant
+875,"Eden Vegetarian Restaurant, Chennai","Vegetarian, Restaurant",restaurant
+876,"Copper Chimney, Chennai",None,restaurant
+877,"Dialogue in the Dark, Chennai",None,restaurant
+878,"Mathura Restaurant, Chennai",Restaurant,restaurant
+879,"Hotel Saravana Bhavan, Chennai",Hotel,restaurant
+880,Britannia & Co. - Mumbai,None,restaurant
+881,Cafe Irani Chaii - Pune,"Irani, Cafe",cafe
+882,Vada Pav at Ashok Vada Pav Stall - Mumbai,Vada Pav,restaurant
+883,Cafe Goodluck - Pune,Cafe,cafe
+884,Leopold Cafe - Mumbai,Cafe,cafe
+885,Apoorva Restaurant - Mumbai,Restaurant,restaurant
+886,Chitale Bandhu Mithaiwale - Pune,None,point_of_interest
+887,Kayani Bakery - Pune,Bakery,bakery
+888,Gajalee - Mumbai,None,restaurant
+889,Cafe Madras - Mumbai,Cafe,cafe
+890,Shabari - Nashik,None,restaurant
+891,Yazdani Bakery - Mumbai,Bakery,bakery
+892,Aaswad - Mumbai,None,restaurant
+893,Kalyani Bhel - Pune,Bhel,restaurant
+894,Swati Snacks - Mumbai,Snacks,restaurant
+895,Misal Pav at Kata Kirr - Nashik,Misal Pav,restaurant
+896,Prakash Shakahari Upahar Kendra - Pune,None,meal_takeaway
+897,Sardar Pav Bhaji - Mumbai,Pav Bhaji,restaurant
+898,Sujata Mastani - Pune,None,store
+899,Kande Pohe at Kaka Halwai - Pune,Kande Pohe,store
+900,Bagdadi - Mumbai,None,restaurant
+901,Aaswad Upahar Griha - Pune,None,restaurant
+902,Kayani and Co. - Pune,None,bakery
+903,Pancham Puriwala - Mumbai,None,restaurant
+904,Chitale Bandhu Mithaiwale - Mumbai,None,store
+905,Hotel Shreyas - Pune,Hotel,lodging
+906,Badshah Cold Drinks - Mumbai,Cold Drinks,restaurant
+907,Janaseva Vada Pav - Pune,Vada Pav,restaurant
+908,Prakash Shakahari Upahar Kendra - Mumbai,None,meal_takeaway
+909,Bedekar Misal - Pune,Misal,restaurant
+910,Mysore Palace - Mysore,Palace,tourist_attraction
+911,Hampi - Bellary,None,locality
+912,Gokarna Beaches - Gokarna,Beaches,tourist_attraction
+913,Coorg - Kodagu,None,locality
+914,Jog Falls - Shimoga,Falls,locality
+915,Chikmagalur - Chikkamagaluru,None,locality
+916,Bandipur National Park - Chamarajanagar,National Park,tourist_attraction
+917,Nandi Hills - Chikkaballapur,Hills,locality
+918,Murudeshwar Temple - Uttara Kannada,Temple,locality
+919,Udupi - Udupi,None,locality
+920,Mysore Zoo - Mysore,Zoo,zoo
+921,Srirangapatna - Mandya,None,locality
+922,Belur and Halebidu - Hassan,None,locality
+923,Ranganathittu Bird Sanctuary - Mandya,Sanctuary,tourist_attraction
+924,Jogimatti - Chitradurga,None,tourist_attraction
+925,Badami Caves - Bagalkot,Caves,tourist_attraction
+926,Shravanabelagola - Hassan,None,locality
+927,Gomateshwara Statue - Hassan,Statue,place_of_worship
+928,Karwar Beach - Uttara Kannada,Beach,
+929,Aihole - Bagalkot,None,locality
+930,Pattadakal - Bagalkot,None,locality
+931,Dubare Elephant Camp - Kodagu,None,lodging
+932,Kodachadri - Shimoga,None,point_of_interest
+933,Agumbe - Shimoga,None,locality
+934,Om Beach - Gokarna,Beach,natural_feature
+935,Kemmannugundi - Chikkamagaluru,None,neighborhood
+936,Nandi Statue - Chikkaballapur,Statue,tourist_attraction
+937,Talakadu - Mysore,None,locality
+938,Kudremukh National Park - Chikkamagaluru,National Park,natural_feature
+939,Sringeri Sharada Peetha - Chikkamagaluru,None,hindu_temple
+940,Gateway of India - Mumbai,None,tourist_attraction
+941,Ajanta and Ellora Caves - Aurangabad,Caves,hindu_temple
+942,Marine Drive - Mumbai,None,route
+943,Elephanta Caves - Mumbai,Caves,tourist_attraction
+944,Shirdi Sai Baba Temple - Shirdi,Temple,hindu_temple
+945,Siddhivinayak Temple - Mumbai,Temple,hindu_temple
+946,Lonavala and Khandala - Pune,None,sublocality_level_1
+947,Mahabaleshwar - Satara,None,locality
+948,Alibaug Beach - Raigad,Beach,natural_feature
+949,Lavasa - Pune,None,locality
+950,Matheran - Raigad,None,locality
+951,Daulatabad Fort - Aurangabad,Fort,tourist_attraction
+952,Panchgani - Satara,None,locality
+953,Trimbakeshwar Temple - Nashik,Temple,hindu_temple
+954,Karla Caves - Pune,Caves,tourist_attraction
+955,Tadoba Andhari Tiger Reserve - Chandrapur,Reserve,tourist_attraction
+956,Chhatrapati Shivaji Terminus (Victoria Terminus) - Mumbai,None,train_station
+957,Kanheri Caves - Mumbai,Caves,tourist_attraction
+958,Pratapgad Fort - Satara,Fort,point_of_interest
+959,Bhimashankar Temple - Pune,Temple,hindu_temple
+960,Aurangabad Caves - Aurangabad,Caves,tourist_attraction
+961,Rajmachi Fort - Pune,Fort,locality
+962,Ganpatipule Beach - Ratnagiri,Beach,natural_feature
+963,Malshej Ghat - Pune,Ghat,natural_feature
+964,Raigad Fort - Raigad,Fort,tourist_attraction
+965,Sula Vineyards - Nashik,None,point_of_interest
+966,Shaniwar Wada - Pune,None,park
+967,Bibi Ka Maqbara - Aurangabad,Maqbara,tourist_attraction
+968,Sinhagad Fort - Pune,Fort,tourist_attraction
+969,Juhu Beach - Mumbai,Beach,sublocality_level_1
+970,"Eiffel Tower - Paris, France",None,tourist_attraction
+971,Great Wall of China - China,None,restaurant
+972,"Taj Mahal - Agra, India",None,tourist_attraction
+973,Machu Picchu - Peru,None,tourist_attraction
+974,"Statue of Liberty - New York City, USA",Statue,tourist_attraction
+975,"Colosseum - Rome, Italy",None,tourist_attraction
+976,Pyramids of Giza - Egypt,Pyramids,tourist_attraction
+977,"Sydney Opera House - Sydney, Australia",Opera House,tourist_attraction
+978,Angkor Wat - Cambodia,None,hindu_temple
+979,"Christ the Redeemer - Rio de Janeiro, Brazil",None,tourist_attraction
+980,Serengeti National Park - Tanzania,National Park,tourist_attraction
+981,"Grand Canyon - Arizona, USA",None,locality
+982,Santorini - Greece,None,natural_feature
+983,Great Barrier Reef - Australia,Reef,colloquial_area
+984,Petra - Jordan,None,tourist_attraction
+985,Acropolis of Athens - Greece,None,tourist_attraction
+986,Niagara Falls - Canada and USA,Falls,locality
+987,Chichen Itza - Mexico,None,premise
+988,"Yellowstone National Park - Wyoming, USA",National Park,locality
+989,"The Louvre - Paris, France",None,tourist_attraction
+990,"Sagrada Familia - Barcelona, Spain",None,neighborhood
+991,Amazon Rainforest - South America,Rainforest,natural_feature
+992,Mount Everest - Nepal,Mount,natural_feature
+993,The Pyramids of Teotihuacan - Mexico,Pyramids,tourist_attraction
+994,The Vatican City - Vatican City,None,locality
+995,Neuschwanstein Castle - Germany,Castle,tourist_attraction
+996,The Great Sphinx of Giza - Egypt,None,tourist_attraction
+997,Iguazu Falls - Argentina and Brazil,Falls,natural_feature
+998,"The Alhambra - Granada, Spain",None,tourist_attraction
+999,"The Palace Museum (Forbidden City) - Beijing, China ",Museum,museum
+1000,"The Ridge, Shimla",None,natural_feature
+1001,"Mall Road, Shimla",None,route
+1002,"Christ Church, Shimla",Church,church
+1003,"Jakhu Hill, Shimla",Hill,natural_feature
+1004,"Shimla State Museum, Shimla",Museum,premise
+1005,"Kufri, Shimla",None,locality
+1006,"Green Valley, Shimla",Valley,tourist_attraction
+1007,"Tara Devi Temple, Shimla",Temple,hindu_temple
+1008,"Annandale, Shimla",None,sublocality_level_1
+1009,"Indian Institute of Advanced Study, Shimla",None,
+1010,"Chadwick Falls, Shimla",Falls,tourist_attraction
+1011,"Himalayan Bird Park, Shimla",Park,park
+1012,"Viceregal Lodge, Shimla",Lodge,tourist_attraction
+1013,"Summer Hill, Shimla",Hill,sublocality_level_1
+1014,"Sankat Mochan Temple, Shimla",Temple,hindu_temple
+1015,"Naldehra Golf Course, Shimla",Golf Course,lodging
+1016,"Mashobra, Shimla",None,locality
+1017,"Kamna Devi Temple, Shimla",Temple,hindu_temple
+1018,"Fagu, Shimla",None,locality
+1019,"Shaily Peak, Shimla",Peak,natural_feature
+1020,"Tattapani, Shimla",None,locality
+1021,"Kiala Forest, Shimla",Forest,tourist_attraction
+1022,"Craignano Nature Park, Shimla",Park,tourist_attraction
+1023,"Shimla Heritage Museum, Shimla",Museum,tourist_attraction
+1024,"Gurudwara Sahib, Shimla, Shimla",Gurudwara,place_of_worship
+1025,"Scandal Point, Shimla",None,tourist_attraction
+1026,"Jakhu Temple, Shimla",Temple,hindu_temple
+1027,"Mahasu Peak, Shimla",Peak,natural_feature
+1028,"Shimla Water Catchment Wildlife Sanctuary, Shimla",Sanctuary,tourist_attraction
+1029,"Himalayan Nature Park, Shimla",Nature Park,tourist_attraction
+1030,"Rohtang Pass, Manali",None,natural_feature
+1031,"Solang Valley, Manali",None,point_of_interest
+1032,"Hadimba Temple, Manali",Temple,hindu_temple
+1033,"Beas River, Manali",River,locality
+1034,"Jogini Falls, Manali",Falls,tourist_attraction
+1035,"Manikaran, Manali",None,travel_agency
+1036,"Old Manali, Manali",None,sublocality_level_1
+1037,"Vashisht Temple and Hot Springs, Manali","Hot Springs, Temple",natural_feature
+1038,"Mall Road, Manali",None,route
+1039,"Gulaba, Manali",None,tourist_attraction
+1040,"Naggar Castle, Manali",Castle,tourist_attraction
+1041,"Bhrigu Lake, Manali",Lake,natural_feature
+1042,"Rahala Falls, Manali",Falls,tourist_attraction
+1043,"Hampta Pass, Manali",None,natural_feature
+1044,"Chandrakhani Pass, Manali",None,natural_feature
+1045,"Manali Sanctuary, Manali",Sanctuary,meal_delivery
+1046,"Nehru Kund, Manali",None,tourist_attraction
+1047,"Tibetan Monastery, Manali",Monestry,tourist_attraction
+1048,"Van Vihar National Park, Manali",National Park,park
+1049,"Kothi, Manali",None,locality
+1050,"Manali Club House, Manali",Club House,lodging
+1051,"Jagatsukh, Manali",None,locality
+1052,"Gulaba Campsite, Manali",None,campground
+1053,"Jana Waterfall, Manali",Waterfall,restaurant
+1054,"Malana Village, Manali",None,tourist_attraction
+1055,"Rani Nala, Manali",None,tourist_attraction
+1056,"Snow Point, Manali",None,restaurant
+1057,"Manali Nature Park, Manali",Nature Park,park
+1058,"Dashir Lake, Manali",Lake,natural_feature
+1059,"Manu Temple, Manali",Temple,route
+1060,"Alleppey Backwaters, Kerala",None,travel_agency
+1061,"Munnar, Kerala",None,locality
+1062,"Kochi (Cochin), Kerala",None,locality
+1063,"Periyar National Park, Kerala",Park,tourist_attraction
+1064,"Varkala Beach, Kerala",Beach,natural_feature
+1065,"Kumarakom, Kerala",None,locality
+1066,"Kovalam Beach, Kerala",Beach,tourist_attraction
+1067,"Wayanad, Kerala",None,administrative_area_level_3
+1068,"Thekkady, Kerala",None,sublocality_level_1
+1069,"Poovar Island, Kerala",Island,spa
+1070,"Athirapally Waterfalls, Kerala",Waterfalls,natural_feature
+1071,"Fort Kochi, Kerala",Fort,sublocality_level_1
+1072,"Marari Beach, Kerala",Beach,natural_feature
+1073,"Thrissur Pooram, Kerala",None,place_of_worship
+1074,"Bekal Fort, Kerala",Fort,tourist_attraction
+1075,"Kozhikode (Calicut), Kerala",None,locality
+1076,"Vagamon, Kerala",None,locality
+1077,"Thiruvananthapuram (Trivandrum), Kerala",None,locality
+1078,"Palakkad, Kerala",None,locality
+1079,"Idukki, Kerala",None,locality
+1080,"Cherai Beach, Kerala",Beach,natural_feature
+1081,"Valiyaparamba Backwaters, Kerala",None,natural_feature
+1082,"Kannur, Kerala",None,locality
+1083,"Guruvayur Temple, Kerala",Temple,hindu_temple
+1084,"Silent Valley National Park, Kerala",National Park,tourist_attraction
+1085,"Bekal Beach, Kerala",Beach,natural_feature
+1086,"Kollam (Quilon), Kerala",None,locality
+1087,"Ponmudi, Kerala",None,locality
+1088,"Kappad Beach, Kerala",Beach,locality
+1089,"Mattancherry Palace (Dutch Palace), Kerala",Palace,museum
+1090,"Cafe Mondegar, Colaba",Cafe,bar
+1091,"Leopold Cafe, Colaba",Cafe,cafe
+1092,"Britannia & Co. Restaurant, Colaba",Restaurant,route
+1093,"Bademiya, Colaba",None,restaurant
+1094,"Baghdadi Restaurant, Colaba",Restaurant,restaurant
+1095,"Delhi Darbar, Colaba",None,restaurant
+1096,"The Table, Colaba",None,restaurant
+1097,"Cafe Churchill, Colaba",Cafe,cafe
+1098,"Trishna, Colaba",None,restaurant
+1099,"Koyla Ethnic Cuisine, Colaba",Ethnic,restaurant
+1100,"Olympia Coffee House, Colaba",Coffee,restaurant
+1101,"Indigo Delicatessen, Colaba",None,restaurant
+1102,"Cafe Royal, Colaba",Cafe,cafe
+1103,"Gokul Restaurant, Colaba",Restaurant,restaurant
+1104,"The Bombay Canteen, Colaba",Canteen,cafe
+1105,"Cafe Ideal, Colaba",Cafe,restaurant
+1106,"Kala Ghoda Cafe, Colaba",Cafe,cafe
+1107,"Bade Miyaan, Colaba",None,restaurant
+1108,"Cafe Moshe's, Colaba",Cafe,cafe
+1109,"Cafe Universal, Colaba",Cafe,cafe
+1110,"Food Inn, Colaba",None,restaurant
+1111,"Cafe Excelsior, Colaba",Cafe,cafe
+1112,"Cafe Leopold's, Colaba",Cafe,cafe
+1113,"Jimmy Boy, Colaba",None,bakery
+1114,"Piccadilly Restaurant, Colaba",Restaurant,restaurant
+1115,"Yazdani Bakery & Restaurant, Colaba","Bakery, Restaurant",bakery
+1116,"Cafe Military, Colaba",Cafe,restaurant
+1117,"Bagdadi Restaurant, Colaba",Restaurant,restaurant
+1118,"Ling's Pavilion, Colaba",None,restaurant
+1119,"Cafe Mysore, Colaba",Cafe,cafe
+1120,"Ubud Monkey Forest, Bali",Forest,tourist_attraction
+1121,"Tanah Lot Temple, Bali",Temple,tourist_attraction
+1122,"Uluwatu Temple, Bali",Temple,hindu_temple
+1123,"Tegalalang Rice Terrace, Bali",Rice Terrace,tourist_attraction
+1124,"Mount Batur, Bali",None,natural_feature
+1125,"Bali Safari and Marine Park, Bali","Marine Park, Safari",zoo
+1126,"Tirta Empul Temple, Bali",Temple,hindu_temple
+1127,"Seminyak Beach, Bali",Beach,natural_feature
+1128,"Kuta Beach, Bali",Beach,natural_feature
+1129,"Nusa Dua Beach, Bali",Beach,natural_feature
+1130,"Goa Gajah (Elephant Cave), Bali",Cave,hindu_temple
+1131,"Sacred Monkey Forest Sanctuary, Bali",Sanctuary,tourist_attraction
+1132,"Pura Ulun Danu Bratan (Lake Bratan Temple), Bali","Temple, Lake",hindu_temple
+1133,"Nusa Penida Island, Bali",Island,natural_feature
+1134,"Jatiluwih Rice Terraces, Bali",Rice Terraces,tourist_attraction
+1135,"Pura Luhur Batukaru (Batukaru Temple), Bali",Temple,hindu_temple
+1136,"Taman Ayun Temple, Bali",Temple,hindu_temple
+1137,"Lovina Beach, Bali",Beach,neighborhood
+1138,"Besakih Temple, Bali",Temple,hindu_temple
+1139,"Waterbom Bali, Bali",None,tourist_attraction
+1140,"Pura Tirta Gangga (Tirta Gangga Water Palace), Bali",Palace,tourist_attraction
+1141,"Pura Lempuyang Luhur (Lempuyang Temple), Bali",Temple,hindu_temple
+1142,"Pura Goa Lawah (Bat Cave Temple), Bali","Temple, Cave",hindu_temple
+1143,"Tegenungan Waterfall, Bali",Waterfall,tourist_attraction
+1144,"Mount Agung, Bali",Mount,natural_feature
+1145,"Jimbaran Bay, Bali",Bay,lodging
+1146,"Gunung Kawi (Kawi Mountain), Bali",Mountain,hindu_temple
+1147,"Pura Tanah Lot (Tanah Lot Temple), Bali",Temple,tourist_attraction
+1148,"Gitgit Waterfall, Bali",Waterfall,tourist_attraction
+1149,"Pura Besakih (Mother Temple of Besakih), Bali",Temple,hindu_temple
+1150,"Italian Trattoria - Rome, Italy",Italian,restaurant
+1151,"Mexican Grill - Mexico City, Mexico","Mexican, Grill",meal_takeaway
+1152,"Indian Curry House - Mumbai, India",Indian,restaurant
+1153,"Thai Basil Restaurant - Bangkok, Thailand",Thai,restaurant
+1154,"Japanese Sushi Bar - Tokyo, Japan",Japanese,restaurant
+1155,"Chinese Wok Inn - Beijing, China",Chinese,restaurant
+1156,"Greek Taverna - Athens, Greece",Greek,restaurant
+1157,"Lebanese Mezza Lounge - Beirut, Lebanon",Lebanese,restaurant
+1158,"Spanish Tapas Bar - Barcelona, Spain","Spanish, Bar",cafe
+1159,"French Bistro - Paris, France",French. Bistro,restaurant
+1160,"Turkish Kebab House - Istanbul, Turkey","Turkish, Kebab",restaurant
+1161,"Vietnamese Pho Noodle House - Ho Chi Minh City, Vietnam","Pho Noodle, Vietnamese",restaurant
+1162,"Korean BBQ Grill - Seoul, South Korea","Korean, BBQ, Grill",restaurant
+1163,"Moroccan Spice Kitchen - Marrakech, Morocco",Moroccan,restaurant
+1164,"Brazilian Churrascaria - Rio de Janeiro, Brazil",Brazillian,restaurant
+1165,"Peruvian Cevicheria - Lima, Peru",Peruvian,restaurant
+1166,"Malaysian Hawker Stall - Kuala Lumpur, Malaysia",Malaysian,restaurant
+1167,"Indonesian Rijsttafel Restaurant - Jakarta, Indonesia","Indonesian, Restaurant",restaurant
+1168,"Ethiopian Injera Cafe - Addis Ababa, Ethiopia","Ethiopian, Cafe",restaurant
+1169,"Cajun and Creole Kitchen - New Orleans, USA",None,restaurant
+1170,"Argentinian Steakhouse - Buenos Aires, Argentina","Argentinian, Steakhouse",restaurant
+1171,"Swiss Fondue Chalet - Zurich, Switzerland","Swiss, Fondue",restaurant
+1172,"Irish Pub and Eatery - Dublin, Ireland","Irish, Pub, Eatery",bar
+1173,"Scottish Whisky Bar and Restaurant - Edinburgh, Scotland","Restaurant, Bar",bar
+1174,"Jamaican Jerk Joint - Kingston, Jamaica",Jamaican,restaurant
+1175,"Egyptian Falafel House - Cairo, Egypt","Egyptian, Falafel",restaurant
+1176,"Australian Outback Grill - Sydney, Australia","Australian, Grill",restaurant
+1177,"Swedish Meatball Bistro - Stockholm, Sweden","Swedish, Meatball, Bistro",meal_takeaway
+1178,"Finnish Sauna Café - Helsinki, Finland","Finnish, Cafe, Sauna",restaurant
+1179,"Danish Smørrebrød Deli - Copenhagen, Denmark","Danish, Deli",meal_takeaway
+1180,Konark Sun Temple - Konark,Temple,hindu_temple
+1181,Jagannath Temple - Puri,Temple,hindu_temple
+1182,Chilika Lake - Puri,Lake,natural_feature
+1183,Nandankanan Zoological Park - Bhubaneswar,Park,zoo
+1184,Lingaraj Temple - Bhubaneswar,Temple,hindu_temple
+1185,Udayagiri and Khandagiri Caves - Bhubaneswar,Caves,tourist_attraction
+1186,Dhauli Giri - Bhubaneswar,None,tourist_attraction
+1187,Chandrabhaga Beach - Konark,Beach,natural_feature
+1188,Simlipal National Park - Mayurbhanj,National Park,tourist_attraction
+1189,Cuttack Chandi Temple - Cuttack,Temple,hindu_temple
+1190,Bhitarkanika National Park - Kendrapara,National Park,tourist_attraction
+1191,Puri Beach - Puri,Beach,natural_feature
+1192,Ratnagiri Buddhist Excavation - Jajpur,Buddihist,tourist_attraction
+1193,Hirakud Dam - Sambalpur,Dam,premise
+1194,Satkosia Tiger Reserve - Angul,Reserve,point_of_interest
+1195,Nrusinghanath Temple - Bargarh,Temple,hindu_temple
+1196,Debrigarh Wildlife Sanctuary - Bargarh,Sanctuary,tourist_attraction
+1197,Chausathi Yogini Temple - Hirapur,Temple,hindu_temple
+1198,Simhanath Temple - Sambalpur,Temple,hindu_temple
+1199,Simhanath Hill - Bargarh,Hill,
+1200,Daringbadi Hill Station - Kandhamal,Hill Station,park
+1201,Barabati Fort - Cuttack,Fort,tourist_attraction
+1202,Ghanteswari Temple - Sambalpur,Temple,hindu_temple
+1203,Ushakothi Wildlife Sanctuary - Sambalpur,Sanctuary,park
+1204,Gandhi Park - Paradeep,Park,park
+1205,Rajarani Temple - Bhubaneswar,Temple,hindu_temple
+1206,Satpada Dolphin Sanctuary - Puri,Sanctuary,travel_agency
+1207,Harishankar Temple - Balangir,Temple,tourist_attraction
+1208,Saptasajya - Dhenkanal,None,locality
+1209,Chhatia Bata - Jajpur,None,clothing_store
+1210,Golghar - Patna,None,tourist_attraction
+1211,Mahatma Gandhi Setu - Patna,None,route
+1212,Patna Museum - Patna,Museum,museum
+1213,Takht Sri Patna Sahib - Patna,None,tourist_attraction
+1214,Kumhrar Park - Patna,Park,park
+1215,Agam Kuan - Patna,None,neighborhood
+1216,Nalanda University - Nalanda (near Patna),University,university
+1217,Bihar Museum - Patna,Museum,museum
+1218,Sanjay Gandhi Biological Park - Patna,Park,zoo
+1219,Buddha Smriti Park - Patna,"Park, Buddha",park
+1220,Padri Ki Haveli - Patna,None,church
+1221,Patna Planetarium - Patna,Planetarium,point_of_interest
+1222,Phulwari Sharif - Patna,None,sublocality_level_1
+1223,Patna Sahib Gurudwara - Patna,Gurudwara,tourist_attraction
+1224,Patna Zoo - Patna,Zoo,zoo
+1225,Patna University - Patna,University,university
+1226,Bihar Legislative Assembly - Patna,None,local_government_office
+1227,Patna High Court - Patna,Court,courthouse
+1228,Funtasia Water Park - Patna,Water Park,tourist_attraction
+1229,Patna Sahib Gurdwara - Patna,Gurudwara,tourist_attraction
+1230,Patna Women's College - Patna,College,university
+1231,Gandhi Maidan - Patna,None,park
+1232,Srikrishna Science Centre - Patna,Science Centre,tourist_attraction
+1233,Buddha Smriti Park - Patna,"Park, Buddha",park
+1234,Buxar Fort - Buxar (near Patna),Fort,point_of_interest
+1235,Maner Sharif - Maner (near Patna),None,locality
+1236,Patna Junction - Patna,None,route
+1237,Patna Secretariat - Patna,None,point_of_interest
+1238,Golak Bari - Patna,None,
+1239,Eco Park - Patna,Park,park
