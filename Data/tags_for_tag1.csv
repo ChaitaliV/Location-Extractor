@@ -1,7 +1,7 @@
 ,Tags
 0,Monestry
 1,Cruise
-2,"Museum, Palace"
+2,Museum
 3,Craft Market
 4,Mall
 5,Saree
@@ -12,10 +12,10 @@
 10,Sushi Restaurant
 11,African
 12,Snowboarding
-13,"Bar, Bakery"
+13,Bar
 14,Indian
 15,Island
-16,French. Bistro
+16,Bistro
 17,Resort
 18,Peak
 19,Thrift Store
@@ -26,16 +26,16 @@
 24,Tanning Salon
 25,Tea Shop
 26,Dam
-27,Street Food Market
+27,Street Food
 28,Landmark
-29,Auto Parts Store
+29,Auto Parts 
 30,Shopping Street
-31,Appliance Store
-32,Convenience Store
+31,Appliance
+32,Convenience
 33,Cocktail Bar
 34,Lassi
-35,Acupuncture Clinic
-36,Specialty Food Store
+35,Acupuncture
+36,Specialty Food
 37,Paratha
 38,Sanctuary
 39,Spa
@@ -47,13 +47,13 @@
 45,Taco Stand
 46,Oyster Bar
 47,Distillery
-48,"Cafe,Restaurant"
-49,"Ethiopian, Cafe"
+48,Cafe
+49,Ethiopian
 50,Indonesian
 51,Peruvian
-52,"Temple, Hill"
+52,Hill
 53,Archery Range
-54,Gourmet Food Shop
+54,Gourmet Food
 55,Masala Dosa
 56,Deli
 57,Outlet Store
@@ -74,14 +74,14 @@
 72,Dessert Shop
 73,Lassi Shop
 74,Greek Restaurant
-75,"Pho Noodle, Vietnamese"
-76,"South Indian, Restaurant"
+75,Pho Noodle
+76,South Indian
 77,Ayurvedic Center
-78,"Museum,Library"
+78,Library
 79,Restaurant
 80,University
 81,Flea Market
-82,"Turkish, Kebab"
+82,Kebab
 83,Chole Bhature Stall
 84,Garden
 85,Infrared Sauna
@@ -90,7 +90,7 @@
 88,Manipuri
 89,Rasmalai
 90,Amusement Park
-91,"Swedish, Meatball, Bistro"
+91,Swedish
 92,Ski Resort
 93,Kerala
 94,Home Decor Store
@@ -111,9 +111,9 @@
 109,Shopping Center
 110,Bakery
 111,Dutch
-112,Paneer Tikka Corner
-113,"Veg, Restaurant"
-114,Juice Bar
+112,Paneer Tikka 
+113,Veg
+114,Juice
 115,Bengali
 116,Vav
 117,Historical Site
@@ -127,8 +127,8 @@
 125,Valley
 126,German
 127,Ice Cream
-128,Ice Cream Parlor
-129,Pilates Studio
+128,Ice Cream 
+129,Pilates 
 130,Donuts
 131,Mount
 132,Hair Salon
@@ -137,7 +137,7 @@
 135,Goan
 136,Biryani
 137,Beaches
-138,Kachori Corner
+138,Kachori
 139,City Tour
 140,Garhwali
 141,Jodhpuri
@@ -158,45 +158,45 @@
 156,Wildlife Tour
 157,Spanish
 158,Dhaba
-159,Vietnamese Restaurant
+159,Vietnamese
 160,Anglo-Indian
-161,"Cave, Buddisht"
+161,Cave
 162,Mizo
 163,French
-164,Physical Therapy Center
+164,Physical Therapy
 165,Pub
 166,Super Market
-167,Sandwich Shop
+167,Sandwich 
 168,Vietnamese
 169,Steam Room
 170,Taproom
 171,Pastry Shop
 172,Playground
-173,Video Game Store
+173,Video Game
 174,Fort
 175,Toy Store
-176,Fine Dining Restaurant
+176,Fine Dining
 177,Couture
-178,Malai Kofta Corner
+178,Malai Kofta 
 179,Opera House
 180,Food Court
-181,"Hot Springs, Temple"
-182,Shopping Mall
+181,Hot Springs
+182,Mall
 183,Food Market
-184,Conference Center
-185,Noodle House
-186,Photography Spot
+184,Conference 
+185,Noodle
+186,Photography 
 187,Sports Stadium
 188,Holistic Center
-189,Family Restaurant
+189,Family 
 190,Safari
 191,Historical Tour
-192,Rasgulla Stall
+192,Rasgulla
 193,Clinic
-194,Heritage Walk
-195,Organic Restaurant
+194,Heritage
+195,Organic
 196,Brewery
-197,Live Music Venue
+197,Live Music
 198,Hill
 199,Naan Shop
 200,Steakhouse
@@ -209,29 +209,29 @@
 207,Sweets Shop
 208,Coastal
 209,Korma
-210,Equestrian Center
+210,Equestrian 
 211,Collage
 212,Thai
 213,Butcher Shop
 214,Rajasthani
-215,"Argentinian, Steakhouse"
-216,Coffee Shop
+215,Argentinian
+216,Coffee
 217,Golf Course
 218,Upma
 219,Moroccan
 220,Irish
 221,Chinese
 222,Awadhi
-223,Stationery Store
+223,Stationery
 224,Karaoke Bar
-225,Fried Chicken Joint
-226,Italian Restaurant
+225,Fried Chicken 
+226,Italian 
 227,Khichdi
 228,Art Gallery
 229,Afghan
 230,Cold Drinks
-231,Rock Climbing Gym
-232,Supplement Store
+231,Rock Climbing 
+232,Supplement 
 233,Waffle
 234,Pharmacy
 235,Hot Air Balloon
@@ -245,20 +245,20 @@
 243,Cave
 244,Uttar Pradesh
 245,Poha
-246,Seafood Restaurant
+246,Seafood 
 247,Archaeological Site
 248,Waterfalls
 249,Halotherapy Center
 250,Roti Wala
-251,"Sweets, Restaurant"
+251,Sweets
 252,Sports Bar
-253,"Korean, BBQ, Grill"
-254,Art Supply Store
-255,Thai Restaurant
+253,BBQ
+254,Art Supply 
+255,Thai 
 256,Bar
 257,Club
-258,Reflexology Center
-259,Gourmet Food Store
+258,Reflexology
+259,Gourmet Food
 260,Hills
 261,Continental
 262,Souvenir Shop
@@ -268,8 +268,8 @@
 266,Piano Bar
 267,Chaat
 268,Mughlai
-269,Heritage Site
-270,Barbershop
+269,Heritage 
+270,Barber
 271,Fish Market
 272,Cycling
 273,Memorial
@@ -279,7 +279,7 @@
 277,Court
 278,Badminton Court
 279,Gymnasium
-280,Street Food Stall
+280,Street Food 
 281,Spice Shop
 282,Gelateria
 283,Bird Watching
@@ -288,8 +288,8 @@
 286,Plantations
 287,Reserve
 288,Beach
-289,"Irish, Pub, Eatery"
-290,"Park, Buddha"
+289,Irish
+290,Buddha
 291,Music
 292,Theater
 293,Diving
@@ -310,7 +310,7 @@
 308,Mandir
 309,Stepwell
 310,Guesthouse
-311,Herb Shop
+311,Herb 
 312,Lebanese
 313,Race Track
 314,Sushi Bar
@@ -318,41 +318,41 @@
 316,Nature Park
 317,Brewpub
 318,Cheese Shop
-319,"Spa, Thai"
-320,Bhel Puri Stall
+319,Spa
+320,Bhel Puri 
 321,Kulfi
 322,Trade Fair
-323,Chiropractic Clinic
-324,Liquor Store
-325,Meditation Center
+323,Chiropractic
+324,Liquor 
+325,Meditation 
 326,Pulao
 327,Hypermarket
 328,Middle Eastern
-329,"Australian, Grill"
+329,Australian
 330,Gift Shop
-331,Wellness Cafe
+331,Wellness 
 332,Malaysian
 333,Maqbara
-334,Mexican Restaurant
+334,Mexican 
 335,British
-336,Pav Bhaji Stall
+336,Pav Bhaji
 337,Gardens
-338,"Bar, Cocktail"
+338,Cocktail
 339,Bagel
 340,memorials
 341,Theme Park
 342,Convention Center
 343,Bazzar
-344,"Irani, Cafe"
+344,Irani
 345,Pav Bhaji
 346,Gujarati
 347,Kebab
 348,Paintball Arena
 349,Bookstore
 350,Camping
-351,Donut Shop
+351,Donut 
 352,Sikkimese
-353,Nail Salon
+353,Nail 
 354,Hyderabadi
 355,Bistro
 356,Bhaji
@@ -369,44 +369,44 @@
 367,Vada
 368,Paneer
 369,Club House
-370,Vegetarian Restaurant
+370,Vegetarian
 371,Tavern
 372,College
-373,Fitness Center
+373,Fitness
 374,Rice Terrace
 375,Rafting
 376,Relaxation Center
 377,Beer Store
-378,Spanish Restaurant
+378,Spanish 
 379,Meghalayan
 380,Ethnic
 381,Foot Spa
 382,Waterfall
 383,Biryani House
-384,Health Food Store
+384,Health Food 
 385,Adventure Tour
-386,Specialty Store
+386,Specialty 
 387,Swiss
 388,Science Centre
 389,Observatory
-390,Popcorn Shop
-391,Smoothie Bar
-392,Vintage Shop
+390,Popcorn 
+391,Smoothie 
+392,Vintage 
 393,Ashram
 394,Go-Kart Track
 395,Jain
-396,Curry House
+396,Curry
 397,Dahi Vada
-398,Detox Center
-399,Cosmetics Store
+398,Detox 
+399,Cosmetics 
 400,Beer Garden
 401,Nature Trail
-402,Barbecue Restaurant
+402,Barbecue 
 403,Hot Springs
 404,Cricket Ground
 405,Scenic Viewpoint
 406,Water Park
-407,Gulab Jamun House
+407,Gulab Jamun 
 408,Diner
 409,Hostel
 410,Park
@@ -421,38 +421,38 @@
 419,Ethiopian
 420,Basilica
 421,Pet Store
-422,"Temple, Lake"
+422,Lake
 423,Church
-424,Accessory Store
-425,Masala Dosa House
+424,Accessory
+425,Masala Dosa 
 426,Cheesemonger
-427,"Marine Park, Safari"
-428,"Bakery, Bistro"
+427,Marine Park
+428,Safari
 429,Cidery
-430,"Temple, Cave"
-431,"Egyptian, Falafel"
+430,Cave
+431,Egyptian
 432,Fishing
 433,Lodge
-434,Chinese Medicine Clinic
+434,Chinese Medicine
 435,Konkani
-436,Sake Shop
-437,Wellness Resort
+436,Sake 
+437,Wellness
 438,Thali
 439,Chettinad
-440,Tandoori Corner
-441,"Pub,Bistro"
-442,Massage Studio
-443,Hot Dog Stand
+440,Tandoori 
+441,Resort
+442,Massage 
+443,Hot Dog 
 444,Adventure Park
 445,Mediterranean
 446,Tea House
-447,Craft Store
+447,Craft 
 448,Outdoor Arena
 449,Sunrise Point
 450,Winery
 451,American
 452,Snacks
-453,Vegetable Market
+453,Vegetable
 454,Beauty Spa
 455,Northeastern
 456,Barbecue
@@ -463,7 +463,7 @@
 461,Barbeque
 462,Butter Chicken
 463,Malvani
-464,Sports Goods Store
+464,Sports Goods 
 465,Misal
 466,Coconut Chutney
 467,Sindhi
@@ -482,32 +482,32 @@
 480,Market Stall
 481,Shrine
 482,Candy Store
-483,Indian Restaurant
+483,Indian 
 484,Korean
 485,Jacuzzi
 486,Kande Pohe
 487,Cinema
 488,Hiking
 489,Burger Joint
-490,Chinese Restaurant
-491,Rehabilitation Center
-492,"Pub, Bistro"
-493,Beauty Supply Store
+490,Chinese 
+491,Rehabilitation 
+492,Mount
+493,Beauty Supply 
 494,Tamil
-495,Locally Sourced Restaurant
+495,Locally Sourced 
 496,Drinks
 497,Curry
 498,Kulfi Corner
 499,Clothing Store
 500,Canteen
-501,"Cafe, Coffee"
+501,Coffee
 502,Fruit Stand
-503,Sweet Shop
+503,Sweet 
 504,Malai Kofta
-505,"Swiss, Fondue"
+505,Fondue
 506,Aloo Tikki
 507,Yoga
-508,Rice Terraces
+508,Swiss
 509,Japanese
 510,Street
 511,Cultural Tour
@@ -516,7 +516,7 @@
 514,Ski Center
 515,Tennis Court
 516,Assamese
-517,"Bakery, Restaurant"
+517,Chaat
 518,Volleyball Court
 519,Turkish
 520,Café
@@ -524,7 +524,7 @@
 522,Mess
 523,Punjabi
 524,Rainforest
-525,Adventure Sports Center
+525,Adventure Sports
 526,Snorkeling
 527,Farm
 528,Raita
@@ -535,69 +535,69 @@
 533,Ice Skating Rink
 534,Tripuri
 535,Farmers Market
-536,"Bakery, Bar, Kitchen"
-537,"Vegetarian, Restaurant"
+536,Locho
+537,Bread
 538,Khasi
-539,Olive Oil Shop
-540,Dhokla House
+539,Olive Oil 
+540,Dhokla 
 541,Night Market
 542,Music Store
 543,Sporthall
 544,Boat Tour
-545,"Museum,Art Gallery"
+545,Boating
 546,Museum
 547,Massage Center
-548,Middle Eastern Restaurant
+548,Middle Eastern
 549,Andhra
 550,Forest
 551,Misal Pav
 552,Gastropub
-553,"Restaurant, Bar"
+553,River
 554,Biriyani
 555,Harbor
 556,Coffee
 557,Rajput
 558,Gourmet Market
 559,Antique Store
-560,Hyderabadi Biryani House
+560,Hyderabadi Biryani 
 561,Sweets 
-562,Ramen Shop
+562,Ramen
 563,Skiing
 564,Thermal Spa
 565,Gulab Jamun
 566,Sweet
 567,Rogan Josh
-568,Rajma Chawal Stall
+568,Rajma Chawal 
 569,Irish Pub
 570,Film Festival
 571,Salon
-572,"Indonesian, Restaurant"
+572,Indonesian
 573,Pizzeria
 574,Riverwalk
 575,Kolkata
 576,Delicatessen
-577,Family Entertainment Center
-578,Farm-to-Table Restaurant
+577,Family Entertainment
+578,Farm-to-Table 
 579,Bhel
 580,Health Spa
-581,"Spanish, Bar"
+581,Entertainment
 582,Kashmiri
-583,Samosa Corner
+583,Samosa 
 584,Naga
 585,Brasserie
 586,Confectionery
-587,Buffet Restaurant
+587,Buffet 
 588,Monument
-589,Furniture Store
-590,Frozen Yogurt Shop
+589,Furniture
+590,Frozen Yogurt 
 591,Nature Tour
 592,Food Hall
 593,Chole Bhature
-594,Herbal Spa
-595,Wildlife Sanctuary
+594,Herbal 
+595,Sanctuary
 596,Supermarket
 597,Cultural Center
-598,"Spa,Salon"
+598,Wildlife
 599,Hill Station
 600,Wellness Spa
 601,Fish Curry
@@ -618,11 +618,11 @@
 616,Wine Bar
 617,Vada Pav
 618,Promenade
-619,Jalebi House
+619,Jalebi
 620,Plaza
 621,Drive-Thru
 622,Meat Shop
-623,Chocolate Shop
+623,Chocolate 
 624,Samosa
 625,Mahal
 626,Kitchen
@@ -631,34 +631,25 @@
 629,Skating Rink
 630,Pani Puri
 631,Pyramids
-632,"Cafe, Beer"
+632,Beer
 633,Fast Food Joint
-634,"Mexican, Grill"
-635,Japanese Restaurant
-636,Yoga Studio
+634,Grill
+635,Japanese
+636,Yoga 
 637,Spice Farm
 638,Pakora
 639,Chapati
 640,Railway Station
 641,Library
 642,Fast Food
-643,"Danish, Deli"
-644,French Restaurant
+643,Danish
+644,Deli
 645,Kayaking
 646,Basketball Court
 647,Campground
 648,Gelato
-649,Indoor Arena
-650,"Salon,Spa"
+649,Outdoor
+650,Indoor
 651,Mountain
-652,"Finnish, Cafe, Sauna"
+652,Nightclub
 653,Shoe Store
-654,Papad
-655,Hardware Store
-656,Korean Restaurant
-657,Uttarakhand
-658,Bagh
-659,Ice Cream Shop
-660,Hotel
-661,Wellbeing Retreat
-662,Nightclub
