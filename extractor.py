@@ -26,8 +26,15 @@ from tqdm import tqdm, trange
 import requests
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
-model = torch.load(r'/content/drive/MyDrive/BERT_text.pt')
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+checkpoint = torch.load('/content/drive/MyDrive/BERT_text_dict.pth')
+configuration = BertConfig()
+model = BertModel(configuration)
+model = BertForTokenClassification.from_pretrained("bert-base-cased",num_labels=1882,
+    output_attentions = False,
+    output_hidden_states = False)
+model.load_state_dict({k.replace('module.', ''): v for k, v in checkpoint.items()})
+model.to(torch.device('cpu'))
+device = 'cpu'
 base_url = "https://maps.googleapis.com/maps/api/place/findplacefromtext/json"
 api_key = "AIzaSyCU7kaDfhZIM4bbJVujlGlhdXphUPke1yY"
 engine = "text-davinci-002"
