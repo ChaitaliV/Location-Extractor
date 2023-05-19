@@ -2,14 +2,14 @@
 0,Monestry
 1,Cruise
 2,Museum
-3,Craft Market
+3,Craft 
 4,Mall
 5,Saree
 6,Lounge
 7,Bhojpuri
 8,Sauna
-9,Grocery Store
-10,Sushi Restaurant
+9,Grocery
+10,Sushi
 11,African
 12,Snowboarding
 13,Bar
@@ -19,7 +19,7 @@
 17,Resort
 18,Peak
 19,Thrift Store
-20,Electronics Store
+20,Electronics
 21,Sailing
 22,Airport
 23,Bhaji Pav
@@ -93,22 +93,22 @@
 91,Swedish
 92,Ski Resort
 93,Kerala
-94,Home Decor Store
+94,Home Decor
 95,Jalebi
 96,Pesarattu
 97,Roti
 98,Department Store
-99,Wine Tasting Room
+99,Wine Tasting 
 100,Restro
 101,Retreat Center
 102,Greek
-103,Thali Restaurant
-104,Fashion Boutique
-105,Vegan Restaurant
+103,Thali 
+104,Boutique
+105,Vegan
 106,Cakery
-107,"cruises, River"
+107,cruise
 108,Chocolatier
-109,Shopping Center
+109,Shopping
 110,Bakery
 111,Dutch
 112,Paneer Tikka 
@@ -121,13 +121,13 @@
 119,Naan
 120,Tandoori
 121,Gurudwara
-122,Resort Spa
-123,Pani Puri Stall
+122,Resort 
+123,Pani Puri 
 124,Paragliding
 125,Valley
 126,German
 127,Ice Cream
-128,Ice Cream 
+128,Spa
 129,Pilates 
 130,Donuts
 131,Mount
@@ -141,10 +141,10 @@
 139,City Tour
 140,Garhwali
 141,Jodhpuri
-142,Cheese Market
+142,Cheese
 143,Archaeological Park
 144,Day Spa
-145,Jewelry Store
+145,Jewelry 
 146,Drive-In
 147,Helicopter Tour
 148,Surfing
@@ -155,7 +155,7 @@
 153,Beach Shack
 154,Maharashtrian
 155,Lighthouse
-156,Wildlife Tour
+156,Wildlife
 157,Spanish
 158,Dhaba
 159,Vietnamese
@@ -206,7 +206,7 @@
 204,Football Field
 205,Silk Emporium
 206,Cafe
-207,Sweets Shop
+207,Sweets
 208,Coastal
 209,Korma
 210,Equestrian 
@@ -258,24 +258,18 @@
 256,Bar
 257,Club
 258,Reflexology
-259,Gourmet Food
-260,Hills
-261,Continental
-262,Souvenir Shop
-263,Cocktails
-264,Palace
-265,Rasgulla
+259,Tour
 266,Piano Bar
 267,Chaat
 268,Mughlai
 269,Heritage 
 270,Barber
-271,Fish Market
+271,Fish 
 272,Cycling
 273,Memorial
 274,Tibetan
 275,Palak Paneer
-276,Wellness Center
+276,Wellness 
 277,Court
 278,Badminton Court
 279,Gymnasium
@@ -375,7 +369,7 @@
 373,Fitness
 374,Rice Terrace
 375,Rafting
-376,Relaxation Center
+376,Relaxation 
 377,Beer Store
 378,Spanish 
 379,Meghalayan
@@ -481,7 +475,7 @@
 479,Street Food
 480,Market Stall
 481,Shrine
-482,Candy Store
+482,Candy
 483,Indian 
 484,Korean
 485,Jacuzzi
