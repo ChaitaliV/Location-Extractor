@@ -23,10 +23,11 @@ from torch.nn.utils.rnn import pad_sequence
 from torch.utils.data import DataLoader, RandomSampler, SequentialSampler, TensorDataset
 from transformers import AdamW, get_linear_schedule_with_warmup
 from tqdm import tqdm, trange
+from transformers import BertModel, BertConfig
 import requests
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
-checkpoint = torch.load('/content/drive/MyDrive/BERT_text_dict.pth')
+checkpoint = torch.load('/content/drive/MyDrive/BERT_text_dict.pth',map_location=torch.device('cpu'))
 configuration = BertConfig()
 model = BertModel(configuration)
 model = BertForTokenClassification.from_pretrained("bert-base-cased",num_labels=1882,
@@ -78,7 +79,7 @@ class LocationExtractor:
             try: 
               if (s[0] == ''):
                 p = p + ' ' + s[1]
-              elseif (s[0] == ' '):
+              elif (s[0] == ' '):
                 p = p + ' ' + s[1]
               else:
                 p = p+' '+s[0]
