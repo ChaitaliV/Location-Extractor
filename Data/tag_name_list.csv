@@ -1,0 +1,542 @@
+,Tags,Category
+0,Monestry,site-seeing
+1,Cruise,entertainment
+2,Museum,site-seeing
+3,Craft,shopping
+4,Mall,shopping
+5,Saree,shopping
+6,Lounge,entertainment
+7,Bhojpuri,entertainment
+8,Sauna,self-care
+9,Grocery,shopping
+10,Sushi,food
+11,African,food
+12,Snowboarding,entertainment
+13,Bar,clubs & bar
+14,Indian,food
+15,Island,site-seeing
+16,Bistro,food
+17,Resort,site-seeing
+18,Peak,site-seeing
+19,Thrift Store,shopping
+20,Electronics,shopping
+21,Sailing,entertainment
+22,Airport,site-seeing
+23,Bhaji Pav,food
+24,Tanning Salon,self-care
+25,Tea Shop,cafe
+26,Dam,site-seeing
+27,Street Food,food
+28,Landmark,site-seeing
+29,Auto Parts,shopping
+30,Shopping Street,shopping
+31,Appliance,shopping
+32,Convenience,shopping
+33,Cocktail Bar,clubs & bar
+34,Lassi,food
+35,Acupuncture,self-care
+36,Specialty Food,food
+37,Paratha,food
+38,Sanctuary,site-seeing
+39,Spa,self-care
+40,North Indian,food
+41,Garden Center,shopping
+42,Pedestrian Street,shopping
+43,Kebab,food
+44,Kathiyawadi,food
+45,Taco,food
+46,Oyster,food
+47,Oyster Bar,food
+48,Sushi Bar,food
+49,Cafe,cafe
+50,Ethiopian,food
+51,Indonesian,food
+52,Peruvian,food
+53,Hill,site-seeing
+54,Archery Range,entertainment
+55,Gourmet Food,food
+56,Masala Dosa,food
+57,Deli,food
+58,Outlet,shopping
+59,Zoo,site-seeing
+60,Computer,shopping
+61,Egyptian,food
+62,Idli,food
+63,Cake,dessert
+64,Stargazing Spot,site-seeing
+65,Salt Cave,self-care
+66,Mindfulness,self-care
+67,Masjid,site-seeing
+68,English Pub,clubs & bar
+69,Statue,site-seeing
+70,Mangalorean,food
+71,Kadai Paneer,food
+72,Locho,food
+73,Dessert,dessert
+74,Greek,food
+75,Pho Noodle,food
+76,South Indian,food
+77,Ayurvedic,self-care
+78,Library,site-seeing
+79,Restaurant,food
+80,University,site-seeing
+81,Flea Market,shopping
+82,Chole Bhature,food
+83,Garden,site-seeing
+84,Infrared Sauna,self-care
+85,Buddhist,site-seeing
+86,Boutique,shopping
+87,Manipuri,food
+88,Rasmalai,dessert
+89,Amusement Park,entertainment
+90,Swedish,food
+91,Ski Resort,entertainment
+92,Home Decor,shopping
+93,Jalebi,dessert
+94,Pesarattu,food
+95,Roti,food
+96,Department Store,shopping
+97,Wine Tasting,entertainment
+98,Restro,food
+99,Retreat Center,site-seeing
+100,Thali,food
+101,Vegan,food
+102,Cakery,dessert
+103,Chocolatier,dessert
+104,Bakery,dessert
+105,Dutch,food
+106,Paneer Tikka,food
+107,Veg,food
+108,Juice,food
+109,Bengali,food
+110,Vav,site-seeing
+111,Historical Site,site-seeing
+112,River,site-seeing
+113,Naan,food
+114,Tandoori,food
+115,Gurudwara,site-seeing
+116,Pani Puri,food
+117,Paragliding,entertainment
+118,Valley,site-seeing
+119,German,food
+120,Ice Cream,dessert
+121,Pilates,self-care
+122,Donuts,dessert
+123,Mount,site-seeing
+124,Hair Salon,self-care
+125,Vineyard,site-seeing
+126,Fashion,shopping
+127,Goan,food
+128,Biryani,food
+129,Beaches,site-seeing
+130,Kachori,food
+131,City Tour,site-seeing
+132,Garhwali,food
+133,Jodhpuri,food
+134,Cheese,food
+135,Archaeological Park,site-seeing
+136,Day Spa,self-care
+137,Jewelry,shopping
+138,Drive-In,entertainment
+139,Helicopter Tour,entertainment
+140,Surfing,entertainment
+141,Gallery,site-seeing
+142,Market,shopping
+143,Italian,food
+144,Baker,dessert
+145,Beach Shack,food
+146,Maharashtrian,food
+147,Lighthouse,site-seeing
+148,Wildlife,site-seeing
+149,Spanish,food
+150,Dhaba,food
+151,Vietnamese,food
+152,Anglo-Indian,food
+153,Cave,site-seeing
+154,Mizo,food
+155,French,food
+156,Physical Therapy,self-care
+157,Pub,clubs & bar
+158,Super Market,shopping
+159,Sandwich,food
+160,Steam Room,self-care
+161,Taproom,entertainment
+162,Pastry,dessert
+163,Playground,entertainment
+164,Video Game,entertainment
+165,Fort,site-seeing
+166,Toy Store,shopping
+167,Fine Dining,food
+168,Couture,shopping
+169,Malai Kofta,food
+170,Opera House,entertainment
+171,Food Court,food
+172,Hot Springs,site-seeing
+173,Food Market,food
+174,Noodle,food
+175,Photography,entertainment
+176,Sports,entertainmnet
+177,Holistic Center,self-care
+178,Family,entertainment
+179,Safari,site-seeing
+180,Historical Tour,site-seeing
+181,Rasgulla,dessert
+182,Clinic,self-care
+183,Heritage,site-seeing
+184,Organic,food
+185,Brewery,clubs & bar
+186,Live Music,entertainment
+187,Steakhouse,food
+188,Russian,food
+189,Mosque,site-seeing
+190,Falls,site-seeing
+191,Football Field,entertainment
+192,Silk Emporium,shopping
+193,Sweets,dessert
+194,Coastal,site-seeing
+195,Korma,food
+196,Equestrian,entertainment
+197,Thai,food
+198,Butcher Shop,shopping
+199,Thai massage,self-care
+200,Rajasthani,food
+201,Argentinian,food
+202,Coffee,food
+203,Golf Course,sports
+204,Upma,food
+205,Moroccan,food
+206,Chinese,food
+207,Awadhi,food
+208,Stationery,shopping
+209,Karaoke Bar,entertainment
+210,Fried Chicken,food
+211,Khichdi,food
+212,Art Gallery,site-seeing
+213,Afghan,food
+214,Cold Drinks,food
+215,Rock Climbing,entertainment
+216,Supplement,shopping
+217,Waffle,dessert
+218,Pharmacy,self-care
+219,Hot Air Balloon,entertainment
+220,Mexican,food
+221,Pakora,food
+222,Bhelpuri,food
+223,Paratha Shop,food
+224,Bridge,site-seeing
+225,Mutton Biryani,food
+226,Poha,food
+227,Seafood,food
+228,Archaeological Site,site-seeing
+229,Waterfalls,site-seeing
+230,Halotherapy Center,self-care
+231,Sports Bar,clubs & bar
+232,BBQ,food
+233,Art Supply,shopping
+234,Club,entertainment
+235,Reflexology,self-care
+236,Tour,site-seeing
+237,Piano Bar,clubs & bar
+238,Chaat,food
+239,Mughlai,food
+240,Barber,self-care
+241,Fish,food
+242,Memorial,site-seeing
+243,Tibetan,food
+244,Palak Paneer,food
+245,Wellness,self-care
+246,Court,entertainment
+247,Badminton Court,sports
+248,Gymnasium,sports
+249,Spice Shop,shopping
+250,Gelateria,food
+251,Bird Watching,site-seeing
+252,Maldivian,food
+253,Cryotherapy Center,self-care
+254,Plantations,site-seeing
+255,Reserve,site-seeing
+256,Beach,site-seeing
+257,Buddha,site-seeing
+258,Music,entertainment
+259,Theater,entertainment
+260,Diving,entertainment
+261,Dosa,food
+262,Sikkim,site-seeing
+263,Wine,food
+264,Australian,food
+265,Beauty Salon,self-care
+266,Andaman and Nicobar,site-seeing
+267,Lucknowi,food
+268,Scandinavian,food
+269,Farmers' Market,shopping
+270,Sunset Point,site-seeing
+271,Bowling Alley,entertainment
+272,None,uncategorized
+273,Mandir,site-seeing
+274,Stepwell,site-seeing
+275,Herb,food
+276,Lebanese,food
+277,Race Track,entertainment
+278,Brazilian,food
+279,Nature Park,site-seeing
+280,Brewpub,clubs & bar
+281,Cheese Shop,food
+282,Bhel Puri,food
+283,Kulfi,dessert
+284,Chiropractic,self-care
+285,Meditation,self-care
+286,Pulao,food
+287,Hypermarket,shopping
+288,Middle Eastern,food
+289,Gift Shop,shopping
+290,Malaysian,food
+291,Maqbara,site-seeing
+292,British,food
+293,Pav Bhaji,food
+294,Gardens,site-seeing
+295,Cocktail,clubs & bar
+296,Bagel,food
+297,memorials,site-seeing
+298,Theme Park,entertainment
+299,Bazzar,shopping
+300,Irani,food
+301,Gujarati,food
+302,Bookstore,shopping
+303,Donut,dessert
+304,Sikkimese,food
+305,Nail,self-care
+306,Hyderabadi,food
+307,Bhaji,food
+308,Memorial Hall,site-seeing
+309,Floatation Center,self-care
+310,Himachali,food
+311,Caves,site-seeing
+312,Parsi,food
+313,Rajma,food
+314,Botanical Garden,site-seeing
+315,Planetarium,site-seeing
+316,Salad Bar,food
+317,Vada,food
+318,Paneer,food
+319,Club House,entertainment
+320,Vegetarian,food
+321,College,site-seeing
+322,Fitness,self-care
+323,Rice Terrace,site-seeing
+324,Rafting,entertainment
+325,Relaxation,self-care
+326,Beer Store,Shopping
+327,Meghalayan,food
+328,Ethnic,food
+329,Foot Spa,self-care
+330,Waterfall,site-seeing
+331,Health Food,food
+332,Adventure Tour,entertainment
+333,Swiss,food
+334,Science Centre,site-seeing
+335,Observatory,site-seeing
+336,Popcorn,food
+337,Smoothie,food
+338,Vintage,site-seeing
+339,Ashram,site-seeing
+340,Jain,food
+341,Curry,food
+342,Dahi Vada,food
+343,Detox,self-care
+344,Cosmetics,shopping
+345,Beer Garden,food
+346,Nature Trail,site-seeing
+347,Barbecue,food
+348,Cricket Ground,entertainment
+349,Scenic Viewpoint,site-seeing
+350,Water Park,entertainment
+351,Gulab Jamun,dessert
+352,Diner,food
+353,Park,site-seeing
+354,Cheesecake,dessert
+355,Health Club,self-care
+356,Bhindi Masala,food
+357,Brazillian,food
+358,Gajar Halwa,dessert
+359,Tearoom,cafe
+360,Basilica,site-seeing
+361,Pet Store,shopping
+362,Lake,site-seeing
+363,Church,site-seeing
+364,Accessory,shopping
+365,Cheesemonger,food
+366,Marine Park,site-seeing
+367,Fishing,entertainment
+368,Lodge,entertainment
+369,Chinese Medicine,self-care
+370,Konkani,food
+371,Sake,beverage
+372,Chettinad,food
+373,Massage,self-care
+374,Hot Dog,food
+375,Adventure,entertainment
+376,Mediterranean,food
+377,Tea House,cafe
+378,Outdoor Arena,entertainmnet
+379,Sunrise Point,site-seeing
+380,Winery,food
+381,American,food
+382,Snacks,food
+383,Vegetable,food
+384,Beauty Spa,self-care
+385,Northeastern,food
+386,Gota,food
+387,Saffron Fields,site-seeing
+388,Causeway,site-seeing
+389,Reef,site-seeing
+390,Barbeque,food
+391,Butter Chicken,food
+392,Malvani,food
+393,Sports Goods,shopping
+394,Misal,food
+395,Coconut Chutney,food
+396,Sindhi,food
+397,Israeli,food
+398,Mountain Range,site-seeing
+399,Picnic Spot,site-seeing
+400,Exhibition,site-seeing
+401,Odisha,food
+402,Vada Pav,food
+403,Ruins,site-seeing
+404,Fish and Chips,food
+405,Karnataka,food
+406,Mysore Masala Dosa,food
+407,Iranian,food
+408,Shrine,site-seeing
+409,Candy,dessert
+410,Korean,food
+411,Jacuzzi,self-care
+412,Kande Pohe,food
+413,Cinema,entertainment
+414,Burger,food
+415,Rehabilitation,self-care
+416,Beauty Supply,shopping
+417,Tamil,food
+418,Locally Sourced,food
+419,Drinks,beverage
+420,Kulfi Corner,dessert
+421,Clothing,shopping
+422,Canteen,food
+423,Fruit Stand,food
+424,Sweet,dessert
+425,Fondue,food
+426,Aloo Tikki,food
+427,Yoga,self-care
+428,Japanese,food
+429,Street,site-seeing
+430,Cultural Tour,site-seeing
+431,Bathhouse,self-care
+432,Gym,self-care
+433,Ski Center,entertainment
+434,Tennis Court,entertainment
+435,Assamese,food
+436,Volleyball Court,entertainment
+437,Turkish,food
+438,Café,cafe
+439,Bicycle Shop,shopping
+440,Mess,food
+441,Punjabi,food
+442,Rainforest,site-seeing
+443,Shooting Range,entertainmnet
+444,Swimming Pool,entertainmnet
+445,Chocolate,dessert
+446,Food Truck,food
+447,Ice Skating,entertainmnet
+448,Tripuri,food
+449,Farmers Market,shopping
+450,Bread,food
+451,Khasi,food
+452,Dhokla,food
+453,Night Market,shopping
+454,Music Store,shopping
+455,Sporthall,entertainmnet
+456,Boat Tour,site-seeing
+457,Boating,entertainmnet
+458,Massage Center,self-care
+459,Andhra,food
+460,Forest,site-seeing
+461,Misal Pav,food
+462,Gastropub,food
+463,Biriyani,food
+464,Harbor,site-seeing
+465,Gourmet Market,shopping
+466,Antique Store,shopping
+467,Hyderabadi Biryani,food
+468,Ramen,food
+469,Skiing,entertainmnet
+470,Thermal Spa,self-care
+471,Rogan Josh,food
+472,Rajma Chawal,food
+473,Irish Pub,clubs & bar
+474,Film Festival,entertainment
+475,Salon,self-care
+476,Pizzeria,food
+477,Riverwalk,site-seeing
+478,Delicatessen,food
+479,Family Entertainment,entertainment
+480,Farm-to-Table,food
+481,Bhel,food
+482,Health Spa,self-care
+483,Entertainment,entertainment
+484,Kashmiri,food
+485,Samosa,food
+486,Naga,food
+487,Brasserie,food
+488,Confectionery,food
+489,Buffet,food
+490,Monument,site-seeing
+491,Furniture,shopping
+492,Frozen Yogurt,food
+493,Nature Tour,site-seeing
+494,Food Hall,food
+495,Herbal,self-care
+496,Supermarket,shopping
+497,Cultural Center,site-seeing
+498,Hill Station,site-seeing
+499,Fish Curry,food
+500,Aromatherapy,self-care
+501,Temple,site-seeing
+502,Castle,site-seeing
+503,Picnic Garden,site-seeing
+504,Bay,site-seeing
+505,Ladakhi,food
+506,Bazaar,shopping
+507,Ghat,site-seeing
+508,Bihari,food
+509,National Park,site-seeing
+510,Kheer,dessert
+511,Music Festival,entertainment
+512,Wine Bar,clubs & bar
+513,Promenade,site-seeing
+514,Plaza,Shopping
+515,Drive-Thru,food
+516,Meat Shop,food
+517,Mahal,site-seeing
+518,Kitchen,food
+519,Jamaican,food
+520,Cupcake Shop,food
+521,Skating Rink,entertainmnet
+522,Pyramids,site-seeing
+523,Beer,clubs & bar
+524,Fast Food,food
+525,Grill,food
+526,Spice Farm,site-seeing
+527,Chapati,food
+528,Railway Station,site-seeing
+529,Danish,food
+530,Kayaking,entertainmnet
+531,Basketball Court,entertainmnet
+532,Campground,site-seeing
+533,Stadium,entertainmnet
+534,Gelato,dessert
+535,Mountain,site-seeing
+536,Nightclub,clubs & bar
+537,Shoe Store,shopping
+538,Field,site-seeing
+539,Festival,entertainment
+540,Cathedral,site-seeing
