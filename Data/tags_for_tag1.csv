@@ -56,33 +56,33 @@
 54,Gourmet Food
 55,Masala Dosa
 56,Deli
-57,Outlet Store
+57,Outlet
 58,Zoo
-59,Computer Store
+59,Computer
 60,Egyptian
 61,Idli House
 62,Cake Shop
 63,Stargazing Spot
 64,Salt Cave
-65,Mindfulness Studio
+65,Mindfulness 
 66,Masjid
 67,English Pub
 68,Statue
 69,Mangalorean
 70,Kadai Paneer
 71,Locho
-72,Dessert Shop
-73,Lassi Shop
-74,Greek Restaurant
+72,Dessert
+73,Lassi
+74,Greek 
 75,Pho Noodle
 76,South Indian
-77,Ayurvedic Center
+77,Ayurvedic 
 78,Library
 79,Restaurant
 80,University
 81,Flea Market
 82,Kebab
-83,Chole Bhature Stall
+83,Chole Bhature 
 84,Garden
 85,Infrared Sauna
 86,Buddihist
@@ -170,7 +170,7 @@
 168,Vietnamese
 169,Steam Room
 170,Taproom
-171,Pastry Shop
+171,Pastry 
 172,Playground
 173,Video Game
 174,Fort
@@ -186,7 +186,7 @@
 184,Conference 
 185,Noodle
 186,Photography 
-187,Sports Stadium
+187,Sports 
 188,Holistic Center
 189,Family 
 190,Safari
@@ -198,7 +198,7 @@
 196,Brewery
 197,Live Music
 198,Hill
-199,Naan Shop
+199,Naan
 200,Steakhouse
 201,Russian
 202,Mosque
@@ -290,7 +290,7 @@
 294,Dosa
 295,Bicycle Path
 296,Sikkim
-297,Wine Shop
+297,Wine 
 298,Australian
 299,Beauty Salon
 300,Andaman and Nicobar
@@ -341,7 +341,7 @@
 345,Pav Bhaji
 346,Gujarati
 347,Kebab
-348,Paintball Arena
+348,Paintball 
 349,Bookstore
 350,Camping
 351,Donut 
@@ -376,7 +376,7 @@
 380,Ethnic
 381,Foot Spa
 382,Waterfall
-383,Biryani House
+383,Biryani 
 384,Health Food 
 385,Adventure Tour
 386,Specialty 
@@ -437,11 +437,11 @@
 441,Resort
 442,Massage 
 443,Hot Dog 
-444,Adventure Park
+444,Adventure 
 445,Mediterranean
 446,Tea House
 447,Craft 
-448,Outdoor Arena
+448,Outdoor 
 449,Sunrise Point
 450,Winery
 451,American
@@ -466,14 +466,14 @@
 470,Picnic Spot
 471,Exhibition
 472,Odisha
-473,Vada Pav Stall
+473,Vada Pav 
 474,Ruins
-475,Fish and Chips Shop
+475,Fish and Chips
 476,Karnataka
 477,Mysore Masala Dosa
 478,Iranian
 479,Street Food
-480,Market Stall
+480,Market 
 481,Shrine
 482,Candy
 483,Indian 
@@ -482,7 +482,7 @@
 486,Kande Pohe
 487,Cinema
 488,Hiking
-489,Burger Joint
+489,Burger 
 490,Chinese 
 491,Rehabilitation 
 492,Mount
@@ -492,7 +492,7 @@
 496,Drinks
 497,Curry
 498,Kulfi Corner
-499,Clothing Store
+499,Clothing 
 500,Canteen
 501,Coffee
 502,Fruit Stand
@@ -526,7 +526,7 @@
 530,Swimming Pool
 531,Chocolate
 532,Food Truck
-533,Ice Skating Rink
+533,Ice Skating 
 534,Tripuri
 535,Farmers Market
 536,Locho
@@ -595,7 +595,7 @@
 599,Hill Station
 600,Wellness Spa
 601,Fish Curry
-602,Aromatherapy Studio
+602,Aromatherapy 
 603,Temple
 604,Castle
 605,Lake
@@ -626,7 +626,7 @@
 630,Pani Puri
 631,Pyramids
 632,Beer
-633,Fast Food Joint
+633,Fast Food 
 634,Grill
 635,Japanese
 636,Yoga 
@@ -647,3 +647,11 @@
 651,Mountain
 652,Nightclub
 653,Shoe Store
+654,Field
+655,Vav
+656,Stepwell
+657,Festival
+658,Restaurant
+659,Sushi
+660,Cathedral
+
