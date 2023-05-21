@@ -25,6 +25,8 @@ from transformers import AdamW, get_linear_schedule_with_warmup
 from tqdm import tqdm, trange
 from transformers import BertModel, BertConfig
 import requests
+import pandas as pd
+import inflect
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
 checkpoint = torch.load('/content/drive/MyDrive/BERT_text_dict.pth',map_location=torch.device('cpu'))
@@ -84,6 +86,7 @@ class LocationExtractor:
               else:
                 p = p+' '+s[0]
             except:
+
               pass
         return p
 
@@ -188,7 +191,128 @@ class PlaceFinder:
         for ele in self.data:
             data.append(self.fetch_place_details(ele))
         return data
-    
+   
+
+class PlaceTagger:
+    def __init__(self):
+        self.df = pd.read_csv('tag_name_list.csv')
+        self.possible_tags = list(set(list(self.df['Tags'][:])))
+
+        self.tag1_category = {}
+        for i in range(len(self.df)):
+            self.tag1_category[self.df['Tags'][i].lower()] = self.df['Category'][i]
+
+        self.reconsider = ['point_of_interest', 'parking', 'neighborhood', 'premise', 'general_contractor',
+                           'route', 'sublocality_level_1', 'sublocality_level_2',
+                           'sublocality_level_3', 'locality', 'taxi_stand', 'travel_agency', 'campground',
+                           'administrative_area_level_3', 'local_government_office', 'ward', 'colloquial_area']
+
+        self.category_mapping = {
+            'shopping_mall': 'shopping',
+            'furniture_store': 'shopping',
+            'clothing_store': 'shopping',
+            'physiotherapist': 'self care',
+            'jewelry_store': 'shopping',
+            'store': 'shopping',
+            'supermarket': 'shopping',
+            'restaurant': 'food',
+            'florist': 'shopping',
+            'stadium': 'entertainment',
+            'grocery_or_supermarket': 'shopping',
+            'tourist_attraction': 'site-seeing',
+            'university': 'site-seeing',
+            'bakery': 'desserts',
+            'food': 'food',
+            'museum': 'site-seeing',
+            'art_gallery': 'site-seeing',
+            'natural_feature': 'site-seeing',
+            'zoo': 'site-seeing',
+            'hindu_temple': 'site-seeing',
+            'casino': 'entertainment',
+            'lodging': 'entertainment',
+            'mosque': 'site-seeing',
+            'park': 'site-seeing',
+            'school': 'site-seeing',
+            'spa': 'self care',
+            'hair_care': 'self care',
+            'beauty_salon': 'self care',
+            'bar': 'bars and clubs',
+            'cafe': 'cafe',
+            'night_club': 'bars and clubs',
+            'meal_takeaway': 'food',
+            'book_store': 'shopping',
+            'gym': 'self care',
+            'meal_delivery': 'food',
+            'movie_theater': 'entertainment',
+            'bicycle_store': 'shopping',
+            'shoe_store': 'shopping',
+            'place_of_worship': 'site-seeing',
+            'train_station': 'site-seeing',
+            'church': 'site-seeing',
+        }
+
+    def pipeline(self, input_text, api_place_type):
+        tags_category = None
+        tags_from_name = []
+        word_list = self.possible_tags
+        matching_words = set()
+        p = inflect.engine()  # Initialize the inflect engine
+
+        # Dictionary mapping singular words to their plural forms
+        plural_dict = {
+            "mount": "Mountain"
+        }
+
+        input_words = [word.lower().replace(',', '') for word in input_text.split()]
+
+        for word in word_list:
+            if word.lower() in input_words:
+                matching_words.add(word)
+            elif p.plural(word.lower()) in input_words:
+                matching_words.add(word)
+
+        place_type = api_place_type
+        if isinstance(place_type, str):  # Check if the value is a string
+            if place_type in self.reconsider:
+                for tag in list(matching_words):
+                    if tag.lower() in self.tag1_category:
+                        tags_category = self.tag1_category[tag.lower()]
+                    elif 'food' in tag.lower() or 'cafe' in tag.lower() or 'desert' in tag.lower() or 'bar' in tag.lower():
+                        tags_category = 'food'
+                    else:
+                        tags_category = 'site-seeing'
+
+            if place_type in self.category_mapping:
+                tags_category = self.category_mapping[place_type]
+            elif 'food' in place_type or 'cafe' in place_type or 'desert' in place_type or 'bar' in place_type:
+                tags_category = 'food'
+
+        singular_words = []
+        for word in matching_words:
+            if word.lower() in plural_dict:
+                singular_words.append(plural_dict[word.lower()])
+            elif p.singular_noun(word):
+                singular_words.append(p.singular_noun(word))
+            else:
+                singular_words.append(word)
+        tags_from_name = list(set([word.lower() for word in singular_words]))
+
+        if tags_category is not None:
+            tag_list = tags_from_name + [tags_category]
+        else:
+            tag_list = tags_from_name
+
+        return list(set([tag.lower() for tag in tag_list]))
+
+    def all_tags(self, dataframe):
+        names = dataframe['Name'][:]
+        types = dataframe['Types'][:]
+        all_tags = []
+        for i in range(len(dataframe)):
+            tags = self.pipeline(names[i], types[i])
+            all_tags.append(tags)
+        return all_tags
+  
     
    
 class PlaceDescriptionGenerator:
