@@ -3,116 +3,139 @@
 <html>
 <head>
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-	<title>Lookout</title>
-	<style>
-		body {
-			background-color: #f2f2f2;
-			font-family: 'Poppins';
-			font-size: 16px;
-			font-weight: 400;
-		}
-
-		.title-bar {
-			height: 2cm;
-      width: 100%;
-			background-color: white;
-			display: flex;
-			padding-left: 20px;
-      
-      padding-top:15px;
-      vertical-align:middle;
-      color: #e63946;
-			font-family: 'Poppins';
-  font-weight: 700;
-  font-size: 40px;
-      
-		}
+  <title>Lookout</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+       background-size: cover;
+       width: 100%;
+       height: 100%;
+       background-image: url({{ url_for('static', filename='final.png')}});
+    }
 
     .logo {
 			margin-right: 10px; 
 		}
 
-		.container {
-			width: 100%;
-			margin: 0 auto;
-			padding: 20px;
-			background-color: white;
-			border-radius: 0px;
-			font-family: 'Poppins';
-		}
-
-		form {
+    .title-bar {
+			height: 2cm;
 			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 20px;
-      font-family: 'Poppins';
+      vertical-align:middle;
+      color: #e63946;
+      padding-left: 42%;
+      padding-top: 10px;
+			font-family: 'Poppins';
+  font-weight: 700;
+  font-size: 42px;
+      
 		}
+    
+    .container {
+      margin-top: 20px;
+      height: 3cm;
+      padding-left: 3px;
+      padding-top: 20px;
+      background-color: #c3af9e;
+      margin-left: 290px;
+      text-align: center;
+      border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    }
+    ::placeholder {
+        color: light-grey;
+    }
+      
+    
+    .textcontainer {
+			width: 70%;
+      margin-top: 45px;
+			font-family: 'Poppins';
+    }
 
-		label {
-			font-size: 18px;
-			color: #666666;
-			margin-bottom: 10px;
-			margin-top: 10px;
-		}
+    .container p {
+      margin-bottom: 20px;
+      color: #f6f0f0;
+      font-size: 20px;
+      font-family:'Poppins';
+    }
 
 		textarea {
-			width: 100%;
 			height: 200px;
 			padding: 10px;
 			font-size: 16px;
-			border-radius: 5px;
       font-family: 'Poppins';
-			border: 1px solid #cccccc;
+      background-color: #ebe1c8;
+      border: none;
+    outline: none;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
 		}
 
+    form{
+      display: flex;
+			flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .icon {
+  padding-left: 25px;
+  background: url("https://thenounproject.com/api/private/icons/5706966/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABkaqJeyn4jz8OhgtmLAtBA1m-40lQQOW5TiuKSqKn_AHUIql8OfJHi5ujJ01uGqBwnaVt5F8R-4xwtN6HuKAI8uQWjOA%3D%3D") no-repeat left;
+  background-size: 30px;
+  padding-right: 25px;
+}
+
+
 		input[type="text"] {
-			width: 100%;
 			padding: 10px;
 			font-size: 16px;
-			border-radius: 5px;
-			border: 1px solid #cccccc;
 			margin-top: 10px;
       font-family: 'Poppins';
+      background-color: #ebe1c8;
+      border: none;
+      outline: none;
+      border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
 		}
 
 		input[type="submit"] {
-			background-color: #4CAF50;
+			background-color: #e63946;
 			color: white;
-			border: none;
+      width: 30%;
+      margin-left : 300px;
 			padding: 10px 20px;
 			font-size: 16px;
       font-family: 'Poppins';
-			border-radius: 5px;
 			cursor: pointer;
 			margin-top: 10px;
-
+      border: none;
+      border-radius: 7px;
 			transition: background-color 0.2s ease-in-out;
 		}
 
 		input[type="submit"]:hover {
 			background-color: #3e8e41;
 		}
-	</style>
+  </style>
 </head>
 <body>
-	<div class="title-bar">
-		<img class="logo" src="{{ url_for('static', filename='lookout_logo.png') }}" height="70">
+  <div class="title-bar">
+		<img class="logo" src="{{ url_for('static', filename='lookout_logo.png') }}" height="48">
     <span>Lookout</span>
 	</div>
-	<div class="container">
-		<h2>Extract Locations from Text</h2>
-		<form method="POST" action="/process" onsubmit="changeButtonText()">
-			<label for="paragraph">Enter a paragraph:</label>
-                      
-			<textarea id="paragraph" name="paragraph"></textarea>
+  
+  <div class="container">
+    <p>Discover Your World, Effortlessly: Wave goodbye to tedious research. Lookout scans your input intelligently, saving you time and energy while delivering comprehensive information."</p>
+  </div>
 
-			<label for="city">Enter a city name:</label>
-                      
-			<input type="text" id="city" name="city">
-
-			<input type="submit" value="Submit" id="submitBtn"">
+   <div class="textcontainer">
+		<form method="POST" action="/process" onsubmit="changeButtonText()">                
+			<textarea id="paragraph" name="paragraph"  placeholder="text paragraph"></textarea>
+      <input type="text" id="city" name="city"  placeholder="city name">
+		<input type="submit" value="Submit" id="submitBtn"">
 		</form>
+    
 	</div>
 </body>
 <script>
