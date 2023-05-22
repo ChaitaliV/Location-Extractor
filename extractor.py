@@ -194,8 +194,8 @@ class PlaceFinder:
    
 
 class PlaceTagger:
-    def __init__(self):
-        self.df = pd.read_csv('tag_name_list.csv')
+    def __init__(self,frame):
+        self.df = frame
         self.possible_tags = list(set(list(self.df['Tags'][:])))
 
         self.tag1_category = {}
