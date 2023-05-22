@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <title>Mapbox Example</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
     <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
@@ -10,7 +11,7 @@
         body {
             margin: 0;
             padding: 0;
-          
+            font-family: Poppins;
         }
 
        #loader {
@@ -59,35 +60,36 @@
   cursor: pointer;
   border: 2px solid white;
 }
-    
-        #sidebar {
-            position: fixed;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            width: 300px;
-            background-color: white;
-            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-            overflow: scroll;
-            padding: 20px;
-            visibility: hidden;
-            opacity: 0;
-            transition: visibility 0s, opacity 0.5s ease-out;
-        }
-
         #sidepanel {
             position: fixed;
             top: 0;
             right: 0;
             bottom: 0;
-            width: 300px;
+            width: 400px;
             background-color: white;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
             overflow: scroll;
             padding: 10px;
         }
+  #sidepanel .city{
+    font-weight: 700;
+    font-size: 28px;
+  }
 
+  .cityname{
+     font-weight: 600;
+    font-size: 23px;
+  }
 
+  #sidepanel .views{
+    font-size: 15px;
+  }
+   #sidepanel .title {
+            font-weight: bold;
+            color: #00008B;
+            margin-top: 10px;
+              font-size: 15px;
+        }
 
          .container {
   background-color: #f5f0e4;
@@ -113,10 +115,26 @@ tags-container {
   overflow-x: auto;
 }
 
+
+
 #tagsRow .tag {
   display: inline-flex;
     flex: 0 0 auto;
   background-color: black;
+  color: white;
+  border-radius: 17px;
+  padding: 5px 10px;
+  margin-right: 6px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+#tagsRow .tag.selected {
+  background-color: salmon;
+}
+#tagsRow .filtertag{
+  display: inline-flex;
+    flex: 0 0 auto;
+  background-color: red;
   color: white;
   border-radius: 10px;
   padding: 5px 10px;
@@ -124,64 +142,94 @@ tags-container {
   margin-bottom: 10px;
 }
 
-
+#tagFilterInput {
+  /* Add your desired styles here */
+  width: 200px;
+  height: 30px;
+  padding: 5px;
+  background-color:pink;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
 #toggleButton {
-  margin-left: 10px;
+  background-color:white;
+  border-radius: 7px;
+  border-top-color: black;
+  width: 40px;
+  height: 18px;
+  font-size: 10px;
 }
 #tilesContainer {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  vertical-align: middle;
 }
 
 .tile {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  width: 200px;
-  margin: 10px;
-  padding: 10px;
-  border: 1px solid #ccc;
+  flex-direction: inline-block;
+  background-color:white;
+  width: 100%;
+  margin-top: 10px;
   border-radius: 5px;
+  padding: 10px;
 }
 
 .tile img {
-  width: 100px;
-  height: auto;
+  width: 130px;
+  height: 90px;
+    margin-right: 10px;
   border-radius: 5px;
-  margin-right: 10px;
-}
-
-.tile-content {
-  flex: 1;
 }
 
 .tile h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
+  font-size: 15px;
+  margin-top: 5px;
+  margin-bottom: 7px;
 }
 
-.tile ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+.tile .tags {
+  display: flex;
+  flex-wrap: wrap;castle
 }
 
-.tile li {
+
+.tile .tile-content {
+  flex: 1;
+  flex-direction: column;
+}
+.tile .tags span {
   display: inline-block;
   background-color: black;
   color: white;
-  font-size: 12px;
+  font-size: 13px;
   padding: 3px 6px;
   margin-right: 5px;
-  border-radius: 3px;
+  margin-bottom: 5px;
+  border-radius: 17px;
 }
+
+ #sidebar {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 400px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            overflow: scroll;
+            padding: 10px;
+            visibility: hidden;
+            opacity: 0;
+            
+        }
+
 
 
         #sidebar.active {
             visibility: visible;
             opacity: 1;
-            transition: visibility 0s, opacity 0.5s ease-in;
         }
 
         
@@ -195,12 +243,30 @@ tags-container {
             margin-top: 5px;
             
         }
+        #tagsSidebarRow {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+#tagsSidebarRow .tag {
+  display: inline-flex;
+    flex: 0 0 auto;
+  background-color: black;
+  color: white;
+  border-radius: 17px;
+  font-size :15px;
+  padding: 5px 10px;
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
+
 
     .sidebar-images {
       overflow-x: scroll;
       white-space: nowrap;
       margin-top: 10px;
-      display: flex;
+      display: flex;#
       flex-wrap: wrap;
       justify-content: space-between;
     }
@@ -215,17 +281,16 @@ tags-container {
     
     }
 
-        #sidebar .tags {
-           
-            margin-top: 35px;
-              font-size: 18px;
-              color: black;
-        }
+    .buttonRow{
+      display: flex;
+      flex-direction: inline-block;
+    }
+
 
         #sidebar .text {
            
             
-              font-size: 16px;
+              font-size: 15px;
               font-weight: normal;
               color: black;
         }
@@ -248,26 +313,28 @@ tags-container {
         #sidebar button {
             margin-top: 10px;
             margin-right: 10px;
-            padding: 10px;
-            border-radius: 5px;
-            border: none;
-            color: white;
+            border-radius: 15px;
+            border-top-color: black;
+            color: black;
+            height: 33px;
             font-weight: bold;
+            font-size: 15px;
             cursor: pointer;
+            
         }
 
         #sidebar .map-button {
-            background-color: #3498db;
-            padding: 10px;
+            background-color: white;
+        
             width: 100px;
-            margin-bottom: 10px;
+          
         }
 
         #sidebar .call-button {
-            background-color: #2ecc71;
-            padding: 10px;
+            background-color: white;
+          
             width: 100px;
-            margin-bottom: 10px;
+          
         }
 
         #sidebar .close-button {
@@ -275,7 +342,7 @@ tags-container {
           right: 10px;
   top: 10px;
           border-radius: 0px;
-          background-color: white;
+          background-color: #f5f0e4;
           color:black;
              border: solid black;
              margin-top:20px;
@@ -317,33 +384,30 @@ tags-container {
     <div id='map'></div>
     <div id='sidepanel'>
      <div class="container">
-    <h2>City Name</h2>
-    <p>Views</p>
+    <div id='city' class="cityname"></div>
+    <div class='title'>Places: <span id='views'></span></div>
   </div>
   <div class="tags-container">
     <div id="tagsRow">
-      <!-- <div class="tag">Tag 1</div>
-      <div class="tag">Tag 2</div>
-      <div class="tag">Tag 3</div>
-      <div class="tag">Tag 4</div>
-      <div class="tag">Tag 5</div>
-      <div class="tag">Tag 6</div>
-      <div class="tag">Tag 7</div>
-      <div class="tag">Tag 8</div>
-      <div class="tag">Tag 9</div> -->
     </div>
-    <button id="toggleButton">Expand</button>
+    <button id="toggleButton">more</button>
     <div id="tilesContainer">
     </div>
   </div>
     </div>
     </div>
     <div id="sidebar">
-        <h3></h3>
-        <p class="title">Tags: <span class="tags" id="tag"></span></p>
+      <div class="container">
+<h3></h3>
+  </div>
         
+        <div id="tagsSidebarRow">
+           <div class='tag'>tag 1</div>
+        </div>
+        <div class="buttonRow">
         <button class="map-button">Map</button>
         <button class="call-button">Call</button>
+        </div>
         <p class="title">Description: <span class="text" id="description"></span></p>
         <p class="title">Rating: <span class="text" id="rating"></span></p>
         <p class="title">Address: <span class="text" id="address"></span></p>
@@ -359,7 +423,7 @@ tags-container {
         mapboxgl.accessToken = 'pk.eyJ1IjoiYWF5dXNoZG9zaGkiLCJhIjoiY2xnZzdrYmRzMDhzbTNkcG5zOGszMjRzMyJ9.1Ljn54UqJ-EYlQBh1HWU8g';
 
         var places = {{ places_json|safe }};
-        
+        var city = '{{city_name}}'
         var map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v11',
@@ -370,106 +434,128 @@ tags-container {
         var markers = createMarkers(places);
 
         function createMarkers(places) {
-            var markers = places.map(function(place) {
-                var popupContent = "<h3>" + place.Name + "</h3>"
-                    + "<p>Description: " + place.Description + "</p>"
-                    + "<p>Tags: " + place.Tags + "</p>"
-                    + "<p>Rating: " + place.Rating + "</p>"
-                    + "<p>Address: " + place.Address + "</p>"
-                    + "<p>Opening Hours: " + place["Opening Hours"] + "</p>";
+  var markers = places.map(function(place) {
+    var popupContent = "<h3>" + place.Name + "</h3>"
+      + "<p>Description: " + place.Description + "</p>"
+      + "<p>Tags: " + place.Tags + "</p>"
+      + "<p>Rating: " + place.Rating + "</p>"
+      + "<p>Address: " + place.Address + "</p>"
+      + "<p>Opening Hours: " + place["Opening Hours"] + "</p>";
 
-                var el = document.createElement('div');
-        el.className = 'marker';
-        el.style.backgroundImage = 'url(' + place.Photos[0] + ')';
-        
-        return new mapboxgl.Marker({
-            element: el
-        }).setLngLat([place.Longitude, place.Latitude])
-               
-                    
-                    .addTo(map)
-                    .getElement()
-                .addEventListener('click', function() {
-                    var sidebar = document.getElementById('sidebar');
-                    var backButton = document.getElementById('back-button');
-                    var closeButton = document.querySelector('.close-button');
-                    var mapButton = document.querySelector('.map-button');
-                    var callButton = document.querySelector('.call-button');
+    var el = document.createElement('div');
+    el.className = 'marker';
+    el.style.backgroundImage = 'url(' + place.Photos[0] + ')';
 
-                    sidebar.classList.add('active');
-                    mapButton.onclick = function() {
+    var marker = new mapboxgl.Marker({
+      element: el
+    }).setLngLat([place.Longitude, place.Latitude])
+      .addTo(map)
+      .getElement();
+
+   marker.addEventListener('click', function() {
+      showSidebar(place);
+    });
+
+    return marker;
+  });
+
+  return markers;
+}
+var tagsSidebarRow = document.getElementById('tagsSidebarRow');
+function createSidebarTagElement(tagValue) {
+  var tagElement = document.createElement('div');
+  tagElement.classList.add('tag');
+  tagElement.textContent = tagValue;
+  return tagElement;
+}
+
+function populateSidebarTags(tags) {
+  tagsSidebarRow.innerHTML = ''; // Clear existing tags
+
+  tags.forEach(function(tag) {
+    var tagElement = createSidebarTagElement(tag);
+    tagsSidebarRow.appendChild(tagElement);
+  });
+}
+
+function showSidebar(place) {
+  var sidebar = document.getElementById('sidebar');
+  var backButton = document.getElementById('back-button');
+  var closeButton = document.querySelector('.close-button');
+  var mapButton = document.querySelector('.map-button');
+  var callButton = document.querySelector('.call-button');
+
+  sidebar.classList.add('active');
+
+  mapButton.onclick = function() {
     var googleMapsUrl = 'https://www.google.com/maps/search/?api=1&query=' + encodeURIComponent(place.Name + ' ' + place.Address);
     window.open(googleMapsUrl, '_blank');
-}
-                    if (place.Phone) {
-    callButton.style.display = "block";
+  };
+
+  if (place.Phone) {
+    callButton.style.display = 'block';
     callButton.onclick = function() {
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            window.location.href = "tel:" + place.Phone;
-        } else {
-            window.open("tel:" + place.Phone);
-        }
-    }
-} else {
-    callButton.style.display = "none";
-}
-                    backButton.onclick = function() {
-                        sidebar.classList.remove('active');
-                    }
-                    closeButton.onclick = function() {
-                        sidebar.classList.remove('active');
-                    }
+      if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        window.location.href = 'tel:' + place.Phone;
+      } else {
+        window.open('tel:' + place.Phone);
+      }
+    };
+  } else {
+    callButton.style.display = 'none';
+  }
 
-                    document.querySelector('#sidebar h3').innerHTML = place.Name;
-                    document.querySelector('#sidebar #tag').innerHTML = place.Tags;
-                    document.querySelector('#sidebar #description').innerHTML = place.Description;
-                    document.querySelector('#sidebar #rating').innerHTML =  place.Rating;
-                    document.querySelector('#sidebar #address').innerHTML = place.Address;
-                    document.querySelector('#sidebar #opening-hours').innerHTML = place["Opening Hours"];
-                    // Select the sidebar-images container
-const sidebarImagesContainer = document.querySelector('#sidebar .sidebar-images');
+  backButton.onclick = function() {
+    sidebar.classList.remove('active');
+  };
 
-// Create a new list to hold the image elements
-const imageList = document.createElement('ul');
-imageList.classList.add('sidebar-image-list');
+  closeButton.onclick = function() {
+    sidebar.classList.remove('active');
+  };
 
-// Loop through each photo url and create a new image element for it
-for (var j = 0; j < place.Photos.length; j++) {
-  // Create a new image element
-  const img = document.createElement('img');
-  img.src = place.Photos[j];
-  img.alt = place.Name;
-  img.width = 100;
-  img.height = 100;
-  img.classList.add('sidebar-image');
+  document.querySelector('#sidebar h3').innerHTML = place.Name;
+  document.querySelector('#sidebar #description').innerHTML = place.Description;
+  document.querySelector('#sidebar #rating').innerHTML = place.Rating;
+  document.querySelector('#sidebar #address').innerHTML = place.Address;
+  document.querySelector('#sidebar #opening-hours').innerHTML = place['Opening Hours'];
+   populateSidebarTags(place.Tags)
+  const sidebarImagesContainer = document.querySelector('#sidebar .sidebar-images');
+  const imageList = document.createElement('ul');
+  imageList.classList.add('sidebar-image-list');
 
-  // Add the image element to the list
-  const imageListItem = document.createElement('li');
-  imageListItem.appendChild(img);
-  imageList.appendChild(imageListItem);
-}
+  for (var j = 0; j < place.Photos.length; j++) {
+    const img = document.createElement('img');
+    img.src = place.Photos[j];
+    img.alt = place.Name;
+    img.width = 100;
+    img.height = 100;
+    img.classList.add('sidebar-image');
 
-// Replace the previous images in the sidebar-images container with the new ones
-if (sidebarImagesContainer.firstChild) {
-  sidebarImagesContainer.replaceChild(imageList, sidebarImagesContainer.firstChild);
-} else {
-  sidebarImagesContainer.appendChild(imageList);
+    const imageListItem = document.createElement('li');
+    imageListItem.appendChild(img);
+    imageList.appendChild(imageListItem);
+  }
+
+  if (sidebarImagesContainer.firstChild) {
+    sidebarImagesContainer.replaceChild(imageList, sidebarImagesContainer.firstChild);
+  } else {
+    sidebarImagesContainer.appendChild(imageList);
+  }
 }
 
+ var list = [];
 
-                });
-            
-            });
-            return markers;
-        }
 
+
+
+
+//Creating tags
         function calculateNumberOfPlaces(places) {
     return places.length;
         }
 
       function getAllTags(places) {
           var allTags = [];
-
           places.forEach(function(place) {
               allTags = allTags.concat(place.Tags);
           });
@@ -478,6 +564,8 @@ if (sidebarImagesContainer.firstChild) {
           return Array.from(new Set(allTags));
       }
       var numberOfPlaces = calculateNumberOfPlaces(places);
+      document.querySelector('#sidepanel #city').innerHTML = city;
+  document.querySelector('#sidepanel #views').innerHTML = numberOfPlaces;
       var tagValues = getAllTags(places); // Assuming `getAllTags` function returns an array of tags
       var tagsRow = document.getElementById('tagsRow');
 
@@ -485,20 +573,45 @@ function createTagElement(tagValue) {
   var tagElement = document.createElement('div');
   tagElement.classList.add('tag');
   tagElement.textContent = tagValue;
+  // Add a click event listener to each tag element
+  tagElement.addEventListener('click', function() {
+    tagElement.classList.toggle('selected');
+  
+    if (list.includes(tagValue)) {
+      // Remove tagValue from the list
+      var index = list.indexOf(tagValue);
+      if (index !== -1) {
+        list.splice(index, 1);
+      }
+    } else {
+      // Add tagValue to the list
+      list.push(tagValue);
+    }
+    if (list.length == 0){
+      populateTiles(places);
+    }
+    else{
+       filterTiles(list);
+    }
+   
+    
+
+  });
+
   return tagElement;
 }
 
 function populateTags(tags) {
-  //tagsRow.innerHTML = ''; // Clear existing tags
+  tagsRow.innerHTML = ''; // Clear existing tags
 
   tags.forEach(function(tag) {
     var tagElement = createTagElement(tag);
     tagsRow.appendChild(tagElement);
   });
 }
+populateTags(tagValues)
 
-populateTags(tagValues);
-    
+ 
       //tags expansion button
       var tagsRow = document.getElementById('tagsRow');
 var toggleButton = document.getElementById('toggleButton');
@@ -507,32 +620,45 @@ toggleButton.addEventListener('click', function() {
   tagsRow.classList.toggle('expanded');
 });
 
-      //tiles on side-panel
-      var tilesContainer = document.getElementById('tilesContainer');
 
-function createTileElement(place) {
+
+      //tiles on side-panel
+     function createTileElement(place) {
   var tileElement = document.createElement('div');
   tileElement.classList.add('tile');
 
   var imageElement = document.createElement('img');
-  imageElement.src = place.Photos[0] ;
+  imageElement.src = place.Photos[0];
   imageElement.alt = place.Name;
   tileElement.appendChild(imageElement);
 
+  var contentElement = document.createElement('div');
+  contentElement.classList.add('tile-content');
+
   var nameElement = document.createElement('h3');
   nameElement.textContent = place.Name;
-  tileElement.appendChild(nameElement);
+  contentElement.appendChild(nameElement);
 
-  var tagsElement = document.createElement('ul');
+  var tagsElement = document.createElement('div');
+  tagsElement.classList.add('tags');
   place.Tags.forEach(function(tag) {
-    var tagElement = document.createElement('li');
+    var tagElement = document.createElement('span');
     tagElement.textContent = tag;
     tagsElement.appendChild(tagElement);
   });
-  tileElement.appendChild(tagsElement);
+  contentElement.appendChild(tagsElement);
+
+  tileElement.appendChild(contentElement);
+  tileElement.addEventListener('click', function() {
+    
+      showSidebar(place);
+  
+  });
+  
 
   return tileElement;
 }
+
 
 function populateTiles(places) {
   tilesContainer.innerHTML = ''; // Clear existing tiles
@@ -545,6 +671,72 @@ function populateTiles(places) {
 
 populateTiles(places);
 
+function filterTiles(inputList) {
+  var tiles = document.getElementsByClassName('tile');
+  for (var i = 0; i < tiles.length; i++) {
+    var tile = tiles[i];
+    var tagsElement = tile.querySelector('.tags');
+    var tags = tagsElement.querySelectorAll('span');
+
+    var isMatch = false;
+    for (var j = 0; j < tags.length; j++) {
+      var tag = tags[j];
+      var tagName = tag.textContent.toLowerCase();
+      
+      for (var k = 0; k < inputList.length; k++) {
+        var filterValue = inputList[k].toLowerCase();
+        if (tagName === filterValue) {
+          isMatch = true;
+          break;
+        }
+      }
+
+      if (isMatch) {
+        tile.style.display = 'flex'; // Show the tile
+      } else {
+        tile.style.display = 'none'; // Hide the tile
+      }
+      
+    }
+    // Hide the tile if it doesn't have any tags
+    if (tags.length === 0) {
+      tile.style.display = 'none';
+    }
+  }
+}
+
+function showAllTiles(inputList) {
+  var tiles = document.getElementsByClassName('tile');
+  for (var i = 0; i < tiles.length; i++) {
+    var tile = tiles[i];
+    var tagsElement = tile.querySelector('.tags');
+    var tags = tagsElement.querySelectorAll('span');
+
+    var isMatch = false;
+    for (var j = 0; j < tags.length; j++) {
+      var tag = tags[j];
+      var tagName = tag.textContent.toLowerCase();
+      
+      for (var k = 0; k < inputList.length; k++) {
+        var filterValue = inputList[k].toLowerCase();
+        if (tagName === filterValue) {
+          isMatch = true;
+          break;
+        }
+      }
+
+      if (isMatch) {
+        tile.style.display = 'block'; // Show the tile
+      } else {
+        tile.style.display = 'none'; // Hide the tile
+      }
+      
+    }
+    
+  }
+}
+
+//loader
         document.onreadystatechange = function() {
         if (document.readyState !== "complete") {
             document.querySelector(
@@ -566,5 +758,6 @@ populateTiles(places);
    
     </script>
      
+
 </body>
 </html>
