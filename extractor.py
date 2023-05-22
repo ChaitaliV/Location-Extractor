@@ -338,41 +338,16 @@ class PlaceDescriptionGenerator:
 
       # Extract the generated text from the response
       message = response.choices[0].text.strip()
-      
-      # Split the message into the description and tags
-      place_tokens = place_name.split(',')
-      for token in place_tokens:
-          message1 = message.replace(token, '')
-      return message1, message
+      return message
     
-    def get_tags(self,description):
-      prompt = """
-      Generate only three short tags about the place from the """+description
-      # Generate a response to the prompt
-      response = openai.Completion.create(
-          engine=engine,
-          prompt=prompt,
-          max_tokens=32,
-          n=1,
-          stop=None,
-          temperature=0.7,
-      )
-
-      # Extract the generated text from the response
-      message = response.choices[0].text.strip()
-      words_to_remove = ['Tag','Tags','input','tags','tag','Input','var','Place','place','type','Type','CODE','enter','YOUR  HERE','Output','here','list of','three','append']
-      message = message.replace('\n',',')
-      clean_text = re.sub("[^A-Za-z,']+", ' ', message)
-      for word in words_to_remove:
-          clean_text = clean_text.replace(word,'')
-      return clean_text
+    
       
-    def list_tag_data(self,data):
+    def list_des_data(self,data):
       all_data = []
       for place in data:
         info = {}
         des = self.get_description(place)
-        info['Tags'] = self.get_tags(des)
         info['Description'] = des
         all_data.append(info)
       return all_data
+
