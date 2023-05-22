@@ -75,12 +75,116 @@
             transition: visibility 0s, opacity 0.5s ease-out;
         }
 
+        #sidepanel {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 300px;
+            background-color: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            overflow: scroll;
+            padding: 10px;
+        }
+
+
+
+         .container {
+  background-color: #f5f0e4;
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+
+
+}
+tags-container {
+  margin-top: 20px;
+}
+
+
+#tagsRow {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+}
+
+#tagsRow.expanded {
+  flex-wrap: wrap;
+  overflow-x: auto;
+}
+
+#tagsRow .tag {
+  display: inline-flex;
+    flex: 0 0 auto;
+  background-color: black;
+  color: white;
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin-right: 6px;
+  margin-bottom: 10px;
+}
+
+
+#toggleButton {
+  margin-left: 10px;
+}
+#tilesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.tile {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  width: 200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.tile img {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.tile-content {
+  flex: 1;
+}
+
+.tile h3 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.tile ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.tile li {
+  display: inline-block;
+  background-color: black;
+  color: white;
+  font-size: 12px;
+  padding: 3px 6px;
+  margin-right: 5px;
+  border-radius: 3px;
+}
+
+
         #sidebar.active {
             visibility: visible;
             opacity: 1;
             transition: visibility 0s, opacity 0.5s ease-in;
         }
 
+        
         #sidebar h3 {
             font-weight: bold;
             margin-top: 35px;
@@ -211,11 +315,33 @@
      
       <div id="loader"></div>
     <div id='map'></div>
-   
+    <div id='sidepanel'>
+     <div class="container">
+    <h2>City Name</h2>
+    <p>Views</p>
+  </div>
+  <div class="tags-container">
+    <div id="tagsRow">
+      <!-- <div class="tag">Tag 1</div>
+      <div class="tag">Tag 2</div>
+      <div class="tag">Tag 3</div>
+      <div class="tag">Tag 4</div>
+      <div class="tag">Tag 5</div>
+      <div class="tag">Tag 6</div>
+      <div class="tag">Tag 7</div>
+      <div class="tag">Tag 8</div>
+      <div class="tag">Tag 9</div> -->
+    </div>
+    <button id="toggleButton">Expand</button>
+    <div id="tilesContainer">
+    </div>
+  </div>
+    </div>
+    </div>
     <div id="sidebar">
         <h3></h3>
         <p class="title">Tags: <span class="tags" id="tag"></span></p>
-       
+        
         <button class="map-button">Map</button>
         <button class="call-button">Call</button>
         <p class="title">Description: <span class="text" id="description"></span></p>
@@ -337,6 +463,88 @@ if (sidebarImagesContainer.firstChild) {
             return markers;
         }
 
+        function calculateNumberOfPlaces(places) {
+    return places.length;
+        }
+
+      function getAllTags(places) {
+          var allTags = [];
+
+          places.forEach(function(place) {
+              allTags = allTags.concat(place.Tags);
+          });
+
+          // Remove duplicates and return unique tags
+          return Array.from(new Set(allTags));
+      }
+      var numberOfPlaces = calculateNumberOfPlaces(places);
+      var tagValues = getAllTags(places); // Assuming `getAllTags` function returns an array of tags
+      var tagsRow = document.getElementById('tagsRow');
+
+function createTagElement(tagValue) {
+  var tagElement = document.createElement('div');
+  tagElement.classList.add('tag');
+  tagElement.textContent = tagValue;
+  return tagElement;
+}
+
+function populateTags(tags) {
+  //tagsRow.innerHTML = ''; // Clear existing tags
+
+  tags.forEach(function(tag) {
+    var tagElement = createTagElement(tag);
+    tagsRow.appendChild(tagElement);
+  });
+}
+
+populateTags(tagValues);
+    
+      //tags expansion button
+      var tagsRow = document.getElementById('tagsRow');
+var toggleButton = document.getElementById('toggleButton');
+
+toggleButton.addEventListener('click', function() {
+  tagsRow.classList.toggle('expanded');
+});
+
+      //tiles on side-panel
+      var tilesContainer = document.getElementById('tilesContainer');
+
+function createTileElement(place) {
+  var tileElement = document.createElement('div');
+  tileElement.classList.add('tile');
+
+  var imageElement = document.createElement('img');
+  imageElement.src = place.Photos[0] ;
+  imageElement.alt = place.Name;
+  tileElement.appendChild(imageElement);
+
+  var nameElement = document.createElement('h3');
+  nameElement.textContent = place.Name;
+  tileElement.appendChild(nameElement);
+
+  var tagsElement = document.createElement('ul');
+  place.Tags.forEach(function(tag) {
+    var tagElement = document.createElement('li');
+    tagElement.textContent = tag;
+    tagsElement.appendChild(tagElement);
+  });
+  tileElement.appendChild(tagsElement);
+
+  return tileElement;
+}
+
+function populateTiles(places) {
+  tilesContainer.innerHTML = ''; // Clear existing tiles
+
+  places.forEach(function(place) {
+    var tileElement = createTileElement(place);
+    tilesContainer.appendChild(tileElement);
+  });
+}
+
+populateTiles(places);
+
         document.onreadystatechange = function() {
         if (document.readyState !== "complete") {
             document.querySelector(
@@ -354,6 +562,8 @@ if (sidebarImagesContainer.firstChild) {
             "body").style.visibility = "visible";
         }
     };
+
+   
     </script>
      
 </body>
