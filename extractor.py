@@ -116,6 +116,7 @@ class LocationExtractor:
         p = self.clean_string(lst, sent)
         final_lst = []
         for ele in p:
+            ele = re.sub(r'\(.*$', '', ele)
             final_lst.append(self.add_suffix(ele, sent))
         list_2 = []
         for ele in final_lst:
