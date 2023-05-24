@@ -8,140 +8,139 @@
     body {
       margin: 0;
       padding: 0;
-       align-items: center;
-      font-family: Arial, sans-serif;
-       background-size: cover;
-       width: 100%;
-       height: 100%;
-       background-image: url({{ url_for('static', filename='final.png')}});
+      display: flex;
+       flex-direction: column;
+  align-items: center;
+      font-family: Poppins;
+      background-size: cover;
+      width: 100%;
+      height: 100%;
+      background-image: url({{ url_for('static', filename='final.png')}});
     }
 
     .logo {
-			margin-right: 10px; 
-		}
+      margin-right: 10px; 
+    }
 
     .title-bar {
-			height: 2cm;
-			display: flex;
-      vertical-align:middle;
+      height: 2cm;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       color: #e63946;
-      padding-left: 42%;
-      padding-top: 10px;
-			font-family: 'Poppins';
-  font-weight: 700;
-  font-size: 42px;
-      
-		}
-    
+      font-family: 'Poppins';
+      font-weight: 700;
+      font-size: 42px;
+    }
+
     .container {
       margin-top: 20px;
-      height: 3cm;
       width: 80%;
       padding-left: 3px;
-      margin-left: 120px;
-      padding-top: 20px;
       background-color: #c3af9e;
       text-align: center;
       border-radius: 15px;
     }
-    ::placeholder {
-        color: light-grey;
-    }
-      
     
+    ::placeholder {
+      color: light-grey;
+    }
+
     .textcontainer {
-			width: 80%;
-      margin-left: 120px;
+      display: flex;
+      width: 80%;
+      flex-direction: column;
+      align-items: center;
       margin-top: 45px;
-			font-family: 'Poppins';
+      font-family: 'Poppins';
     }
 
     .container p {
       margin-bottom: 20px;
       color: #f6f0f0;
       font-size: 20px;
-      font-family:'Poppins';
-    }
-
-		textarea {
-			height: 200px;
-			padding: 10px;
-			font-size: 16px;
       font-family: 'Poppins';
-      background-color: #ebe1c8;
-      border: none;
-    outline: none;
-    border-radius: 15px;
-		}
-
-    form{
-      display: flex;
-			flex-direction: column;
-      margin-top: 20px;
     }
 
-    .icon {
-  padding-left: 25px;
-  background: url("https://thenounproject.com/api/private/icons/5706966/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABkaqJeyn4jz8OhgtmLAtBA1m-40lQQOW5TiuKSqKn_AHUIql8OfJHi5ujJ01uGqBwnaVt5F8R-4xwtN6HuKAI8uQWjOA%3D%3D") no-repeat left;
-  background-size: 30px;
-  padding-right: 25px;
-}
-
-
-		input[type="text"] {
-			padding: 10px;
-			font-size: 16px;
-			margin-top: 10px;
+    textarea {
+      height: 200px;
+      padding: 10px;
+      font-size: 16px;
       font-family: 'Poppins';
       background-color: #ebe1c8;
       border: none;
       outline: none;
       border-radius: 15px;
-		}
+    }
 
-		input[type="submit"] {
-			background-color: #e63946;
-			color: white;
-      width: 30%;
-      margin-left : 380px;
-			padding: 10px 20px;
-			font-size: 16px;
+    form {
+      display: flex;
+      width: 80%;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    .icon {
+      padding-left: 25px;
+      background: url("https://thenounproject.com/api/private/icons/5706966/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0&token=gAAAAABkaqJeyn4jz8OhgtmLAtBA1m-40lQQOW5TiuKSqKn_AHUIql8OfJHi5ujJ01uGqBwnaVt5F8R-4xwtN6HuKAI8uQWjOA%3D%3D") no-repeat left;
+      background-size: 30px;
+      padding-right: 25px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 16px;
+      margin-top: 10px;
       font-family: 'Poppins';
-			cursor: pointer;
-			margin-top: 10px;
+      background-color: #ebe1c8;
+      border: none;
+      outline: none;
+      border-radius: 15px;
+    }
+
+    input[type="submit"] {
+      background-color: #e63946;
+      color: white;
+      width: 30%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 10px 20px;
+      font-size: 16px;
+      font-family: 'Poppins';
+      cursor: pointer;
+      margin-top: 10px;
       border: none;
       border-radius: 7px;
-			transition: background-color 0.2s ease-in-out;
-		}
+      transition: background-color 0.2s ease-in-out;
+    }
 
-		input[type="submit"]:hover {
-			background-color: #3e8e41;
-		}
+    input[type="submit"]:hover {
+      background-color: #3e8e41;
+    }
   </style>
 </head>
 <body>
   <div class="title-bar">
-		<img class="logo" src="{{ url_for('static', filename='lookout_logo.png') }}" height="48">
+    <img class="logo" src="{{ url_for('static', filename='lookout_logo.png') }}" height="48">
     <span>Lookout</span>
-	</div>
+  </div>
   
   <div class="container">
     <p>Discover Your World, Effortlessly: Wave goodbye to tedious research. Lookout scans your input intelligently, saving you time and energy while delivering comprehensive information."</p>
   </div>
 
-   <div class="textcontainer">
-		<form method="POST" action="/process" onsubmit="changeButtonText()">                
-			<textarea id="paragraph" name="paragraph"  placeholder="text paragraph"></textarea>
-      <input type="text" id="city" name="city"  placeholder="city name">
-		<input type="submit" value="Submit" id="submitBtn"">
-		</form>
-    
-	</div>
+  
+    <form method="POST" action="/process" onsubmit="changeButtonText()">                
+      <textarea id="paragraph" name="paragraph" placeholder="text paragraph"></textarea>
+      <input type="text" id="city" name="city" placeholder="city name">
+      <input type="submit" value="Submit" id="submitBtn">
+    </form>
+  
+
+  <script>
+    function changeButtonText() {
+      var submitButton = document.getElementById("submitBtn");
+      submitButton.value = "Processing...";
+    }
+  </script>
 </body>
-<script>
-		function changeButtonText() {
-			var submitButton = document.getElementById("submitBtn");
-			submitButton.value = "Processing...";
-		}
-	</script>
-</html>
