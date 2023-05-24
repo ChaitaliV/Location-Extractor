@@ -200,7 +200,9 @@ class PlaceTagger:
         self.possible_tags = list(set(list(self.df['Tags'][:])))
 
         self.tag1_category = {}
+        self.df['Tags'] = self.df['Tags'].astype(str)
         for i in range(len(self.df)):
+            
             self.tag1_category[self.df['Tags'][i].lower()] = self.df['Category'][i]
 
         self.reconsider = ['point_of_interest', 'parking', 'neighborhood', 'premise', 'general_contractor',
