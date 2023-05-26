@@ -27,6 +27,8 @@ from transformers import BertModel, BertConfig
 import requests
 import pandas as pd
 import inflect
+import requests
+from bs4 import BeautifulSoup
 
 tokenizer = BertTokenizer.from_pretrained('bert-base-cased')
 checkpoint = torch.load('/content/drive/MyDrive/BERT_text_dict.pth',map_location=torch.device('cpu'))
@@ -355,3 +357,108 @@ class PlaceDescriptionGenerator:
         all_data.append(info)
       return all_data
 
+class GoogleSearchScraper:
+    def __init__(self, query):
+        self.base_url = f'https://www.google.com/search?q={query}'
+        self.sites =  [
+    'https://www.eater.com/',
+    'https://www.zagat.com/',
+    'https://www.theinfatuation.com/',
+    'https://www.thrillist.com/',
+    'https://www.timeout.com/',
+    'https://guide.michelin.com/',
+    'https://www.yelp.com/',
+    'https://www.tripadvisor.com/',
+    'https://www.opentable.com/',
+    'https://www.grubstreet.com/',
+    'https://www.foodandwine.com/restaurants',
+    'https://www.seriouseats.com/restaurants',
+    'https://www.thedailymeal.com/restaurants',
+    'https://www.gourmettraveller.com.au/dining-out/restaurants',
+    'https://www.restaurantbusinessonline.com/',
+    'https://www.restaurantnews.com/',
+    'https://www.nrn.com/',
+    'https://www.foodrepublic.com/restaurants/',
+    'https://www.bonappetit.com/restaurant',
+    'https://www.foodnetwork.com/restaurants',
+    'https://www.lonelyplanet.com/',
+    'https://www.nationalgeographic.com/travel/',
+    'https://www.travelandleisure.com/',
+    'https://www.cntraveler.com/',
+    'https://www.fodors.com/',
+    'https://www.roughguides.com/',
+    'https://www.frommers.com/',
+    'https://theculturetrip.com/',
+    'https://www.afar.com/',
+    'https://www.atlasobscura.com/',
+    'https://thepointsguy.com/',
+    'https://www.jetsetter.com/',
+    'https://www.smartertravel.com/',
+    'https://www.travelzoo.com/',
+    'https://www.budgettravel.com/',
+    'https://www.tripsavvy.com/',
+    'https://www.insidertravel.co/',
+    'https://matadornetwork.com/',
+    'http://www.bbc.com/travel/',
+    'https://www.nomadicmatt.com/',
+    'https://www.vogue.com/',
+    'https://www.harpersbazaar.com/',
+    'https://www.elle.com/',
+    'https://www.wmagazine.com/',
+    'https://www.instyle.com/',
+    'https://www.refinery29.com/',
+    'https://www.thecut.com/',
+    'https://fashionista.com/',
+    'https://www.whowhatwear.com/',
+    'https://stylecaster.com/',
+    'https://coveteur.com/',
+    'https://www.highsnobiety.com/',
+    'https://hypebeast.com/',
+    'https://www.gq.com/',
+    'https://www.esquire.com/',
+    'https://www.complex.com/',
+    'https://www.dazeddigital.com/',
+    'https://i-d.vice.com/en_uk',
+    'https://fashionmagazine.com/',
+    'https://graziamagazine.com/'
+]
+    
+    def scrape_google_search(self, url):
+        response = requests.get(url)
+        soup = BeautifulSoup(response.text, 'html.parser')
+        
+        # Extract the desired information from the search results page
+        # Replace this code with your specific scraping logic
+        h2_element = soup.find_all("div", class_="egMi0 kCrYT")
+        filtered_urls = []
+        for ele in h2_element:
+            h = ele.find('a')
+            text = h['href']
+            # Extract URLs using regular expressions
+            match = re.search(r'/url\?q=(.*?)&', text)
+            if match:
+                url = match.group(1)
+                # Filter the desired sites
+                if any(site in url for site in self.sites):
+                    info = {}
+                    block = ele.find("div", class_="BNeawe vvjwJb AP7Wnd")
+                    info['text'] = block.get_text()
+                    info['link'] = url
+                    filtered_urls.append(info)
+    
+        return filtered_urls
+    
+    def scrape_pages(self, num_pages):
+        publications = []
+        for page in range(num_pages):
+            # Construct the URL for the current page
+            if page == 0:
+                url = self.base_url
+            else:
+                url = f'{self.base_url}&start={page * 10}'
+            
+            # Scrape data from the current page
+            titles = self.scrape_google_search(url)
+            publications += titles
+        
+        return publications
