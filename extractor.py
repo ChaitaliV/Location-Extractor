@@ -200,10 +200,11 @@ class PlaceFinder:
 class PlaceTagger:
     def __init__(self,frame):
         self.df = frame
+        self.df['Tags'] = self.df['Tags'].astype(str)
         self.possible_tags = list(set(list(self.df['Tags'][:])))
 
         self.tag1_category = {}
-        self.df['Tags'] = self.df['Tags'].astype(str)
+        
         for i in range(len(self.df)):
             
             self.tag1_category[self.df['Tags'][i].lower()] = self.df['Category'][i]
